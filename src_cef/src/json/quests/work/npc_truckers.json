@@ -1,0 +1,11 @@
+{
+    "0": {
+        "buttons":[
+            {"name": "Apply for a job.", "type": "perform"},
+            {"name": "Rent a work vehicle.", "type": "action"},
+            {"name": "Not interested."}
+        ],
+        "text":"Hello!",
+        "sound": "cloud/npc/hunt/hunter1.ogg"
+    }
+}

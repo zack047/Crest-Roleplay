@@ -1,0 +1,119 @@
+@import "../../../assets/css/style";
+
+.newhud__notification {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999999 !important;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: 'TTNorms-Medium';
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    pointer-events: none !important;
+    border-radius: 8px; // Added for a more modern rounded look
+    backdrop-filter: blur(10px); // Added for a frosted glass effect
+
+    &.list {
+        top: unset;
+        bottom: 5%;
+    }
+
+    .notification-true {
+        color: #2BB6A8;
+        @include fluid("font-size", 26);
+    }
+
+    .box-flex {
+        align-items: center;
+
+        .newhud__notification_title {
+            @include fluid("font-size", 24);
+            @include fluid("line-height", 28);
+            font-family: 'TTNorms-Bold';
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+
+        .newhud__notification_count {
+            @include fluid("font-size", 12);
+            @include fluid("line-height", 14);
+            display: flex;
+            align-items: center;
+            justify-content: center; // Fixed typo
+            @include fluid("height", 24);
+            @include fluid("min-width", 24);
+            @include fluid("border-radius", 12px); // Changed to circular look for modern design
+            @include fluid("padding-left", 10px); // Adjusted padding for better look
+            @include fluid("padding-right", 10px); // Adjusted padding for better look
+            @include fluid("margin-left", 10);
+            background: rgba(253,255,252,0.25); // Increased opacity for clearer background
+            letter-spacing: 0.01em;
+        }
+    }
+
+    .newhud__notification_subtitle {
+        @include fluid("margin-top", 10px); // Increased margin for better spacing
+        @include fluid("width", 360px); // Adjusted width for consistency
+        @include fluid("font-size", 16);
+        @include fluid("line-height", 20px); // Adjusted line height for readability
+        text-align: center;
+    }
+
+    .newhud__notification_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'TTNorms-Regular';
+        letter-spacing: 0.02em;
+        @include fluid("font-size", 14);
+        font-weight: 500;
+        word-wrap: break-word;
+
+        .newhud__notification_box {
+            position: relative;
+            background: rgba(1,10,18,0.85); // Slightly reduced opacity for a softer look
+            @include fluid("width", 360px); // Adjusted width for consistency
+            @include fluid("padding", 20px); // Increased padding for better spacing
+            @include fluid("border-left", 4px, solid #43A843); // Increased border width for emphasis
+            @include fluid("border-top-right-radius", 8px); // Increased border radius for modern look
+            @include fluid("border-bottom-right-radius", 8px);  
+            @include fluid("margin-top", 12px); // Increased margin for better spacing
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Added subtle shadow for depth
+
+            .newhud__notification_box_progress {
+                position: absolute;
+                @include fluid("width", 348px);
+                @include fluid("height", 2px);
+                bottom: 0;
+                right: 0;
+
+                i {
+                    position: absolute;
+                    height: 100%;
+                    background: #2BB6A8; // Changed to match accent color for better consistency
+                }
+            }
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &.success {
+                @include fluid("border-left", 4px, solid #43A843); // Increased border width for emphasis
+            }
+
+            &.information {
+                @include fluid("border-left", 4px, solid #FFF0BD); // Increased border width for emphasis
+            }
+
+            &.error {
+                @include fluid("border-left", 4px, solid #FF5773); // Increased border width for emphasis
+            }
+        }
+    }
+}

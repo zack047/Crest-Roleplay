@@ -1,0 +1,10 @@
+{
+    "0": {
+        "buttons":[
+            {"name": "Lets take a look.", "type": "perform"},
+            {"name": "I'm Not interested."}
+        ],
+        "text":"Hey, take a look at the goods.",
+        "sound": "cloud/npc/hunt/hunter1.ogg"
+    }
+}

@@ -1,0 +1,113 @@
+.gta5devgmenu {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.gta5devgmenu .list1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 41.6667vh;
+}
+
+.gta5devgmenu .block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 13.8889vh;
+  height: 13.8889vh;
+  background: url(./1.png);
+  background-size: cover;
+  margin-bottom: -1.4815vh;
+  transition: 0.5s ease;
+}
+
+.gta5devgmenu .block p {
+  color: rgb(255, 255, 255);
+  font-family: CantoraOne;
+  font-size: 1.4815vh;
+  font-weight: 400;
+  line-height: 1.8519vh;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.gta5devgmenu .block img {
+  height: 5.9259vh;
+  width: 5.9259vh;
+  margin-top: 1.1111vh;
+  margin-bottom: 0.8333vh;
+}
+
+.gta5devgmenu .block span {
+  width: 10.1852vh;
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 0.9259vh;
+  font-weight: 500;
+  line-height: 1.1111vh;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.gta5devgmenu p,
+h1 {
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+}
+
+.gta5devgmenu .list1 .block:nth-child(4) {
+  margin-left: 6.9444vh;
+}
+
+.gta5devgmenu .list1 .block:nth-child(5) {
+  margin-right: 6.9444vh;
+}
+
+.gta5devgmenu .list2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 41.6667vh;
+}
+
+.gta5devgmenu .list2 .block:nth-child(1) {
+  margin-left: 6.9444vh;
+}
+
+.gta5devgmenu .list2 .block:nth-child(2) {
+  margin-right: 6.9444vh;
+}
+
+.gta5devgmenu .list3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 41.6667vh;
+}
+
+.gta5devgmenu .list3 .block:nth-child(3) {
+  margin-left: 13.8889vh;
+}
+
+.gta5devgmenu .block:hover {
+  background: url(./2.png);
+  background-size: cover;
+}

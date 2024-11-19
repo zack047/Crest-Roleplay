@@ -1,0 +1,10 @@
+{
+    "0": {
+        "buttons":[
+            {"name": "Let me have a look.", "type": "perform"},
+            {"name": "I'll go for now..."}
+        ],
+        "text":"Hi! Welcome to the premium clothing store. Here you can try on and buy rare clothes with Cypress Bucks. By the way, you can donate for Cypress Bucks, take a look at the store!",
+        "sound": "cloud/npc/donshop/donshop.ogg"
+    }
+}

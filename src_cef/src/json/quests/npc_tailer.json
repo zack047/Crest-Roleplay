@@ -1,0 +1,133 @@
+{
+    "-1": {
+        "buttons":[
+            {"name": "Good.", "style": "big"}
+        ],
+        "text":"Sorry, I don't have any tasks for you."
+    },
+
+    "0": {
+        "buttons":[
+            {"name": "Let's give it a try...", "questId": 1},
+            {"name": "No, I am not interested in anything."}
+        ],
+        "text":"Hello, nice to see you! If you want, I can be your personal guide around the state. I'll show you the most interesting places in our wonderful state, tell you what you can do, and give you tips for enjoying life! Would you like that?"
+    },
+    
+    "1": {
+        "buttons":[
+            {"name": "I am on my way!", "type": "take"},
+            {"name": "Run with it yourself."}
+        ],
+        "text":"I think we should go to the town hall first. I've already put a marker on your map ;) <br/><br/> You can get a job in the city hall, and next to it constantly hangs around a lot of onlookers. Be careful: not all people are friendly, sometimes you can meet unpleasant and toxic personalities! If someone bothers you - just write <b>(T)</b> <i>/pmute</i> and its ID, life immediately becomes better! <br/><br/> All right, run, my friend.",
+        
+        "textSuccess":"Great, you did a good job. Here's a little reward for you.",
+        "buttonsSuccess":[
+            {"name": "Thank you, is there anything else for me?", "type": "perform", "questId": 2, "style": "medium"},
+            {"name": "Goodbye.", "style": "min"}
+        ],
+        "textError":"I have already given you an order, why are you still here? Get it done first, then we'll talk more.",
+        "buttonsError":[
+            {"name": "Verstanden.", "style": "big"}
+        ],
+        "Reward":[
+            {"item_type":228,"item_amount":1},
+            {"item_type":567,"item_amount":2},
+            {"item_type":654,"item_amount":3},
+            {"item_type":888,"item_amount":4}
+        ]
+    },
+    "2": {
+        "buttons":[
+            {"name": "To the farm", "type": "take", "index": 0},
+            {"name": "in the mine", "type": "take", "index": 1},
+            {"name": "To the sawmill", "type": "take", "index": 2},
+            {"name": "in the port", "type": "take", "index": 3},
+            {"name": "I am not interested.", "style": "big"}
+        ],
+        "text":"Your first task is to get some money, don't ask why, you just know you'll need it! <br/><br/>Decide where you're going ... it could be: Farm, mine, sawmill or port, my friends will be there to explain everything to you.",
+        "textSuccess":"Great, you did a good job. Here's a little reward for you.",
+        "buttonsSuccess":[
+            {"name": "Thank you, is there anything else for me?", "type": "perform", "questId": 3, "style": "medium"},
+            {"name": "Goodbye!", "style": "min"}
+        ],
+        "textError":"Listen, I've already given you an order, why are you still here? Get it done first, then we'll talk more.",
+        "buttonsError":[
+            {"name": "Verstanden.", "style": "big"}
+        ],
+        "Reward":[
+            {"item_type":228,"item_amount":1},
+            {"item_type":567,"item_amount":2},
+            {"item_type":654,"item_amount":3},
+            {"item_type":888,"item_amount":4}
+        ]
+    },
+    "3": {
+        "buttons":[
+            {"name": "Okay, ill do it.", "type": "take"},
+            {"name": "I am not interested."}
+        ],
+        "text":"Hey! You again?<br/>I have a few tasks for you, you help me, and in return I help you anyway!<br/><br/> So we can contact you.<br/>< br/>You can find it at /gps.",
+        "textSuccess":"Great, you did a good job. Here, have a little reward.",
+        "buttonsSuccess":[
+            {"name": "Thank you, is there anything else for me?", "type": "perform", "questId": 4, "style": "medium"},
+            {"name": "Goodbye!", "style": "min"}
+        ],
+        "textError":"Listen, I've already given you a task, why are you still here? First do it, then we'll talk.",
+        "buttonsError":[
+            {"name": "Understood.", "style": "big"}
+        ],
+        "Reward":[
+            {"item_type":228,"item_amount":1},
+            {"item_type":567,"item_amount":2},
+            {"item_type":654,"item_amount":3},
+            {"item_type":888,"item_amount":4}
+        ]
+    },
+    "4": {
+        "buttons":[
+            {"name": "Fine.", "type": "take"},
+            {"name": "I am not interested."}
+        ],
+        "text":"I forgot, you need to charge your phone, do it!<br/><br/> There is an ATM nearby, charge your cell phone so we can contact you.",
+        "textSuccess":"Great, you did a good job. Here, have a little reward.",
+        "buttonsSuccess":[
+            {"name": "Thank you, is there anything else for me?", "type": "perform", "questId": 5, "style": "medium"},
+            {"name": "Goodbye!", "style": "min"}
+        ],
+        "textError":"Listen, I've already given you a task, why are you still here? First do it, then we'll talk.",
+        "buttonsError":[
+            {"name": "Understood.", "style": "big"}
+        ],
+        "Reward":[
+            {"item_type":228,"item_amount":1},
+            {"item_type":567,"item_amount":2},
+            {"item_type":654,"item_amount":3},
+            {"item_type":888,"item_amount":4}
+        ]
+    },
+    "5": {
+        "buttons":[
+            {"name": "Fine.", "type": "take", "style": "big"}
+        ],
+        "text":"In short ... you need a driver's license - nothing works without it. Go to the driving school, my buddy Morgan works there, I'll tell him you're coming!<br/><br/>- Go to the driving school and talk to Morgan.<br/>Find in /gps - Important places - Driving school",
+        "textError":"Listen, I've already given you a task, why are you still here? First do it, then we'll talk.",
+        "buttonsError":[
+            {"name": "Understood.", "style": "big"}
+        ]
+    },
+    "6": {
+        "buttons":[
+            {"name": "Yes, put me in touch with Donald.", "type": "perform"},
+            {"name": "I am not interested."}
+        ],
+        "text":"Oh, thank you, I was just waiting for that envelope from Morgan.<br/>Listen, I see you've already settled into the state and it's time for you to do more serious things.<br/><br/>When you're ready, I can put you in touch with Donald, he runs things around here....",
+        "textSuccess":"Great, you did a good job. Here, have a little reward.",
+        "Reward":[
+            {"item_type":228,"item_amount":1},
+            {"item_type":567,"item_amount":2},
+            {"item_type":654,"item_amount":3},
+            {"item_type":888,"item_amount":4}
+        ]
+    }
+}

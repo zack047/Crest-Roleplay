@@ -1,0 +1,35 @@
+{
+    "0": {
+        "buttons":[
+            {"name": "Tell me more about this place.", "questId": 1},
+            {"name": "I need a pill. At least half...", "questId": 2},
+            {"name": "How do you get your job?", "questId": 3},
+            {"name": "Just walking."}
+        ],
+        "text":"Welcome to the city Hospital! My name is Emmanuel. I'm on duty here. How can I help you?",
+        "sound": "cloud/npc/ems/ems1.ogg"
+    },
+    "1": {
+        "buttons":[
+            {"name": "Alright, thank you! See you later.", "style": "medium"}
+        ],
+        "text":"Our hospital is the coolest safe accommodation in this state. Literally saving people's lives. Those who are on the verge of life and death if they do not have time to get help, - they come to us! We bring them to their senses, and they are happy to go on with their business, day after day...",
+        "sound": "cloud/npc/ems/ems2.ogg"
+    },
+    "2": {
+        "buttons":[
+            {"name": "Blue", "type": "perform"},
+            {"name": "Red", "type": "perform"},
+            {"name": "I'm scared, bye.", "style": "big"}
+        ],
+        "text":"What one do you want: Blue or Red? If you take the blue pill, the fairy tale is over. If you take the red pill, you will enter a wonderland. Which one will you choose?",
+        "sound": "cloud/npc/ems/ems3.ogg"
+    },
+    "3": {
+        "buttons":[
+            {"name": "Ok.", "style": "min"}
+        ],
+        "text":"Oh, do you want to be a doctor? That is great, the state always needs people with a good heart, who are ready to help their neighbor! I think you should talk to one of my colleagues, they will be able to advise you in more detail. Or you can search the state portal for information, you will definitely find everything you need there.",
+        "sound": "cloud/npc/ems/ems4.ogg"
+    }
+}

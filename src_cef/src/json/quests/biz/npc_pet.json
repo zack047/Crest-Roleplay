@@ -1,0 +1,18 @@
+{
+    "0": {
+        "buttons":[
+            {"name": "Pay for services and pick up a pet", "type": "perform"},
+            {"name": "Why do we need a veterinarian on staff?", "questId": 1},
+            {"name": "I do not need help", "style": "big"}
+        ],
+        "text":"Good afternoon. If something happened to your beloved pet - don't worry: they'll always be waiting for you here! Perfectly healthy, washed, happy and satisfied. Just pay the vet bill and you and your pet can be on your way!",
+        "sound": "cloud/npc/pet/pet1.ogg"
+    },
+    "1": {
+        "buttons":[
+            {"name": "Wow thanks! See you.", "style": "medium"}
+        ],
+        "text":"How is this why?! What, you don't know yet? Most recently, pets were brought to the city! Now every wealthy resident of our luxurious state has a unique opportunity to get a personal pet that will follow him, be able to attack offenders, play with balls and stuff like that ... Well, if something happens to the pet, my team of doctors will treat and care for them until the owner shows up. What do you say?",
+        "sound": "cloud/npc/pet/pet2.ogg"
+    }
+}

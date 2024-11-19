@@ -1,0 +1,10 @@
+{
+    "0": {
+        "buttons":[
+            {"name": "Sell.", "type": "perform"},
+            {"name": "No interest."}
+        ],
+        "text":"Hello, I buy up resources.",
+        "sound": "cloud/npc/treessell/tressel.ogg"
+    }
+}

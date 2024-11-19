@@ -1,0 +1,9 @@
+{
+    "0": {
+        "buttons":[
+            {"name": "I'm on my way to sign up!"}
+        ],
+        "text":"Congratulations, you found me! To receive your reward, enter the bonus code into your mobile phone: 7534953",
+        "sound": "cloud/npc/bonus.ogg"
+    }
+}

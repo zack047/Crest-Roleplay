@@ -1,0 +1,10 @@
+{
+    "0": {
+        "buttons":[
+            {"name": "Sell.", "type": "perform"},
+            {"name": "No interest."}
+        ],
+        "text":"Hello, do you have any resources you want to get rid of? Our future production will be extremely expensive, so I will buy up everything that is available!",
+        "sound": "cloud/npc/oressale/oresale1.ogg"
+    }
+}

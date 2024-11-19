@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="newhud__notification" class:list={$storeSettings.notifCount > 1>
+        {#if $storeSettings.notifCount === 1}
+        <div class="newhud__background1" transition:fade={{ duration: 250  on:click={() > onDelete(0)>
+            <div class="box-flex box-center">
+                <div class="newhud__notification_title">{notifications[0].title}</div>
+                {#if notifications.length > 1}
+                <div class="newhud__notification_count">x{notifications.length}</div>
+                {/if}
+            </div>
+            <div class="box-flex box-center newhud__notification_progress_box" style="filter: none">        
+                <div class="newhud__notification_progress">
+                    <i style=
+                        `width: ${notifications[0].percent}%;` +
+                        `transition-duration:${notifications[0].percent = 0 ? notifications[0].timeout : 0}ms;`
+                    >
+                </div>
+            
+                <div class="newhud__notification_progress">
+                    <i style=
+                        `width: ${notifications[0].percent}%;` +
+                        `transition-duration:${notifications[0].percent = 0 ? notifications[0].timeout : 0}ms;`
+                    >
+                </div>
+            </div>
+            <div class="newhud__notification_subtitle">{@html notifications[0].elements}</div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+    "0": {
+        "buttons":[
+            {"name": "Let me have a look.", "type": "perform"},
+            {"name": "I'll do better..."}
+        ],
+        "text":"Hello! My name is Ivan. I can help you with the furniture in your house. With my help, you can either buy furniture for dollars, or craft for resources. Interesting?",
+        "sound": "cloud/npc/furniture/furniture.ogg"
+    }
+}

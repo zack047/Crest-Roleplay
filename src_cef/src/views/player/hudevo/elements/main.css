@@ -1,0 +1,228 @@
+.enterpika {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.enterpika p {
+    color: #FDFFFC;
+    font-family: SF Pro Display;
+    font-size: 1.6667vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.0167vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.enterpika p b {
+    border-bottom: 0.1852vh solid rgba(0, 0, 0, 0.35);
+    border-radius: 0.3704vh;
+    background: rgb(255, 255, 255);
+    color: rgba(30, 30, 30, 0.8);
+    font-family: SF Pro Display;
+    font-size: 1.6667vh;
+    font-weight: 500;
+    line-height: 1.9444vh;
+    text-align: center;
+    padding: 0.6481vh 1.1111vh;
+}
+
+.haxzertaxi {
+    margin-right: 1.852vh;
+    margin-top: 1.2037vh;
+    height: 2.4074vh;
+    border-radius: 0.2778vh;
+    padding: 0vh 1.1111vh;
+    background: rgba(30, 30, 30, 0.7);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.haxzertaxi p {
+    color: rgb(255, 255, 255);
+    font-family: Gilroy;
+    font-size: 0.9259vh;
+    font-weight: 500;
+    line-height: 1.1111vh;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.haxzertaxi b {
+    color: #fff;
+    font-family: SF Pro Display;
+    font-size: 0.9259vh;
+    font-weight: 600;
+    line-height: 95.5%;
+    padding: 0vh 0.5556vh;
+    height: 1.4815vh;
+    display: flex;
+    letter-spacing: 0vh;
+    text-align: center;
+    margin-left: 0.3704vh;
+    border-radius: 0.2778vh;
+    background: #CFF80B;
+    align-items: center;
+    justify-content: center;
+}
+
+.hud_haxzer .hud_left .hud_gps .hud_micro .weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 1vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .hud_micro .weather p {
+    color: #FFF;
+    text-shadow: 0vh 0vh 0.37vh rgba(0, 0, 0, 0.25);
+    font-family: SF Pro Display;
+    font-size: 1.296vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.03vh;
+    margin-top: 0vh;
+    display: flex;
+    margin-bottom: 0vh;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hud_haxzer .hud_left .hud_gps .hud_micro .weather p img {
+    width: 1.6667vh;
+    height: 1.6667vh;
+    margin-left: 0.0926vh;
+    margin-right: 0.3704vh;
+}
+
+.hudhaxzer_use {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3vh;
+}
+.hudhaxzer_use .usetitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.hudhaxzer_use .usetitle p {
+    width: 2.778vh;
+    height: 2.778vh;
+    margin-bottom: 0vh;
+    text-align: center;
+    border-radius: 50%;
+    border: solid 0.2vh rgba(255, 255, 255, 0.15);
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.481vh;
+    line-height: 1.759vh;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 0.648vh rgb(255 255 255 / 50%);
+    justify-content: center;
+    align-content: center;
+}
+.hudhaxzer_use .usetitle .titleico {
+    animation: rotateE 1.5s infinite linear;
+    position: absolute;
+}
+.hudhaxzer_use .usetitle .titleico svg {
+    display: block;
+    width: 5.093vh;
+    height: 5.093vh;
+}
+.hudhaxzer_use .usetext {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.481vh;
+    line-height: 1.759vh;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 0.648vh rgb(255 255 255 / 50%);
+    justify-content: flex-start;
+    align-content: center;
+    margin-left: 1.5vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .leftti p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.1111vh;
+    font-weight: 600;
+    line-height: 1.2963vh;
+    letter-spacing: 0%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 1.2963vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .leftti p b {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.1111vh;
+    font-weight: 600;
+    line-height: 1.2963vh;
+    letter-spacing: 0%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .leftti p svg {
+    width: 1.8519vh;
+    height: 1.8519vh;
+    margin-right: 0.3704vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .money {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.hud_haxzer .hud_right .playerinfo .money .nalmoney {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hud_haxzer .hud_right .playerinfo .money .nalmoney svg {
+    width: 2.2222vh;
+    height: 2.2222vh;
+    margin-right: 0.3704vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .money .nalmoney p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 2.2222vh;
+    font-weight: 500;
+    line-height: 2.6852vh;
+    letter-spacing: 0%;
+    text-align: right;
+}

@@ -1,0 +1,52 @@
+@function vh($px) {
+	@return 0.09259259259259259vh * $px;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+	font-family: 'Gilroy';
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.auth {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+
+	background: radial-gradient(333.19% 142.26% at 100.00% 100.00%, rgba(21, 23, 26, 0.83) 0%, #101417 100%);
+	background-size: cover;
+
+
+	&__monkey{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		width: vh(1793);
+		height: vh(1080);
+		pointer-events: none;
+
+		z-index: 1;
+	}
+
+	&__sparks{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		mix-blend-mode: color-dodge;
+
+		width: vh(1534);
+		height: vh(1080);
+		pointer-events: none;
+		z-index: 1;
+	}
+}

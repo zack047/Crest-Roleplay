@@ -1,0 +1,10 @@
+{
+    "0": {
+        "buttons":[
+            {"name": "Pick up your vehicle", "style": "medium", "type": "perform"},
+            {"name": "Bye.", "style": "min"}
+        ],
+        "text":"Hello! If your vehicle has been impounded and you want to collect it, you've come to the right place!",
+        "sound": "cloud/npc/carevac/carevac.ogg"
+    }
+}

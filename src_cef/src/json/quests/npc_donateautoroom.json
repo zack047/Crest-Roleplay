@@ -1,0 +1,10 @@
+{
+    "0": {
+        "buttons":[
+            {"name": "Let's take a look.", "type": "perform"},
+            {"name": "I better go."}
+        ],
+        "text":"Hello, my dear customer! I'm happy to welcome you to the place where you can buy the brightest and most visually appealing cars for cash! Buy one, you won't regret it, but I have a favor to ask of you, will you take me to the burger joint later? Oh, okay, well... So, you're going to check out the rarest cars in the state?",
+        "sound": "cloud/npc/autodon/donata1.ogg"
+    }
+}

@@ -1,0 +1,123 @@
+@import "../../../assets/css/style";
+
+.newhud__notification {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 9999999 !important;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: "TTNorms-Medium";
+  font-weight: 500;
+  font-style: normal;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7), -1px -1px 0 rgba(0, 0, 0, 0.7),
+    1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7),
+    1px 1px 0 rgba(0, 0, 0, 0.7);
+  pointer-events: none !important;
+}
+
+.newhud__notification.list {
+  top: unset;
+  bottom: 5%;
+}
+
+.newhud__notification .notification-true {
+  color: #2bb6a8;
+  font-size: 26px; /* Assuming fluid() generates this */
+}
+
+.newhud__notification .box-flex {
+  align-items: center;
+}
+
+.newhud__notification .box-flex .newhud__notification_title {
+  font-size: 24px; /* Assuming fluid() generates this */
+  line-height: 28px; /* Assuming fluid() generates this */
+  font-family: "TTNorms-Bold";
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.newhud__notification .box-flex .newhud__notification_count {
+  font-size: 12px; /* Assuming fluid() generates this */
+  line-height: 14px; /* Assuming fluid() generates this */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px; /* Assuming fluid() generates this */
+  min-width: 24px; /* Assuming fluid() generates this */
+  border-radius: 4px; /* Assuming fluid() generates this */
+  padding-left: 7px; /* Assuming fluid() generates this */
+  padding-right: 7px; /* Assuming fluid() generates this */
+  margin-left: 10px; /* Assuming fluid() generates this */
+  background: rgba(253, 255, 252, 0.15);
+  letter-spacing: 0.01em;
+}
+
+.newhud__notification_subtitle {
+  margin-top: 8px; /* Assuming fluid() generates this */
+  width: 350px; /* Assuming fluid() generates this */
+  font-size: 16px; /* Assuming fluid() generates this */
+  line-height: 18px; /* Assuming fluid() generates this */
+  text-align: center;
+}
+
+.newhud__notification_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "TTNorms-Regular";
+  letter-spacing: 0.02em;
+  font-size: 14px; /* Assuming fluid() generates this */
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.newhud__notification_list .newhud__notification_box {
+  position: relative;
+  background: rgba(1, 10, 18, 0.9);
+  width: 350px; /* Assuming fluid() generates this */
+  padding: 18px; /* Assuming fluid() generates this */
+  border-left: 2px solid #43a843; /* Assuming fluid() generates this */
+  border-top-right-radius: 4px; /* Assuming fluid() generates this */
+  border-bottom-right-radius: 4px; /* Assuming fluid() generates this */
+  margin-top: 10px; /* Assuming fluid() generates this */
+}
+
+.newhud__notification_list
+  .newhud__notification_box
+  .newhud__notification_box_progress {
+  position: absolute;
+  width: 348px; /* Assuming fluid() generates this */
+  height: 2px; /* Assuming fluid() generates this */
+  bottom: 0;
+  right: 0;
+}
+
+.newhud__notification_list
+  .newhud__notification_box
+  .newhud__notification_box_progress
+  i {
+  position: absolute;
+  height: 100%;
+  background: white;
+}
+
+.newhud__notification_list .newhud__notification_box:first-child {
+  margin-top: 0;
+}
+
+.newhud__notification_list .newhud__notification_box.success {
+  border-left: 2px solid #43a843; /* Assuming fluid() generates this */
+}
+
+.newhud__notification_list .newhud__notification_box.information {
+  border-left: 2px solid #fff0bd; /* Assuming fluid() generates this */
+}
+
+.newhud__notification_list .newhud__notification_box.error {
+  border-left: 2px solid #ff5773; /* Assuming fluid() generates this */
+}

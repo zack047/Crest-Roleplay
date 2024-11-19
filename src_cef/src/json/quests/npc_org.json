@@ -1,0 +1,38 @@
+{
+    "0": {
+        "buttons":[
+            {"name": "Yes, tell us more.",  "questId": 1},
+            {"name": "I just want to go to the office!", "type": "take"},
+            {"name": "No, I am not interested...", "style": "big"}
+        ],
+        "text":"Hello, my name is Polly. I am the director of Eclipse Tower. This is where the most influential organizations in our country are created! Do you have ambitions to become a leader?",
+        "sound": "cloud/npc/org/org1.ogg"
+    },
+    "1": {
+        "buttons":[
+            {"name": "I always wanted to form a grouping.", "questId": 2},
+            {"name": "I am determined to build a community.", "questId": 3},
+            {"name": "Difficult and scary... Goodbye!", "style": "big"}
+        ],
+        "text":"All right, let's get started. There are two types of organizations: Groupings and Communities. Which one would you like to know about?",
+        "sound": "cloud/npc/org/org2.ogg"
+    },
+    "2": {
+        "buttons":[
+            {"name": "Yes, that's exactly what I want!", "type": "perform"},
+            {"name": "No, that's not for me. Tell me about the communities.", "questId": 3},
+            {"name": "I have changed my mind.", "style": "big"}
+        ],
+        "text":"I see you have a penchant for the shady side of things.... You like guns, money and expensive cars? You stand up for what is yours and take what is not yours? Then this is the right group for you. There you can go on kidnappings, robberies and territorial gains.",
+        "sound": "cloud/npc/org/org3.ogg"
+    },
+    "3": {
+        "buttons":[
+            {"name": "Nothing to think about! Let's go!", "type": "perform"},
+            {"name": "Whoa, whoa, whoa... Take it easy... What about the grouping?", "questId": 2},
+            {"name": "I didn't understand half the words. Goodbye.", "style": "big"}
+        ],
+        "text":"Do you want to be part of the state system? The community is a good choice. They have a contract with the government and work for the good of the state. The goal of the community is to gather like-minded people into one organization and achieve the socio-economic goals set. Does that sound complicated? Maybe you should think about it.",
+        "sound": "cloud/npc/org/org4.ogg"
+    }
+}

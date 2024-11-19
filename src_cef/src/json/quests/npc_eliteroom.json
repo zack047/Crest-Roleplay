@@ -1,0 +1,10 @@
+{
+    "0": {
+        "buttons":[
+            {"name": "I really want to see them!", "type": "perform"},
+            {"name": "Goodbye."}
+        ],
+        "text":"Welcome to Elite Cypress autoroom! Here you will find the most beautiful, fastest and coolest cars that can only be found in our store! The prices are steep but I think you will be blown away by the range and coolness of our cars!",
+        "sound": "cloud/npc/eliteroom/eliteroom.ogg"
+    }
+}

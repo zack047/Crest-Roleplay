@@ -1,0 +1,41 @@
+{
+    "0": {
+        "buttons":[
+            {"name": "Where am I?", "questId": 1},
+            {"name": "What are you doing here?", "questId": 2},
+            {"name": "I want to work for you.", "questId": 3},
+            {"name": "My ad was deleted. Why?", "questId": 4},
+            {"name": "I'm sorry, just passing by...", "style": "big"}
+        ],
+        "text":"Hello, welcome to our office. My name is Jennifer and i am here to answer any of your questions. What would you like to know?",
+        "sound": "cloud/npc/news/news1.ogg"
+    },
+    "1": {
+        "buttons":[
+            {"name": "It's cool here. Thanks!", "style": "medium"}
+        ],
+        "text":"You are in the main office of the famous news company, Los Santos News. Here you might be lucky enough to meet the most creative and talented people from all over the state!",
+        "sound": "cloud/npc/news/news2.ogg"
+    },
+    "2": {
+        "buttons":[
+            {"name": "Fire! Insanely interesting!", "style": "medium"}
+        ],
+        "text":"You know, our activities are very diverse... Fresh newspapers in the morning, intriguing photographs, video reports from the scene, cultural events, all this and much more - the work of our employees who do their work with a special approach. Not just because we are called the eyes, ears and voice of the people!",
+        "sound": "cloud/npc/news/news3.ogg"
+    },
+    "3": {
+        "buttons":[
+            {"name": "Ok.", "style": "min"}
+        ],
+        "text":"I want to say that this is the correct decision! You won't regret it one bit if you join us. I hope you have a medical certificate and a category B driving license with you. All you have to do next is to pass an interview with one of our personnel department team members and consider the deal in the bag.",
+        "sound": "cloud/npc/news/news4.ogg"
+    },
+    "4": {
+        "buttons":[
+            {"name": "I'll be more careful in the future, thanks!", "style": "medium"}
+        ],
+        "text":"Yeah... It's an embarrassing situation. Most likely, your ad was written in violation of the rules for editing ads. I'm sure this won't happen again if you check them out on the State Portal or consult with one of our staff. Don't be upset!",
+        "sound": "cloud/npc/news/news5.ogg"
+    }
+}

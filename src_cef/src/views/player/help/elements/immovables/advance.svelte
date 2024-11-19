@@ -1,0 +1,11 @@
+<script>
+    //import image from '../../images/job_bus.png'
+</script>
+
+<div class="text">
+    <p><span style="font-weight: 400;"><strong>Improvements are available for homes</strong>, The list of available upgrades includes the following: the following: the first one, the second one, the second one. In the list of available upgrades you can find:</span></p>
+    <p><span style="font-weight: 400;"><strong>Safe</strong> - Designed for storing weapons<br /></span><span style="font-weight: 400;"><strong>Аптечка</strong> - allows you to be cured from home.<br /></span><span style="font-weight: 400;"><strong>Clothes Storage Closet</strong><br /></span><strong>Locker for storing items</strong><br /><span style="font-weight: 400;"><strong>Burglary-proof safe</strong> &mdash; it cannot be hacked, at most you can buy 1 piece, you can only store weapons in it<br /></span><span style="font-weight: 400;"><strong>Alarm</strong> - triggers a volume hack and calls the police</span></p>
+    <p><span style="font-weight: 400;"><strong>If there are not enough garage spaces</strong>, you can increase them by buying garage improvements:</span></p>
+    <p><span style="font-weight: 400;"><strong>1</strong> garage space to <strong>2</strong> garage spaces - 16.000$<br /></span><span style="font-weight: 400;">С <strong>2</strong> garage spaces to <strong>3</strong> garage spaces - 24.000$<br /></span><span style="font-weight: 400;">С <strong>3</strong> garage spaces to <strong>4</strong> garage spaces - 36.000$<br /></span><span style="font-weight: 400;">С <strong>4</strong> garage spaces to <strong>5</strong> garage spaces - 48.000$<br /></span><span style="font-weight: 400;">С <strong>5</strong> garage spaces To <strong>6</strong> garage spaces - 80.000$<br /></span><span style="font-weight: 400;">С <strong>6</strong> garage spaces to <strong>10</strong> garage spaces - 250.000$<br /></span><span style="font-weight: 400;">С <strong>10</strong> garage spaces to <strong>15</strong> garage spaces- 15.000 RedBucks<br /></span><span style="font-weight: 400;">С <strong>15</strong> garage spaces to <strong>23</strong> garage spaces - 30.000 RedBucks<br /></span><span style="font-weight: 400;">С <strong>23</strong> garage spaces to <strong>38</strong> garage spaces - 60.000 RedBucks</span></p>
+    
+</div>

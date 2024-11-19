@@ -1,0 +1,69 @@
+.notilistpi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.notilistpi .notpiblock {
+    width: 37.1296vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 0.3704vh;
+    background: rgba(16, 21, 24, 0.70);
+    margin-bottom: 0.6481vh;
+}
+
+.notilistpi .notpiblock .leftnotipi {
+    margin-left: 0.9259vh;
+    margin-top: 1.0185vh;
+}
+
+.notilistpi .notpiblock .rightnotipi {
+    margin-top: 1.3889vh;
+    margin-bottom: 1.3889vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 32.4074vh;
+    margin-right: 0.9259vh;
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.notilistpi .notpiblock .leftnotipi svg {
+    width: 2.2222vh;
+    height: 2.2222vh;
+}
+
+.notilistpi .notpiblock .rightnotipi p {
+    margin-bottom: 0vh;
+    margin-top: 0vh;
+}
+
+.notilistpi .notpiblock.error {
+    border-right: 0.2778vh solid #F21626;
+}
+
+.notilistpi .notpiblock.success {
+    border-right: 0.2778vh solid #34B67C;
+}
+
+.notilistpi .notpiblock.information {
+    border-right: 0.2778vh solid #F4C940;
+}
+
+.notilistpi .notpiblock.alert {
+    border-right: 0.2778vh solid #F4C940;
+}
+
+.notilistpi .notpiblock.warning {
+    border-right: 0.2778vh solid #F4C940;
+}

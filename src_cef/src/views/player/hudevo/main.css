@@ -1,0 +1,3054 @@
+.gta5devuse {
+  width: 26.5741vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: auto;
+  margin-bottom: 2vh;
+}
+
+.hud_haxzer .hud_right .infocraftmenu {
+  width: 23.1481vh;
+  height: 3.7037vh;
+  margin-right: 3.2407vh;
+  margin-top: auto;
+  margin-bottom: 1.8519vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.3704vh;
+  background: rgba(30, 30, 30, 0.8);
+}
+
+.hud_haxzer .hud_right .bottomprobel {
+  margin-bottom: 23.6111vh;
+}
+
+.hud_haxzer .hud_right .infocraftmenu h1 {
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 1.3889vh;
+  font-weight: 500;
+  line-height: 1.6667vh;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-left: 1.2963vh;
+}
+
+.hud_haxzer .hud_right .infocraftmenu p {
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 1.3889vh;
+  font-weight: 500;
+  line-height: 1.6667vh;
+  letter-spacing: 0%;
+  text-align: right;
+  margin-right: 1.2963vh;
+}
+
+.hud_haxzer .hud_right .infocraftmenu p b {
+  color: rgb(255, 255, 255, 0.25);
+  font-family: SF Pro Display;
+  font-size: 1.3889vh;
+  font-weight: 500;
+  line-height: 1.6667vh;
+  letter-spacing: 0%;
+  text-align: right;
+}
+
+.gta5devuse .headuse {
+  width: 26.5741vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.gta5devuse .lineuse {
+  width: 26.5741vh;
+  height: 0.1852vh;
+  background: rgba(255, 255, 255, 0.25);
+  margin: 1.7593vh 0vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gta5devuse .btnsuse {
+  width: 26.5741vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gta5devuse .headuse .infouse {
+  width: 20.6481vh;
+  margin-left: 1.0185vh;
+}
+
+.gta5devuse .headuse .iconuse {
+  width: 4.537vh;
+  height: 4.537vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.6481vh;
+  background: rgb(255, 255, 255);
+}
+
+.gta5devuse .headuse .iconuse svg {
+  width: 2.963vh;
+  height: 2.963vh;
+}
+
+.gta5devuse .headuse .infouse h1 {
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 1.4815vh;
+  font-weight: 500;
+  line-height: 1.7593vh;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.gta5devuse .headuse .infouse p {
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 1.0185vh;
+  font-weight: 500;
+  line-height: 1.2037vh;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.gta5devuse .lineuse .linus {
+  width: 19.2593vh;
+  height: 0.1852vh;
+  background: #ffd749;
+}
+
+.gta5devuse .btnsuse .btnus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0vh 0.9259vh;
+}
+
+.gta5devuse .btnsuse .btnus span {
+  width: 2.5926vh;
+  height: 2.5926vh;
+  box-sizing: border-box;
+  border-bottom: 0.1389vh solid rgba(0, 0, 0, 0.35);
+  border-radius: 0.3704vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 1.2963vh;
+  font-weight: 500;
+  line-height: 1.5741vh;
+  letter-spacing: 1%;
+  text-align: center;
+}
+
+.gta5devuse .btnsuse .btnus.yes span {
+  background: #b12828;
+}
+
+.gta5devuse .btnsuse .btnus.no span {
+  background: #80aa27;
+}
+
+.gta5devuse .btnsuse .btnus p {
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 1.4815vh;
+  font-weight: 500;
+  line-height: 1.7593vh;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-left: 0.7407vh;
+}
+
+.gta5devuse p,
+h1 {
+  margin: 0;
+}
+
+.hud_haxzer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0vh;
+  top: 0vh;
+}
+
+.hud_haxzer .hud_left {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+}
+
+.hud_haxzer .hud_center {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 0vh;
+  z-index: 1;
+  height: 100%;
+  transform: translate(-50%, 0px);
+}
+
+.hud_haxzer .hud_right {
+  height: 100%;
+  position: absolute;
+  top: 0vh;
+  right: 0vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.hud_haxzer .hud_right .playerinfo {
+  margin-right: 1.852vh;
+  margin-top: 1.944vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-end;
+  align-items: center;
+}
+
+.hud_haxzer .hud_right .playerinfo .bottominfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-top: 18.296vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .leftti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .leftti .grenezone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 1.2963vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .leftti .userid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 1.2963vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .leftti .useronline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 1.2963vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .leftti .grenezone b {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4815vh;
+  line-height: 1.7593vh;
+  text-align: center;
+  color: #ffd749;
+  text-shadow: 0vh 0vh 0.9259vh rgba(204, 63, 112, 0.59);
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .leftti .grenezone p {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4815vh;
+  line-height: 1.7593vh;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0vh 0vh 0.9259vh rgba(255, 255, 255, 0.5);
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .leftti .userid p {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.1111vh;
+  line-height: 1.2963vh;
+  display: flex;
+  align-items: center;
+  color: #fec219;
+  text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .leftti .useronline svg {
+  width: 1.8519vh;
+  height: 1.8519vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .leftti .useronline p {
+  /*-----*/
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.1111vh;
+  line-height: 1.2963vh;
+  display: flex;
+  align-items: center;
+  color: blue;
+  text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .rightti {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 15.242vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .leftti .greenzone {
+  margin-top: 2.6vh;
+  margin-right: 1.481vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .leftti .greenzone p {
+  color: #a9f555;
+  font-family: SF Pro Display;
+  font-size: 2.481vh;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  text-shadow: 0px 0px 1vh #a9f555;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .leftti .greenzone b {
+  color: #fff;
+  font-weight: 400 !important;
+  text-shadow: 0px 0px 1vh #fff;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .rightti .logo {
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .rightti .dopinfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 15.242vh;
+  margin-top: 0.185vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .rightti .dopinfo .leftdi {
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .rightti .dopinfo .rightdi {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .rightti .logo img {
+  width: 12.8972vh;
+  height: 5.0926vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .rightti .dopinfo .leftdi .online {
+  /*----*/
+  color: red;
+  text-align: right;
+  text-shadow: 0px 0px 0.37vh rgba(0, 0, 0, 0.4);
+  font-family: SF Pro Display;
+  font-size: 3.311vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-right: 1vh;
+}
+
+.hud_haxzer
+  .hud_right
+  .playerinfo
+  .topinfo
+  .rightti
+  .dopinfo
+  .rightdi
+  .nameserv {
+  height: 1.57vh;
+  padding: 0 0.5vh;
+  border-radius: 0.37vh;
+  background: rgba(20, 20, 20, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 1vh;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .rightti .dopinfo .rightdi .id {
+  color: #fec219;
+  text-align: right;
+  text-shadow: 0px 0px 0.37vh rgba(0, 0, 0, 0.4);
+  font-family: SF Pro Display;
+  font-size: 2.111vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 2vh;
+  position: absolute;
+}
+
+.hud_haxzer .hud_right .playerinfo .bottominfo .stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.hud_haxzer .hud_right .playerinfo .bottominfo .stars .star {
+}
+
+.hud_haxzer .hud_right .playerinfo .bottominfo .money {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_right .playerinfo .bottominfo .weapons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin-top: 0.833vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .bottominfo .money .nalmoney {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  align-content: center;
+  margin-top: 0.926vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .bottominfo .money .bankmoney {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 0.833vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .bottominfo .money .nalmoney p {
+  color: #fff;
+  text-align: right;
+  text-shadow: 0px 0px 0.37vh rgba(0, 0, 0, 0.4);
+  font-family: SF Pro Display;
+  font-size: 2.7vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .bottominfo .money .nalmoney p.moneypush {
+  text-align: right;
+  font-family: SF Pro Display;
+  font-size: 0.741vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-right: 0.463vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .bottominfo .money .bankmoney p {
+  color: #fff;
+  text-align: right;
+  text-shadow: 0px 0px 0.37vh rgba(0, 0, 0, 0.4);
+  font-family: SF Pro Display;
+  font-size: 0.696vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .bottominfo .money .bankmoney p.moneypush {
+  text-align: right;
+  font-family: SF Pro Display;
+  font-size: 0.741vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-right: 0.463vh;
+}
+
+.hud_gps .money b {
+  color: #fff;
+  text-align: right;
+  text-shadow: 0px 0px 0.37vh rgba(0, 0, 0, 0.4);
+  font-family: SF Pro Display;
+  font-size: 1.296vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  flex-direction: row;
+}
+
+.hud_gps .money p {
+  margin-left: 0.5vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .bottominfo .weapons h1 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4815vh;
+  line-height: 1.7593vh;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+}
+
+.hud_haxzer .hud_right .playerinfo .bottominfo .weapons p {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5741vh;
+  line-height: 1.5741vh;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+}
+
+.hud_haxzer .hud_right .playerinfo .bottominfo .weapons b {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2963vh;
+  line-height: 1.2963vh;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  letter-spacing: 0.01em;
+  color: #ffffff50;
+  text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+}
+
+.hud_haxzer .hud_right .playerinfo .bottominfo .stars .star svg {
+  width: 2.407vh;
+  height: 2.407vh;
+  margin-left: 0.2vh;
+  fill: #fff;
+  opacity: 0.1;
+}
+
+.hud_haxzer .hud_right .playerinfo .bottominfo .stars .star.active svg {
+  opacity: 1;
+  fill: #ffeb3b;
+  filter: drop-shadow(0px 0px 10px rgb(255 235 59));
+}
+
+.hud_haxzer .hud_right .playerinfo .bottominfo .money .nalmoney svg {
+  width: 2.222vh;
+  height: 2.222vh;
+  margin-left: 0.185vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .bottominfo .money .bankmoney svg {
+  margin-left: 0.463vh;
+  width: 1.296vh;
+  height: 1.296vh;
+  margin-right: 0.463vh;
+}
+
+.hud_haxzer .hud_right .speedometr {
+  position: absolute;
+  right: 4.907vh;
+  bottom: 4.722vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 22.867vh;
+}
+
+.hud_haxzer .hud_right .speedometr .topspeed {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+  top: 0vh;
+  left: 0vh;
+}
+
+.hud_haxzer .hud_right .speedometr .bottomspeed {
+  width: 22.867vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hud_haxzer .hud_right .speedometr .topspeed .rpmblock {
+}
+
+.hud_haxzer .hud_right .speedometr .topspeed .rpmblock .text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  left: 0.5vh;
+}
+
+.hud_haxzer .hud_right .speedometr .topspeed .rpmblock .rpmbg {
+  width: 4.476vh;
+  height: 1.026vh;
+  position: relative;
+  margin-left: -0.3vh;
+}
+
+.hud_haxzer .hud_right .speedometr .bottomspeed .left {
+}
+
+.hud_haxzer .hud_right .speedometr .bottomspeed .right {
+  position: relative;
+  left: -6vh;
+  top: -0.7vh;
+}
+
+.hud_haxzer .hud_right .speedometr .bottomspeed .left .rpmblock {
+}
+
+.hud_haxzer .hud_right .speedometr .bottomspeed .left .rpmblock .text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_right .speedometr .bottomspeed .left .rpmblock .rpmbg {
+}
+
+.hud_haxzer .hud_right .speedometr .topspeed .rpmblock .rpmbg svg {
+  width: 4.476vh;
+  height: 1.026vh;
+  opacity: 0.2;
+  fill: #fff;
+}
+
+.hud_haxzer .hud_right .speedometr .topspeed .rpmblock .rpmbg.act1 svg {
+  filter: drop-shadow(0px 0px 0.926vh rgba(255, 53, 53, 0.55));
+  opacity: 1;
+  fill: #ff3535;
+}
+
+.hud_haxzer .hud_right .speedometr .bottomspeed .left .rpmblock .rpmbg svg {
+  width: 2.8vh;
+  height: 3vh;
+  opacity: 0.2;
+  fill: #fff;
+}
+
+.hud_haxzer .hud_right .speedometr .bottomspeed .left .rpmblock {
+  margin-left: 0.26vh;
+}
+
+.hud_haxzer .hud_right .speedometr .bottomspeed .left .rpmblock:nth-child(2) {
+  margin-left: -1.737vh;
+  margin-top: -0.5vh;
+}
+
+.hud_haxzer .hud_right .speedometr .bottomspeed .left .rpmblock .rpmbg.act {
+}
+
+.hud_haxzer .hud_right .speedometr .bottomspeed .left .rpmblock .rpmbg.act svg {
+  filter: drop-shadow(0px 0px 0.926vh rgba(255, 255, 255, 0.55));
+  opacity: 1;
+}
+
+.hud_haxzer .hud_right .speedometr .topspeed .rpmblock .rpmbg.act {
+}
+
+.hud_haxzer .hud_right .speedometr .topspeed .rpmblock .rpmbg.act svg {
+  filter: drop-shadow(0px 0px 0.926vh rgba(255, 255, 255, 0.55));
+  opacity: 1;
+}
+
+.hud_haxzer .hud_right .speedometr .bottomspeed .right .bgspeedr svg {
+  width: 29.741vh;
+  height: 6.222vh;
+}
+
+.hud_haxzer .hud_right .speedometr .bottomspeed .right .bgspeedr {
+}
+
+.hud_haxzer .hud_right .speedometr .bottomspeed .right .infospeedr {
+  width: 18.519vh;
+  height: 5.185vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  margin-top: -5.185vh;
+  margin-left: 8vh;
+}
+
+.hud_haxzer .hud_right .speedometr .bottomspeed .right .infospeedr .speedd {
+  width: 7.037vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2vh;
+}
+
+.hud_haxzer .hud_right .speedometr .bottomspeed .right .infospeedr .speedin {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 1vh;
+}
+
+.hud_haxzer .hud_right .speedometr .bottomspeed .right .infospeedr .speedd p {
+  color: rgba(255, 255, 255, 0.1);
+  font-family: SF Pro Display;
+  font-size: 3.704vh;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 95.5%; /* 38.2px */
+  margin-bottom: 0vh;
+  margin-top: 0vh;
+}
+
+.hud_haxzer .hud_right .speedometr .bottomspeed .right .infospeedr .speedd b {
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 3.704vh;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 95.5%;
+  margin-bottom: 0vh;
+  margin-top: 0vh;
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedd
+  span {
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 1.111vh;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 95.5%;
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedfuel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedico {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0.463vh;
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedfuel
+  .fuelo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 7.6vh;
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedfuel
+  .fuelbar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 0.556vh;
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedfuel
+  .fuelbar
+  .bgbar {
+  position: relative;
+  margin-left: -0.5vh;
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedfuel
+  .fuelbar
+  .bgbar
+  svg {
+  width: 1.481vh;
+  height: 1.296vh;
+  fill: rgba(255, 255, 255, 0.1);
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedfuel
+  .fuelo
+  p {
+  color: #fff; /*Frontline*/
+  font-family: SF Pro Display;
+  font-size: 3.111vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 95.5%; /* 11.46px */
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedfuel
+  .fuelbar
+  .bgbar.act
+  svg {
+  fill: #ffd749; /*fule color frontline*/
+  filter: drop-shadow(0px 0px 0.926vh rgba(10, 75, 255, 0.55));
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedfuel
+  .fuelo
+  svg {
+  width: 1.111vh;
+  height: 1.111vh;
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedico
+  .engico {
+  margin-right: 1.019vh;
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedico
+  .doorico {
+  margin-right: 1.019vh;
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedico
+  .lightico {
+  margin-right: 1.019vh;
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedico
+  .remico {
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedico
+  .engico
+  svg {
+  width: 1.481vh;
+  height: 1.019vh;
+  fill: #fff;
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedico
+  .doorico
+  svg {
+  width: 1.389vh;
+  height: 1.296vh;
+  fill: #fff;
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedico
+  .lightico
+  svg {
+  width: 1.389vh;
+  height: 1.019vh;
+  fill: #fff;
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedico
+  .remico
+  svg {
+  width: 1.389vh;
+  height: 1.389vh;
+  fill: #fff;
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedico
+  .doorico.act
+  svg {
+  fill: #ffd749;
+  filter: drop-shadow(0px 0px 0.543vh #ffd749); /*default color cff80b*/
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedico
+  .engico.act
+  svg {
+  fill: #ffd749;
+  filter: drop-shadow(0px 0px 0.543vh #ffd749);
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedico
+  .lightico.act
+  svg {
+  fill: #ffd749;
+  filter: drop-shadow(0px 0px 0.543vh #ffd749);
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .right
+  .infospeedr
+  .speedin
+  .speedico
+  .remico.act
+  svg {
+  fill: #ffd749;
+  filter: drop-shadow(0px 0px 0.543vh #ffd749);
+}
+
+.hud_haxzer .hud_right .speedometr .topspeed .rpmblock .text p {
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 0.926vh;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 95.5%; /* 9.55px */
+  letter-spacing: 0.546vh;
+  margin-top: 0vh;
+  margin-bottom: 0.546vh;
+}
+
+.hud_haxzer .hud_right .speedometr .bottomspeed .left .rpmblock .text p {
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 0.926vh;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 95.5%;
+  letter-spacing: 0.546vh;
+  margin-top: -0.654vh;
+  margin-bottom: 0vh;
+}
+
+.hud_haxzer
+  .hud_right
+  .speedometr
+  .bottomspeed
+  .left
+  .rpmblock
+  .text
+  p:nth-child(2) {
+  margin-top: 1.5vh;
+  position: relative;
+  left: -1.5vh;
+}
+
+.hud_haxzer .hud_left .hits {
+  position: absolute;
+  margin-left: 1.8519vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 10vh;
+  bottom: 33.963vh;
+  left: 0vh;
+}
+
+.hud_haxzer .hud_left .hits .hit {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 1.481vh;
+}
+
+.hud_haxzer .hud_left .hits svg {
+  width: 1.852vh;
+  height: 1.852vh;
+  margin-left: 1.389vh;
+}
+
+.hud_haxzer .hud_left .hits b {
+  display: flex;
+  width: 2.778vh;
+  height: 2.778vh;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.37vh;
+  border: 0.1vh solid rgba(255, 255, 255, 0.04);
+  background: rgba(35, 38, 45, 0.5);
+  box-shadow: 0px 0.37vh 0.37vh 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 1.389vh;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 1.389vh;
+}
+
+.hud_haxzer .hud_right .killlogs {
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  max-height: 7.504vh;
+  overflow: hidden;
+  margin-top: 14.2593vh;
+  margin-right: 1.852vh;
+}
+
+.hud_haxzer .hud_right .killlogs .kills {
+  width: 27.778vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 1.204vh;
+}
+
+.hud_haxzer .hud_right .killlogs .kills .leftk {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: SF Pro Display;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: right;
+  color: rgb(242, 22, 38);
+}
+
+.hud_haxzer .hud_right .killlogs .kills .centerk {
+  margin-left: 0.5vh;
+  margin-right: 0.5vh;
+}
+
+.hud_haxzer .hud_right .killlogs .kills .rightk {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: SF Pro Display;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: right;
+  color: rgb(106, 250, 80);
+}
+
+.hud_haxzer .hud_right .killlogs .kills .centerk svg {
+  width: 4.63vh;
+}
+
+.hud_haxzer .hud_right .killlogs .kills:nth-child(2) {
+  opacity: 0.5;
+}
+
+.hud_haxzer .hud_right .killlogs .kills:nth-child(3) {
+  opacity: 0.2;
+}
+
+.hud_haxzer .hud_center .hud_capt {
+  width: 43.056vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 3.333vh;
+}
+
+.hud_haxzer .hud_center .hud_capt .catp_timer {
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  top: -1.3vh;
+}
+
+.hud_haxzer .hud_center .hud_capt .catp_timer b {
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 2.222vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.111vh;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+}
+
+.hud_haxzer .hud_center .hud_capt .catp_timer p {
+  color: #dfdfdf;
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 1.111vh;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.056vh;
+  text-transform: uppercase;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .leftcapt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .centercapt {
+  height: 2.407vh;
+  width: 0.185vh;
+  background: #fdfffc;
+  margin-top: 1.7vh;
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .rightcapt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .leftcapt .capt_info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 21.481vh;
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .leftcapt .capt_bar {
+  width: 21.481vh;
+  height: 0.185vh;
+  background: rgba(253, 255, 252, 0.2);
+  margin-top: 0.833vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .leftcapt .capt_info span {
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 1.567vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.083vh;
+  width: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .leftcapt .capt_info h1 {
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 1.3vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.017vh;
+  margin-bottom: 0vh;
+  margin-top: 0vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .leftcapt .capt_info .yellow {
+  color: #ffd749;
+  text-shadow: 0px 0px 1.852vh rgba(255, 215, 73, 0.5);
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .leftcapt .capt_info .green {
+  color: #6afa50;
+  text-shadow: 0px 0px 1.852vh rgba(106, 250, 80, 0.5);
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .leftcapt .capt_info .violet {
+  color: #c548ff;
+  text-shadow: 0px 0px 1.852vh rgba(197, 72, 255, 0.5);
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .leftcapt .capt_info .red {
+  color: #e71d36;
+  text-shadow: 0px 0px 1.852vh rgba(231, 29, 54, 0.5);
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .leftcapt .capt_info .blue {
+  color: #0091ff;
+  text-shadow: 0px 0px 1.852vh rgba(0, 145, 255, 0.5);
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .rightcapt .capt_bar {
+  width: 21.481vh;
+  height: 0.185vh;
+  background: rgba(253, 255, 252, 0.2);
+  margin-top: 0.833vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .rightcapt .capt_info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 21.481vh;
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .rightcapt .capt_info span {
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 1.567vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.083vh;
+  width: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .rightcapt .capt_info h1 {
+  text-align: center;
+  text-shadow: 0px 0px 1.852vh rgba(106, 250, 80, 0.5);
+  font-family: SF Pro Display;
+  font-size: 1.3vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.017vh;
+  margin-bottom: 0vh;
+  margin-top: 0vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .rightcapt .capt_info .yellow {
+  color: #ffd749;
+  text-shadow: 0px 0px 1.852vh rgba(255, 215, 73, 0.5);
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .rightcapt .capt_info .green {
+  color: #6afa50;
+  text-shadow: 0px 0px 1.852vh rgba(106, 250, 80, 0.5);
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .rightcapt .capt_info .violet {
+  color: #c548ff;
+  text-shadow: 0px 0px 1.852vh rgba(197, 72, 255, 0.5);
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .rightcapt .capt_info .red {
+  color: #e71d36;
+  text-shadow: 0px 0px 1.852vh rgba(231, 29, 54, 0.5);
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .rightcapt .capt_info .blue {
+  color: #0091ff;
+  text-shadow: 0px 0px 1.852vh rgba(0, 145, 255, 0.5);
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .leftcapt .capt_bar .bar_bg {
+  height: 0.185vh;
+  color: #e71d36;
+  text-shadow: 0px 0px 1.852vh rgba(231, 29, 54, 0.5);
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .rightcapt .capt_bar .bar_bg {
+  height: 0.185vh;
+  color: #6afa50;
+  text-align: center;
+  text-shadow: 0px 0px 1.852vh rgba(106, 250, 80, 0.5);
+}
+
+.hud_haxzer .hud_center .hud_level {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 3.333vh;
+}
+
+.hud_haxzer .hud_center .hud_level h1 {
+  color: #ffd749;
+  text-shadow: 0px 0px 1.111vh rgba(11, 255, 223, 0.25);
+  font-family: SF Pro Display;
+  font-size: 1.852vh;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 28px */
+  margin-top: 0vh;
+  margin-bottom: 2.085vh;
+}
+
+.hud_haxzer .hud_center .hud_level p {
+  color: #fff;
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 1.296vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.hud_haxzer .hud_center .hud_level p span {
+  color: rgba(30, 30, 30, 0.5);
+  font-family: SF Pro Display;
+  font-size: 1.0185vh;
+  font-weight: 600;
+  line-height: 95.5%;
+  letter-spacing: 0%;
+  text-align: left;
+  display: flex;
+  height: 1.4815vh;
+  border-radius: 3px;
+  background: #ffd749;
+  align-items: center;
+  justify-content: center;
+  padding: 0vh 0.7vh;
+  margin-right: 0.5vh;
+}
+
+.hud_haxzer .hud_center .hud_level .lvl_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.hud_haxzer .hud_center .hud_level .lvl_info b {
+  width: 2.685vh;
+  height: 1.759vh;
+  display: flex;
+  align-items: center;
+  border-radius: 0.185vh;
+  background: #fff;
+  justify-content: center;
+  color: #000;
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 1.111vh;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 16.8px */
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+}
+
+.hud_haxzer .hud_center .hud_level .lvl_info .lvl_barbg {
+  width: 15.833vh;
+  height: 0.556vh;
+  border-radius: 0.1vh;
+  background: rgba(35, 38, 45, 0.3);
+  margin-left: 0.463vh;
+  margin-right: 0.463vh;
+}
+
+.hud_haxzer .hud_center .hud_level .lvl_info .lvl_barbg .lvl_bar {
+  height: 0.556vh;
+  border-radius: 0.1vh;
+  background: #ffd749;
+  box-shadow: 0px 0px 2.222vh 0px #ffd749;
+}
+
+.hud_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 3vh;
+  z-index: 999999999 !important;
+  left: 50%;
+  transform: translate(-50%, 0vh);
+}
+
+.hud_bottom .hud_use {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 3vh;
+  width: 30vh;
+}
+
+.hud_bottom .hud_use .usetitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.hud_bottom .hud_use p {
+  width: 2.778vh;
+  height: 2.778vh;
+  margin-bottom: 0vh;
+  text-align: center;
+  border-radius: 50%;
+  border: solid 0.2vh rgba(255, 255, 255, 0.15);
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.481vh;
+  line-height: 1.759vh;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  text-shadow: 0px 0px 0.648vh rgb(255 255 255 / 50%);
+  justify-content: center;
+  align-content: center;
+  margin-top: 0;
+}
+
+.hud_bottom .hud_use .usetext {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.481vh;
+  line-height: 1.759vh;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  text-shadow: 0px 0px 0.648vh rgb(255 255 255 / 50%);
+  justify-content: flex-start;
+  align-content: center;
+  margin-left: 1.5vh;
+  width: auto;
+}
+
+.hud_bottom .hud_use .usetitle .titleico {
+  animation: rotateE 1.5s infinite linear;
+  position: absolute;
+}
+
+.hud_bottom .hud_use .usetitle .titleico svg {
+  display: block;
+  width: 5.093vh;
+  height: 5.093vh;
+}
+
+.hud_bottom .hud_noti {
+  display: flex;
+  align-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3.519vh;
+}
+
+.hud_bottom .hud_noti .noti_ico {
+}
+
+.hud_bottom .hud_noti h1 {
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 1.852vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.102vh;
+  text-transform: uppercase;
+  margin-bottom: 0.2vh;
+  margin-top: 0vh;
+}
+
+.hud_bottom .hud_noti .error {
+  color: #ff3535;
+  text-shadow: 0px 0px 0.926vh rgba(255, 53, 53, 0.5);
+}
+
+.hud_bottom .hud_noti .success {
+  color: #ffd749;
+  text-shadow: 0px 0px 0.926vh rgba(11, 255, 223, 0.5);
+}
+
+.hud_bottom .hud_noti .information {
+  color: #ffec45;
+  text-shadow: 0px 0px 0.926vh rgba(255, 236, 69, 0.5);
+}
+
+.hud_bottom .hud_noti .noti_bargb {
+  width: 9.028vh;
+  height: 0.278vh;
+  border-radius: 0.278vh;
+  background: #ffffff25;
+}
+
+.hud_bottom .hud_noti span {
+  width: 16.852vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  text-shadow: 0px 0px 0.37vh rgba(0, 0, 0, 0.25);
+  font-family: SF Pro Display;
+  font-size: 1.111vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.66px;
+  margin-top: 0.463vh;
+}
+
+.hud_bottom .hud_noti .noti_bargb .noti_bar {
+  height: 0.278vh;
+  border-radius: 0.278vh;
+  background: #ffffff;
+}
+
+.hud_bottom .hud_noti .noti_ico svg {
+  width: 4.722vh;
+  height: 4.722vh;
+}
+
+.hud_haxzer .hud_left .hud_gps {
+  margin-bottom: 2.037vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 3vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .gps_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1.204vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .gps_info h1 {
+  color: #fec219; /*Frontline Main Color*/
+  text-shadow: 0px 0px 0.37vh rgba(0, 0, 0, 0.25);
+  font-family: SF Pro Display;
+  font-size: 1.4519vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.03vh;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .gps_info p {
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 0.37vh rgba(0, 0, 0, 0.25);
+  font-family: SF Pro Display;
+  font-size: 1.2667vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.022vh;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_left .hud_gps .gps_info p svg {
+  width: 0.833vh;
+  height: 1.111vh;
+  margin-right: 0.833vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .right .microfon {
+  margin-left: 1vh;
+  display: none;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .right .radio {
+  margin-left: 1vh;
+  display: none;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .right .microfon.act {
+  display: block;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .right .radio.act {
+  display: block;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .right .microfon svg {
+  height: 2.037vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .right .radio svg {
+  width: 3vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .timeup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+  text-shadow: 0px 0px 0.37vh rgba(0, 0, 0, 0.25);
+  font-family: SF Pro Display;
+  font-size: 1.4519vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.03vh;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .timedown {
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0px 0px 0.37vh rgba(0, 0, 0, 0.25);
+  font-family: SF Pro Display;
+  font-size: 1.296vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.022vh;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .timeup span {
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0px 0px 0.37vh rgba(0, 0, 0, 0.25);
+  font-family: SF Pro Display;
+  font-size: 1.2963vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.022vh;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 0.4vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .info_data {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .info_time {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 1.667vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .info_data .data_ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.778vh;
+  margin-right: 0.741vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .info_data .infodata {
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .info_time .time_ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.778vh;
+  margin-right: 0.741vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .info_time .infotime {
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .info_data .infodata b {
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0px 0.37vh 0.37vh rgba(0, 0, 0, 0.25);
+  font-family: SF Pro Display;
+  font-size: 1.111vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+}
+
+.hud_haxzer .hud_right .speedgta5dev {
+  position: absolute;
+  bottom: -1.4259vh;
+  right: 5.8704vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  scale: 1.2;
+}
+
+.hud_haxzer .hud_right .speedgta5dev .speed {
+  width: 19.7222vh;
+  height: 19.7222vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1.3889vh;
+}
+
+.hud_haxzer .hud_right .speedgta5dev .fuel {
+  display: flex;
+  width: 4.6296vh;
+  height: 16.9444vh;
+  position: absolute;
+  right: -1.7593vh;
+  margin-top: 1.9444vh;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_right .speedgta5dev .fuel svg {
+  width: 0.7407vh;
+  height: 0.7407vh;
+  position: relative;
+  right: 1vh;
+}
+
+.hud_haxzer .hud_right .speedgta5dev .fuel .bgfuel {
+  margin-top: 0.463vh;
+  width: 2.8704vh;
+}
+
+.hud_haxzer .hud_right .speedgta5dev .fuel .bgfuel svg {
+  position: absolute;
+  width: 3.1481vh;
+  height: 13.1481vh;
+  right: 0vh;
+}
+
+.hud_haxzer .hud_right .speedgta5dev .speed .speedbg {
+  width: 19.7222vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_right .speedgta5dev .speed .speedbtn {
+  width: 19.7222vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1.6667vh;
+}
+
+.hud_haxzer .hud_right .speedgta5dev .speed .speedbtn .sbtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hud_haxzer .hud_right .speedgta5dev .speed .speedbtn .sbtn.act {
+}
+
+.hud_haxzer .hud_right .speedgta5dev .speed .speedbg .infospeed p span.active {
+  opacity: 1;
+}
+
+.hud_haxzer .hud_right .speedgta5dev .speed .speedbtn .sbtn svg {
+  fill: white;
+  position: relative;
+  z-index: -1;
+  top: 0.3704vh;
+  left: -1.3889vh;
+  opacity: 0.2;
+}
+
+.hud_haxzer .hud_right .speedgta5dev .speed .speedbtn .sbtn.act svg {
+  opacity: 1;
+}
+
+.hud_haxzer .hud_right .speedgta5dev .speed .speedbtn .sbtn span {
+  display: flex;
+  width: 19px;
+  height: 19px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 1.2963vh;
+  font-weight: 400;
+  line-height: 1.5741vh;
+  text-align: center;
+  margin-right: 1.0185vh;
+}
+
+.hud_haxzer .hud_right .speedgta5dev .speed .speedbg .sbg {
+}
+
+.hud_haxzer .hud_right .speedgta5dev .speed .speedbg .infospeed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1.2963vh;
+  margin-top: 4.537vh;
+}
+
+.hud_haxzer .hud_right .speedgta5dev .speed .speedbg .infospeed p {
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 4.4444vh;
+  font-weight: 500;
+  line-height: 5.2778vh;
+  letter-spacing: 0%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+}
+
+.hud_haxzer .hud_right .speedgta5dev .speed .speedbg .infospeed b {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: SF Pro Display;
+  font-size: 1.1111vh;
+  font-weight: 300;
+  line-height: 1.2963vh;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.hud_haxzer .hud_right .speedgta5dev .speed .speedbg .infospeed p span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.7407vh;
+  opacity: 0.2;
+}
+
+.hud_haxzer .hud_right .speedgta5dev .speed .speedbg .sbg svg {
+  width: 7.5vh;
+  height: 16.0185vh;
+  position: absolute;
+  right: 0vh;
+}
+
+.hud_haxzer .hud_right .speedgta5dev .speed .speedbg .infospeed p span svg {
+  width: 0.6481vh;
+  height: 1.1111vh;
+  stroke: white;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .info_data .infodata p {
+  color: #fff;
+  text-shadow: 0px 0.37vh 0.37vh rgba(0, 0, 0, 0.25);
+  font-family: SF Pro Display;
+  font-size: 1.111vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .info_time .infotime b {
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0px 0.37vh 0.37vh rgba(0, 0, 0, 0.25);
+  font-family: SF Pro Display;
+  font-size: 1.111vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .info_time .infotime p {
+  color: #fff;
+  text-shadow: 0px 0.37vh 0.37vh rgba(0, 0, 0, 0.25);
+  font-family: SF Pro Display;
+  font-size: 1.111vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .info_time .time_ico svg {
+  width: 1.111vh;
+  height: 1.111vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info .info_data .data_ico svg {
+  width: 1.111vh;
+  height: 1.111vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .hud_micro {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_left .hud_gps .hud_micro .micro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.37vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .hud_micro .micro .microbg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.hud_haxzer .hud_left .hud_gps .hud_micro .micro .microbg svg {
+  width: 3.889vh;
+  height: 3.889vh;
+  opacity: 0.5;
+  fill: rgba(35, 38, 45);
+}
+
+.hud_haxzer .hud_left .hud_gps .hud_micro .micro .microbg .microico {
+  position: absolute;
+  width: 1.667vh;
+  height: 1.667vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .hud_micro .micro .microbg .microico svg {
+  width: 1.667vh;
+  height: 1.667vh;
+  opacity: 0.5;
+  fill: #fff;
+}
+
+.hud_haxzer .hud_left .hud_gps .hud_micro .micro .microbg.act svg {
+  opacity: 0.25;
+  fill: #fec219;
+}
+
+.hud_haxzer .hud_left .hud_gps .hud_micro .micro .microbg.act .microico svg {
+  opacity: 1;
+  fill: #fec219;
+}
+
+.hud_haxzer .hud_left .hud_gps .hud_micro .micro .text {
+  color: #fff;
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 1.111vh;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.144vh;
+  position: relative;
+  top: 1vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .hud_quest {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 9vh;
+  position: relative;
+  left: -27vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .hud_quest .quest_head {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hud_haxzer .hud_left .hud_gps .hud_quest .quest_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 0.4vh;
+  margin-top: 0.37vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .hud_quest .quest_head svg {
+  width: 1.852vh;
+  height: 1.852vh;
+  margin-right: 0.278vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .hud_quest .quest_head h1 {
+  width: 15.37vh;
+  color: #fff;
+  text-shadow: 0px 0px 1.111vh #000;
+  font-family: Gilroy;
+  font-size: 1.389vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0vh;
+  margin-top: 0vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .hud_quest .quest_info svg {
+  width: 1.019vh;
+  height: 1.019vh;
+  margin-right: 0.278vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .hud_quest .quest_info p {
+  width: 15.833vh;
+  color: #fff;
+  text-shadow: 0px 0px 1.111vh #000;
+  font-family: Gilroy;
+  font-size: 0.833vh;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+}
+
+.hud_haxzer .hud_left .hudevo__left_bottom {
+  margin-top: auto;
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: flex-start !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+}
+
+.hud_haxzer .hud_right .gift1 {
+  position: absolute;
+  right: 38.074vh;
+  top: 0vh;
+  width: 7.778vh;
+  height: 8.241vh;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.29) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hud_haxzer .hud_right .gift1 .gift_block {
+  width: 4.259vh;
+  height: 0.37vh;
+  background: #ffd749;
+  border-radius: 0vh 0vh 2vh 2vh;
+  display: block;
+}
+
+.hud_haxzer .hud_right .gift1 .gift_ico {
+  width: 4.052vh;
+  height: 4.167vh;
+  background-size: cover;
+}
+
+.hud_haxzer .hud_right .gift1 .gift_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hud_haxzer .hud_right .gift1 .gift_info h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 0.926vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+}
+
+.hud_haxzer .hud_right .gift1 .gift_info p {
+  color: #ffd749;
+  font-family: Gilroy;
+  font-size: 0.926vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-shadow: 0px 0px 1.111vh #ffd749;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+}
+
+.hud_haxzer .hud_right .hud_check {
+  position: absolute;
+  right: 35.648vh;
+  bottom: 0vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_right .hud_check .check_head {
+  width: 13.889vh;
+  height: 2.778vh;
+  border-radius: 0.37vh 0.37vh 0px 0px;
+  border-bottom: 0.139vh solid rgba(0, 0, 0, 0.1);
+  background: #0d463f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 0.926vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  z-index: 1;
+}
+
+.hud_haxzer .hud_right .hud_check .check_info {
+  display: flex;
+  flex-direction: column;
+  width: 13.889vh;
+  height: 11.75vh;
+  align-items: stretch;
+}
+
+.hud_haxzer .hud_right .hud_check .check_info .check_bg {
+  position: relative;
+  top: -11vh;
+}
+
+.hud_haxzer .hud_right .hud_check .check_info .chech_if {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6vh 1.019vh 0.6vh 1.019vh;
+  z-index: 1;
+  border-bottom: solid 1px #0000001a;
+}
+
+.hud_haxzer .hud_right .hud_check .check_info .chech_if p {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 0.941vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+}
+
+.hud_haxzer .hud_right .hud_check .check_info .chech_if b {
+  color: #ffd749;
+  text-align: right;
+  font-family: Gilroy;
+  font-size: 1vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+}
+
+.hud_haxzer .hud_right .hud_check .check_info .check_bg svg {
+  width: 13.8vh;
+  height: 13.75vh;
+}
+
+.hud_gps .money {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 1.204vh;
+}
+
+.hud_gps .money .nalmoney {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1.204vh;
+}
+
+.hud_gps .money .bankmoney {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1.204vh;
+  opacity: 0.6;
+}
+
+.hud_gps .money .nalmoney svg {
+  width: 1.667vh;
+  height: 1.667vh;
+  margin-right: 0.463vh;
+}
+
+.hud_gps .money .nalmoney p {
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 1.4519vh;
+  text-shadow: 0px 0px 0.37vh rgba(0, 0, 0, 0.4);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hud_gps .money .nalmoney p.moneypush {
+  margin-left: 0.463vh;
+  font-size: 1.111vh;
+}
+
+.hud_gps .money .bankmoney svg {
+  width: 1.667vh;
+  height: 1.667vh;
+  margin-right: 0.463vh;
+}
+
+.hud_gps .money .bankmoney p {
+  color: #fff;
+  text-align: right;
+  text-shadow: 0px 0px 0.37vh rgba(0, 0, 0, 0.4);
+  font-family: SF Pro Display;
+  font-size: 1.2815vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hud_gps .money .bankmoney b {
+  color: #fff;
+  text-align: right;
+  text-shadow: 0px 0px 0.37vh rgba(0, 0, 0, 0.4);
+  font-family: SF Pro Display;
+  font-size: 1.2815vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hud_gps .money .nalmoney b {
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 1.4519vh;
+  text-shadow: 0px 0px 0.37vh rgba(0, 0, 0, 0.4);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hud_gps .money .bankmoney p.moneypush {
+  margin-left: 0.463vh;
+  font-size: 1.111vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .gps_info svg {
+  width: 1.667vh;
+  height: 1.667vh;
+  margin-right: 1.759vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .gps_info .gps_left {
+  display: flex;
+  flex-direction: column;
+}
+
+.hud_haxzer .hud_left .hud_gps .gps_info .greenzone {
+  margin-left: 0.648vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .gps_info .greenzone p {
+  color: #6afa50;
+  text-align: center;
+  text-shadow: 0px 0px 0.926vh rgba(255, 255, 255, 0.25),
+    0px 0.37vh 0.37vh rgba(0, 0, 0, 0.25);
+  font-family: SF Pro Display;
+  font-size: 2.481vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hud_haxzer .hud_left .hud_gps .gps_info .greenzone p b {
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 2.481vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .logosr {
+  margin-bottom: 0.556vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .logosr img {
+  width: 11.574vh;
+  height: 4.63vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .infosr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .infosr .serverid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .infosr .serveronline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-left: 1.944vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .infosr .serverid p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  color: #fff;
+  text-align: right;
+  text-shadow: 0px 0px 0.37vh rgba(0, 0, 0, 0.4);
+  font-family: SF Pro Display;
+  font-size: 1.111vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .infosr .serverid span {
+  color: rgba(255, 255, 255, 0.83);
+  text-align: right;
+  font-family: SF Pro Display;
+  font-size: 1.111vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 0.185vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .infosr .serverid p svg {
+  width: 1.759vh;
+  height: 1.759vh;
+  margin-left: 0.278vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .infosr .serveronline p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  color: #fff;
+  text-align: right;
+  text-shadow: 0px 0px 0.37vh rgba(0, 0, 0, 0.4);
+  font-family: SF Pro Display;
+  font-size: 1.111vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .infosr .serveronline span {
+  color: rgba(255, 255, 255, 0.83);
+  text-align: right;
+  font-family: SF Pro Display;
+  font-size: 1.111vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 0.185vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .infosr .serveronline p b {
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 1.111vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hud_haxzer .hud_right .playerinfo .topinfo .infosr .serveronline p svg {
+  width: 1.759vh;
+  height: 1.759vh;
+  margin-left: 0.278vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .bottominfo .weapons img {
+  height: 2.852vh;
+  border-radius: 2px;
+  background: rgba(16, 21, 24, 0.5);
+  margin: 0.463vh 0vh;
+}
+
+.hud_haxzer .hud_right .playerinfo .bottominfo .weapons p svg {
+  width: 1.481vh;
+  height: 1.481vh;
+  margin-right: 0.556vh;
+}
+
+.hud_haxzer .hud_right .hud_quest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 1.2963vh;
+  margin-right: 1.852vh;
+}
+
+.hud_haxzer .hud_right .hud_quest .quest_head {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_right .hud_quest .quest_info {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0.6481vh;
+}
+
+.hud_haxzer .hud_right .hud_quest .quest_head svg {
+  margin-left: 0.5vh;
+  width: 1.852vh;
+  height: 1.852vh;
+}
+
+.hud_haxzer .hud_right .hud_quest .quest_info svg {
+  margin-left: 0.5vh;
+  height: 1.019vh;
+  width: 1.019vh;
+}
+
+.hud_haxzer .hud_right .hud_quest .quest_head h1 {
+  color: #ffd749;
+  font-family: SF Pro Display;
+  font-size: 1.6667vh;
+  font-weight: 400;
+  line-height: 1.9444vh;
+  letter-spacing: 0%;
+  text-align: right;
+  text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.7);
+}
+
+.hud_haxzer .hud_right .hud_quest .quest_info p {
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 1.2963vh;
+  font-weight: 400;
+  line-height: 1.5741vh;
+  text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+  letter-spacing: 0%;
+  text-align: right;
+}
+
+.hud_haxzer .hud_center .annon {
+  margin-top: 2.037vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_center .annon .bgicon {
+  width: 7.593vh;
+  height: 5.556vh;
+  background: url(https://imgur.com/KanY74F.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hud_haxzer .hud_center .annon .bgname {
+  display: flex;
+  margin-top: 1.574vh;
+  border-radius: 6px;
+  width: 19.907vh;
+  height: 2.778vh;
+  border: 0.1vh solid #ffffff21;
+  background: #ffffff21;
+  justify-content: center;
+  align-items: center;
+}
+
+.hud_haxzer .hud_center .annon span {
+  margin-top: 1.019vh;
+  width: 21.019vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: nowrap;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  text-shadow: 0px 0px 0.833vh rgba(0, 0, 0, 0.55);
+  font-family: SF Pro Display;
+  font-size: 1.111vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hud_haxzer .hud_center .annon .bgicon svg {
+  height: 5.926vh;
+  width: 5.926vh;
+}
+
+.hud_haxzer .hud_center .annon .bgname .nameannon {
+  width: 14.722vh;
+  height: 2.778vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.556vh;
+  border: 0.1vh solid rgba(30, 30, 30, 0.52);
+  background: rgba(30, 30, 30, 0.25);
+}
+
+.hud_haxzer .hud_center .annon .bgname .nameannon p {
+  color: #fff;
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 1.389vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info p {
+  display: flex;
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 1.296vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.039vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info p svg {
+  margin-right: 1.759vh;
+  width: 1.667vh;
+  height: 1.667vh;
+}
+
+.hud_haxzer .hud_left .hud_gps .data_info p b {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: SF Pro Display;
+  font-size: 1.296vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.039vh;
+  margin-left: 0.4vh;
+}
+
+.hudevo__radio {
+  position: absolute;
+  bottom: 22vh;
+  right: 4vh;
+}
+
+.iteminfopik {
+  border-radius: 0.3704vh;
+  background: #1b1b1b;
+  padding: 1.9444vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.iteminfopik .imgitem {
+  width: 5.9259vh;
+  height: 5.9259vh;
+  border-radius: 0.463vh;
+  background: rgba(0, 0, 0, 0.2);
+  margin-right: 1.2037vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.iteminfopik .infoitem {
+  width: 26.1111vh;
+}
+
+.iteminfopik .imgitem img {
+  width: 5vh;
+  background-size: cover;
+}
+
+.iteminfopik .infoitem h1 {
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 1.2963vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+}
+
+.iteminfopik .infoitem p {
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 1.1111vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0.2778vh;
+}
+
+.petinfopika {
+  width: 20vh;
+  margin-top: 0.2037vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin-left: 1.8519vh;
+}
+
+.petinfopika .infopet {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0.5556vh;
+}
+
+.petinfopika .infopet .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.7778vh;
+  height: 2.7778vh;
+  border-radius: 0.2778vh;
+  background: rgba(30, 30, 30, 0.5);
+}
+
+.petinfopika .infopet .icon svg {
+  width: 1.4815vh;
+  height: 1.4815vh;
+}
+
+.petinfopika .infopet .namepet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 1.2037vh;
+  height: 2.7778vh;
+}
+
+.petinfopika .infopet .namepet h1 {
+  color: rgb(255, 255, 255);
+  font-family: SF Pro Display;
+  font-size: 1.2963vh;
+  font-weight: 500;
+  line-height: 1.5741vh;
+  letter-spacing: 0.1852vh;
+  text-align: left;
+}
+
+.petinfopika .healbar {
+  width: 13.5185vh;
+  height: 0.2778vh;
+  background: url(https://imgur.com/ior02VE.png);
+  background-size: cover;
+}
+
+.petinfopika .healbar .healprogres {
+  max-width: 13.5185vh;
+  height: 0.2778vh;
+  background: url(https://imgur.com/hXaD5FB.png);
+  background-size: cover;
+}
+
+.petinfopika p {
+  color: #fff;
+  text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+  font-family: SF Pro Display;
+  font-size: 1.1111vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 95.5%; /* 1.0611vh */
+}
+
+.petinfopika .btninfo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 0.3704vh;
+  height: 6.5741vh;
+}
+
+.petinfopika .btninfo .petdev {
+  border-radius: 0.1852vh;
+  background: rgba(30, 30, 30, 0.7);
+  padding: 0.3704vh 0.3704vh;
+  margin-bottom: 0.3704vh;
+  margin-right: 0.3704vh;
+}
+
+.petinfopika .btninfo .petdev p {
+  color: #fff;
+  text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+  font-family: SF Pro Display;
+  font-size: 0.9259vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 95.5%; /* 0.8843vh */
+}
+
+.petinfopika .btninfo .petdev p b {
+  color: #fff;
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 0.7407vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 95.5%;
+  padding: 0.0926vh 0.2778vh;
+  border-radius: 0.0926vh;
+  background: #ffd749;
+  margin-right: 0.463vh;
+}
+
+.petinfopika .healbar .bgbar.act {
+}
+
+.petinfopika .healbar .bgbar {
+  position: relative;
+  margin-left: -0.5vh;
+}
+
+.petinfopika .healbar .bgbar.act svg {
+  fill: #ff3535;
+  filter: drop-shadow(0px 0px 0.926vh rgba(255, 53, 53, 0.55));
+}
+
+.petinfopika .healbar .bgbar svg {
+  width: 1.481vh;
+  height: 1.296vh;
+  fill: rgba(255, 255, 255, 0.1);
+}
+
+.hud_haxzer .hud_right .playerinfo::after {
+  content: "";
+  background: url();
+  width: 49.8148vh;
+  height: 35vh;
+  position: fixed;
+  top: 0vh;
+  z-index: -1;
+  right: 0vh;
+}
+
+.hud_haxzer .hud_left .hudevo__chat-block {
+  width: 62.5741vh !important;
+  margin-top: 1.4519vh !important;
+  margin-left: 1.8519vh !important;
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .rightcapt .capt_info span svg {
+  width: 1.9444vh;
+  height: 1.9444vh;
+  margin-left: 0.5vh;
+}
+
+.hud_haxzer .hud_center .hud_capt .capt_barinfo .leftcapt .capt_info span svg {
+  width: 1.9444vh;
+  height: 1.9444vh;
+  margin-right: 0.5vh;
+}

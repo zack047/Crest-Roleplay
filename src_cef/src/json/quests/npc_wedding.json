@@ -1,0 +1,10 @@
+{
+    "0": {
+        "buttons":[
+            {"name": "I want a wedding or a divorce.", "type": "perform"},
+            {"name": "I do not want at alls."}
+        ],
+        "text":"Hello, I am a wedding speaker in this state. If you want to marry someone, come to me with your soulmate, bring the money for the ceremony, and don't forget to invite guests! The whole state will know about your wedding, and you will get your heart's desire for your other half stamped in your passport. If necessary, I can help you with the divorce.",
+        "sound": "cloud/npc/wedding/wedding1.ogg"
+    }
+}

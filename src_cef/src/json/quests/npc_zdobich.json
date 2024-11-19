@@ -1,0 +1,560 @@
+{
+    "-1": {
+        "buttons":[
+            {"name": "Good.", "style": "big"}
+        ],
+        "text":"I'm sorry, I don't have any tasks for you.",
+        "sound": "cloud/npc/zdobich/-1.ogg"
+    },
+    "0": {
+        "buttons":[
+            {"name": "Yes, of course.", "style": "medium", "questId": 1},
+            {"name": "Go away.", "style": "min"}
+        ],
+        "text":"Hello!  Are you new here?  I'll help you find your way around.  My name is Dobich and I help new citizens.  Listen to me carefully and try not to miss anything!  The tutorial is aimed at people who have never played GTA 5, but there is also some useful information for old hands.  If you don't understand something, you can open the chat (T key) and talk to our helpers using the '/report' command. Ok?",
+        "sound": "cloud/npc/zdobich/0.ogg",
+        "Title": "Hello, Dobich!",
+        "Desc": "The NPC Vitali Dobich is standing next to you.  Talk to him, he has something to tell you!",
+        "Tasks": [
+            "Talk to NPC Vitaly Dobich!"
+        ]
+    },
+    "1": {
+        "buttons":[
+            {"name": "OK...", "style": "medium", "questId": 2},
+            {"name": "Go away.", "style": "min"}
+        ],
+        "text":"Let's start with the game menu:  There are a lot of interesting tabs that you should familiarize yourself with right away, so that you can easily navigate through these functions in the future.  By default, it is opened via the I key, if you have not reconfigured the keys.  The first tab is: News - here you will find the latest project news.",
+        "sound": "cloud/npc/zdobich/1.ogg"
+    },
+    "2": {
+        "buttons":[
+            {"name": "Yes, of course.", "style": "medium", "type": "take"},
+            {"name": "Go away.", "style": "min"}
+        ],
+        "text":"Now let's move on to the inventory, the place where all your items are stored.  You can use an item by double-clicking on it or by right-clicking on it.  There are five quick slots in the inventory, the fifth slot is used only for the mask.  The Quick slots are needed to use items without opening the inventory, and this is done using the [1-5] buttons.  In the inventory it also shows the clothes that you wear.  Let's try it with a little practice.  I'll give you a cool jacket now, put it on.  You can drag the T-shirt to your character's clothing slots on the left, or you can either right-click to select the clothes and click 'Use' or just hover over the T-shirt and double-click on it. How cool and practical...",
+        "sound": "cloud/npc/zdobich/2.ogg",
+
+        "Title": "Hard in training, easy in combat",
+        "Desc": "Learn how to open your inventory and use clothes.",
+        "Tasks": [
+            "Put on a T-shirt from your inventory!"
+        ],
+        "textError":"You don't seem to understand the inventory yet.  You can drag the T-shirt to the clothing slots on the left side, or you can right-click on the garment and click the Use button, or by hovering over the T-shirt with the mouse cursor and double-clicking.  If you are not successful, please contact the admins with [/report] and they will be happy to help you.",
+        "soundError": "cloud/npc/zdobich/2e.ogg",
+        "textSuccess": "Great, well done!",
+        "buttonsSuccess":[
+            {"name": "Thanks, is there anything else for me?", "type": "perform", "questId": 3, "style": "medium"},
+            {"name": "See you again.", "style": "min"}
+        ],
+        "soundSucess": "cloud/npc/zdobich/2s.ogg",
+        "buttonsError":[
+            {"name": "I will get to the bottom of the matter!", "style": "big"}],
+
+        "Reward": {
+            "Money": 6500,
+            "Items": [ 1 ]
+        }
+    },
+    "3": {
+        "buttons":[
+            {"name": "Yes, it all makes sense to me.", "style": "medium", "questId": 4},
+            {"name": "Go away.", "style": "min"}
+        ],
+        "text":"Great!  You can expand your inventory slots by buying a backpack in a store, but keep in mind that the backpack will fall out when your character dies, so be careful.  You can also throw items in your inventory on the floor and split them up by clicking, I think you can easily figure that out!",
+        "sound": "cloud/npc/zdobich/3.ogg"
+    },
+    "4": {
+        "buttons":[
+            {"name": "I'll find out!", "style": "medium", "questId": 5},
+            {"name": "Go away.", "style": "min"}
+        ],
+        "text":"A quick look at the other tabs: In Statistics you can see all the information about your character.  Here you will find everything from the age of your character to your licenses and skills.",
+        "sound": "cloud/npc/zdobich/4.ogg"
+    },
+    "5": {
+        "buttons":[
+            {"name": "All right then!", "style": "medium", "questId": 6},
+            {"name": "Go away.", "style": "min"}
+        ],
+        "text":"On the Settings tab, some game settings can be adjusted quickly and easily, such as the volume of the other players or the range of the players and vehicles.  These settings can be useful for players with a weak computer.  If you are struggling with lag, you should play with these settings to get a better feel for the game.",
+        "sound": "cloud/npc/zdobich/5.ogg"
+    },
+    "6": {
+        "buttons":[
+            {"name": "Gotcha.", "style": "medium", "type": "perform", "questId": 7},
+            {"name": "Go away.", "style": "min"}
+        ],
+        "text":"On the Quests tab you can find out about the current quests, while on the Daily Rewards tab you can get cool bonuses for daily entry into the game, ranging from In-Game currency to free Cases.  I suggest that you take a closer look at this tab, because it is ideal for you if you want to develop quickly in our state.  That's it.",
+        "sound": "cloud/npc/zdobich/6.ogg"
+    },
+    "7": {
+        "buttons":[
+            {"name": "Let's go!", "style": "medium", "type": "take"},
+            {"name": "Go away.", "style": "min"}
+        ],
+        "text":"It's time to go out into the big city!  It would be a good idea to get a license first.  Some of these are for driving certain vehicles, others for handling weapons.  Get your driver's license and then come back to me.",
+        "sound": "cloud/npc/zdobich/7.ogg",
+        "Title": "Almost like Vin Diesel",
+        "Desc": "Go get a driver's license and then come back to Dobich.",
+        "Tasks": [
+            "1. Go to the Driving School",
+            "2. Get a Drivers License",
+            "3. Go back to Dobich"
+        ],
+        "textError":"It seems that you have not yet received your driver's license.  You can pick up your driver's license at the driving school, you can find it on the map [ESC] or you can use the GPS on your mobile phone [M - GPS - Other - Driving School].  If you have any problems, contact the administrators with [/report], they will be happy to help you.",
+        "soundError": "cloud/npc/zdobich/7e.ogg",
+        "textSuccess": "Beautiful!  With a driver's license, your life will change!",
+        "buttonsSuccess":[
+            {"name": "Thanks, is there anything else for me?", "type": "perform", "questId": 8, "style": "medium"},
+            {"name": "See you again.", "style": "min"}
+        ],
+        "soundSucess": "cloud/npc/zdobich/7s.ogg",
+        "buttonsError":[
+            {"name": "I will get to the bottom of the matter!", "style": "big"}],
+
+        "Reward": {
+            "Exp": 1,
+            "Items": [ 217 ]
+        }
+    },
+    "8": {
+        "buttons":[
+            {"name": "I'll do it now.", "style": "medium", "type": "take"},
+            {"name": "Go away.", "style": "min"}
+        ],
+        "text":"It's time to learn how to refuel and repair your car!  You can refuel your car at any gas station.  To do this, stop at the gas station and honk.  You can have your car repaired by a mechanic or use a wrench yourself.  This is available in stores around the clock, as well as a gasoline canister.",
+        "sound": "cloud/npc/zdobich/8.ogg",
+        "Title": "Fill Up",
+        "Desc": "Buy a canister and a wrench and take it to Dobich.",
+        "textError":"It looks like you haven't done my errand yet.  Buy a canister and a wrench at 24/7, you can find them on the map [ESC map], or you can navigate through your phone's GPS [M - GPS - Nearest Places - Nearest 24/7 or Nearest gas station].  If you have problems with this, contact the admins with [/report] and they will be happy to help you.",
+        "soundError": "cloud/npc/zdobich/8e.ogg",
+        "textSuccess": "Great, you learned how to refuel.  My friends, the gas station owners, will be delighted.",
+        "buttonsSuccess":[
+            {"name": "Thanks, is there anything else for me?", "type": "perform", "questId": 9, "style": "medium"},
+            {"name": "See you again.", "style": "min"}
+        ],
+        "soundSucess": "cloud/npc/zdobich/8s.ogg",
+        "buttonsError":[
+            {"name": "I will get to the bottom of the matter!", "style": "big"}],
+        "Tasks": [
+            "1. Go to any 24/7 and buy a canister there",
+            "2. Go to any 24/7 and buy a wrench there",
+            "3. Go back to Dobich"
+        ],
+        "Reward": {
+            "Money": 4500,
+            "Items": [ 250 ]
+        }
+    },
+    "9": {
+        "buttons":[
+            {"name": "I'll do it now.", "style": "medium", "type": "take"},
+            {"name": "Go away.", "style": "min"}
+        ],
+        "text":"You're doing great!  Now it's time to learn how to interact with other players.  All interactions between players are carried out using the circle menu, the standard [G] key.  You can also use the [G] button to control your transport.  Fulfill my task - shake hands with any five people.  Maybe you will become friends...",
+        "sound": "cloud/npc/zdobich/9.ogg",
+        "Title": "Making Connections",
+        "Desc": "Make friends - you need to meet five different people.",
+        "Tasks": [
+            "1. Shake hands with 5 different people",
+            "2. Go back to Dobich"
+        ],
+        "textError":"It looks like you haven't met five different people yet.  You can get to know them via the circle menu by walking up to any person, pointing at them and pressing [G - Interactions - Shake Hands].  Most often people meet at City Hall, there you will surely find someone.  If you can't make it work, ask the administrators with [/report] and they will be happy to help you.",
+        "soundError": "cloud/npc/zdobich/9e.ogg",
+        "textSuccess": "The more useful people you know, the easier it will be for you to achieve your goals.  Yes, I'm a selfish person, aren't I?",
+        "buttonsSuccess":[
+            {"name": "Thanks, is there anything else for me?", "type": "perform", "questId": 10, "style": "medium"},
+            {"name": "See you again.", "style": "min"}
+        ],
+        "soundSucess": "cloud/npc/zdobich/9s.ogg",
+        "buttonsError":[
+            {"name": "I will get to the bottom of the matter!", "style": "big"}],
+        "Reward": {
+            "Exp": 1,
+            "Items": [ 223, 222 ]
+        }
+    },
+    "10": {
+        "buttons":[
+            {"name": "I'll do it now.", "style": "medium", "type": "take"},
+            {"name": "See you again...", "style": "min"}
+        ],
+        "text":"Now that you have friends, you need to learn how to express feelings.  The animation menu [U] will help you with this.  Try using some of the suggested animations.",
+        "sound": "cloud/npc/zdobich/10.ogg",
+        "Title": "Dance",
+        "Desc": "Use a few animations and go back to Dobich.",
+        "Tasks": [
+            "1. Use multiple animations",
+            "2. Go back to Dobich"
+        ],
+        "textError":"I'm guessing you haven't tried our cool animations yet.  You can open the menu with the [U] key, find any animation and double-click on it to use it.  Or drag it to the quick slot bar at the bottom and use the key [U + the digit to which you want to assign the animation].  If you are unsuccessful, please contact the admins with [/report], and they will be happy to help you.",
+        "soundError": "cloud/npc/zdobich/10e.ogg",
+        "textSuccess": "Great moves, you should use them more often.",
+        "buttonsSuccess":[
+            {"name": "Thanks, is there anything else for me?", "type": "perform", "questId": 11, "style": "medium"},
+            {"name": "See you again.", "style": "min"}
+        ],
+        "soundSucess": "cloud/npc/zdobich/10s.ogg",
+        "buttonsError":[
+            {"name": "I will get to the bottom of the matter!", "style": "big"}],
+        "Reward": {
+            "Money": 4800,
+            "Items": [ 226, 219 ]
+        }
+    },
+    "11": {
+        "buttons":[
+            {"name": "I'll do it now.", "style": "medium", "type": "take"},
+            {"name": "See you again.", "style": "min"}
+        ],
+        "text":"You need to learn one of our professions and earn some money, you can get a job at the city hall.",
+        "sound": "cloud/npc/zdobich/11.ogg",
+        "Title": "The guy is a hard worker!",
+        "Desc": "Get yourself a job.  You can find them at City Hall.",
+      "Tasks": [
+        "1. Make $500 doing a job!",
+        "2. Go back to Dobich"
+      ],
+        "textError":"It seems like you haven't found work yet. You can get any job at City Hall. If you do not succeed, ask the administration with [/report], they will be happy to help you.",
+        "soundError": "cloud/npc/zdobich/11e.ogg",
+        "textSuccess": "Did you like your job?  I hope you like my next tasks too!",
+        "buttonsSuccess":[
+            {"name": "Yes, what can you offer me?", "type": "perform", "questId": 20, "style": "medium"},
+            {"name": "See you again.", "style": "min"}
+        ],
+        "soundSucess": "cloud/npc/zdobich/19s.ogg",
+        "buttonsError":[
+            {"name": "I will get to the bottom of the matter!", "style": "big"}
+        ],
+        "Reward": {
+            "Money": 15000,
+            "Items": [ 252 ]
+        }
+    },
+    "20": {
+        "buttons":[
+            {"name": "I will make the effort!", "style": "medium", "type": "take"},
+            {"name": "See you again.", "style": "min"}
+        ],
+        "text":"Good job.  I see you have some money left... It's time for you to get a new hairstyle, it's a must in this state. Go to a hairdresser, maybe you will find something interesting, then you can stop by any tattoo parlor, we have the best tattoo artists in the whole country! Then go to a clothing store and buy yourself something fancy.",
+        "sound": "cloud/npc/zdobich/20.ogg",
+        "Title": "New Style",
+        "Desc": "Visit a couple of places and buy something: First a hairdresser, then a tattoo parlor, and then buy something in a clothing store. Then go back to Dobich.",
+        "Tasks": [
+            "1. Visit any hairdresser and buy a new hairstyle",
+            "2. Visit any tattoo studio and buy a new tattoo",
+            "3. Visit a clothing store and buy yourself something",
+            "4. Go back to Dobich"
+        ],
+        "textError":"It looks like you haven't completed my task yet. You can find all the quest locations on the map [ESC]. If you can't find anything, please contact the administrators with [/report], they will be happy to help you.",
+        "soundError": "cloud/npc/zdobich/20e.ogg",
+        "textSuccess": "Wow, you've changed. At first I didn't recognize you at all. You look amazing.",
+        "buttonsSuccess":[
+            {"name": "Thanks, is there anything else for me?", "type": "perform", "questId": 21, "style": "medium"},
+            {"name": "See you again.", "style": "min"}
+        ],
+        "soundSucess": "cloud/npc/zdobich/20s.ogg",
+        "buttonsError":[
+            {"name": "I will get to the bottom of the matter!", "style": "big"}],
+        "Reward": {
+            "Money": 10000,
+            "Items": [ 229 ]
+        }
+    },
+    "21": {
+        "buttons":[
+            {"name": "I'm running, I'm running!", "style": "medium", "type": "take"},
+            {"name": "Go away.", "style": "min"}
+        ],
+        "text":"Your stomach is probably growling already, huh? Are you hungry? It's about time you had something to eat at a diner. Food gives you back your vitality, use it when you feel sick.",
+        "sound": "cloud/npc/zdobich/21.ogg",
+        "Title": "Eat, your stomach growls",
+        "Desc": "Visit the snack bar, buy groceries and go back to Dobich.",
+      "Tasks": [
+        "1. Go to any restaurant and buy a meal",
+        "2. Go back to Dobich"
+      ],
+        "textError":"It looks like you haven't completed my task yet. You can find a restaurant on the map [ESC] or on your phone [M - GPS - Nearest Places - Nearest Burger Shot]. If you can't find it, ask the administrators with [/report] and they will be happy to help you.",
+        "soundError": "cloud/npc/zdobich/21e.ogg",
+        "textSuccess": "It took you long enough to bring me something to eat. You can eat your own.",
+        "buttonsSuccess":[
+            {"name": "Thanks, is there anything else for me?", "type": "perform", "questId": 23, "style": "medium"},
+            {"name": "See you again.", "style": "min"}
+        ],
+        "soundSucess": "cloud/npc/zdobich/21s.ogg",
+        "buttonsError":[
+            {"name": "I will get to the bottom of the matter!", "style": "big"}],
+        "Reward": {
+            "Exp": 1,
+            "Items": [ 1 ]
+        }
+    },
+    "23": {
+        "buttons":[
+            {"name": "I'm flying!", "style": "medium", "type": "take"},
+            {"name": "Go away.", "style": "min"}
+        ],
+        "text":"What do you think of gambling? Go to the casino, spend $500 and come back to me, but do not spend everything, you will need it.",
+        "sound": "cloud/npc/zdobich/23.ogg",
+        "Title": "Become a Millionaire",
+        "Desc": "Visit the casino, bet $500 and come back to Dobich.",
+        "Tasks": [
+            "1. Visit the Casino",
+            "2. Bet $500 on any game",
+            "3. Go back to Dobich"
+        ],
+        "textError":"It looks like you haven't completed my task yet. You can find the casino on the map [ESC] or on your mobile phone [M - GPS - Other - Casino]. If you can't find it, ask the administrators with [/report] and they will be happy to help you.",
+        "soundError": "cloud/npc/zdobich/23e.ogg",
+        "textSuccess": "I hope you didn't get addicted and lose all your money. I have a brother, Theo Zdobich, and he is a real addict. I can't get him out of the casino. We almost lost our house there.",
+        "buttonsSuccess":[
+            {"name": "Thanks, is there anything else for me?", "type": "perform", "questId": 24, "style": "medium"},
+            {"name": "See you again.", "style": "min"}
+        ],
+        "soundSucess": "cloud/npc/zdobich/23s.ogg",
+        "buttonsError":[
+            {"name": "I will get to the bottom of the matter!", "style": "big"}],
+        "Reward": {
+            "Money": 10000,
+            "Items": [ 251 ]
+        }
+    },
+    "24": {
+        "buttons":[
+            {"name": "I'm going to look for a house.", "style": "medium", "type": "take"},
+            {"name": "See you again.", "style": "min"}
+        ],
+        "text":"You've learnt so much... I remember you, from our first meeting, and now you look great, wear chic clothes and know almost everything. It's time for you to get your own real estate and transport. Let's start with the first one. In order to be able to buy transport, you need a property. You can either buy a property from one of the players, or you can find one yourself and purchase it for state fees. Buy a property and come back to me. Do not forget to pay for your house at the nearest ATM, this is very important! If you don't pay your taxes, your house will be taken away from you very quickly.",
+        "sound": "cloud/npc/zdobich/24.ogg",
+        "Title": "My home is my Fortress",
+        "Desc": "Buy a property and come back to Dobich.",
+        "Tasks": [
+            "1. Buying a property",
+            "2. Go back to Dobich"
+        ],
+        "textError":"It looks like you haven't completed my task yet. You can find empty houses around the city. If you have any problems, ask the administrators with [/report], they will be happy to help you.",
+        "soundError": "cloud/npc/zdobich/24e.ogg",
+        "textSuccess": "Now you've finally done my task, I've been waiting for you.",
+        "buttonsSuccess":[
+            {"name": "Thanks, is there anything else for me?", "type": "perform", "questId": 25, "style": "medium"},
+            {"name": "See you again.", "style": "min"}
+        ],
+        "soundSucess": "cloud/npc/zdobich/24s.ogg",
+        "buttonsError":[
+            {"name": "I will get to the bottom of the matter!", "style": "big"}],
+        "Reward": {
+            "Money": 15000,
+            "Exp": 1,
+            "Items": [ 218 ]
+        }
+    },
+    "25": {
+        "buttons":[
+            {"name": "I'll do it now.", "style": "medium", "type": "take" },
+            {"name": "Go away.", "style": "min"}
+        ],
+        "text":"You have a house, now you can put furniture there. Buy all kinds of furniture for your house; you need them to store things. You can store clothes in the wardrobe, and weapons and other things in the safe. Remember that your house can be robbed and your property stolen! The safest safe is a burglar-proof safe; nothing can be stolen from it. You can buy furniture in a furniture store (GPS -> Miscellaneous). When you have bought and installed the furniture, come back to me.",
+        "sound": "cloud/npc/zdobich/25.ogg",
+        "Title": "Too bad it's not from IKEA",
+        "Desc": "Buy some furniture for the house and go back to Dobich.",
+        "Tasks": [
+            "1. Buy furniture for your house",
+            "2. Go back to Dobich"
+        ],
+        "textError":"It looks like you haven't completed my task yet. You can buy furniture in the furniture store [M - GPS - Miscellaneous]. If you can't figure it out, ask the administrators with [/report], they will be happy to help you.",
+        "soundError": "cloud/npc/zdobich/25e.ogg",
+        "textSuccess": "Do you like it in the furniture store? You can buy everything else there, my friend Ivan is always happy to give you tips.",
+        "buttonsSuccess":[
+            {"name": "Thanks, is there anything else for me?", "type": "perform", "questId": 26, "style": "medium"},
+            {"name": "See you again.", "style": "min"}
+        ],
+        "soundSucess": "cloud/npc/zdobich/25s.ogg",
+        "buttonsError":[
+            {"name": "I will get to the bottom of the matter!", "style": "big"}],
+        "Reward": {
+            "Money": 5000,
+            "Items": [ 263 ]
+        }
+    },
+    "26": {
+        "buttons":[
+            {"name": "Oh, man... I'll check.", "style": "medium", "type": "take" },
+            {"name": "Go away.", "style": "min"}
+        ],
+        "text":"Do you already own a house? Then it's time for you to buy your own vehicle. You can buy your vehicles either from the player or from a car dealer. There are several car dealerships in the state, each with different classes and different cars. You can go to the beach, where there is a car market where players sell their cars, and see if you can find something there.",
+        "sound": "cloud/npc/zdobich/26.ogg",
+        "Title": "Car Art",
+        "Desc": "Buy a means of transport and go back to Dobich.",
+        "textError":"It looks like you haven't completed my task yet. You can buy vehicles at car dealers or at car markets. You can find them on the map or on your phone [M - GPS - Companies]. If you can't figure it out, ask the administrators with [/report], they will be happy to help you.",
+        "soundError": "cloud/npc/zdobich/26e.ogg",
+        "textSuccess": "Oooh, you've got wheels now. Congratulations on your purchase!",
+        "buttonsSuccess":[
+            {"name": "Thanks, is there anything else for me?", "type": "perform", "questId": 28, "style": "medium"},
+            {"name": "See you again.", "style": "min"}
+        ],
+        "soundSucess": "cloud/npc/zdobich/26s.ogg",
+        "buttonsError":[
+            {"name": "I will get to the bottom of the matter!", "style": "big"}],
+        "Tasks": [
+            "1. Buy a means of transport",
+            "2. Go back to Dobich"
+        ],
+        "Reward": {
+            "Exp": 1,
+            "Items": [ -9, 222 ]
+        }
+    },
+    "28": {
+        "buttons":[
+            {"name": "OK!", "style": "medium", "type": "take" },
+            {"name": "Go away.", "style": "min"}
+        ],
+        "text":"It's a cool car, damn it! It will be even better if you do some tuning on it. Go to any tuning shop and get new parts. Then come back to me.",
+        "sound": "cloud/npc/zdobich/28.ogg",
+        "Title": "The Thirst for Speed",
+        "Desc": "Install new parts at the nearest tuning workshop and drive back to Dobitch.",
+        "Tasks": [
+            "1. Buy vehicle parts in the tuning shop",
+            "2. Go back to Dobich"
+        ],
+        "textError":"It looks like you haven't completed my task yet. You can buy parts in the tuning shop, find it on the map or on your phone [M - GPS - Company - LS Customs]. If you can't find it, please contact the administrators with [/report], they will be happy to help you.",
+        "soundError": "cloud/npc/zdobich/28e.ogg",
+        "textSuccess": "That was quick. That's a great vehicle you have there, and what a noise, wow!",
+        "buttonsSuccess":[
+            {"name": "Thanks, is there anything else for me?", "type": "perform", "questId": 29, "style": "medium"},
+            {"name": "See you again.", "style": "min"}
+        ],
+        "soundSucess": "cloud/npc/zdobich/28s.ogg",
+        "buttonsError":[
+            {"name": "I will get to the bottom of the matter!", "style": "big"}],
+        "Reward": {
+            "Money": 3500,
+            "Items": [ 225 ]
+        }
+    },
+    "29": {
+        "buttons":[
+            {"name": "I hope I'm lucky...", "style": "medium", "type": "take" },
+            {"name": "Go away.", "style": "min"}
+        ],
+        "text":"Great, now you are traveling in style. Listen, a friend of mine recently bought a lottery ticket and won $100,000. Do you want to try it too? Go to the nearest store and buy lottery tickets, you can choose the numbers yourself. Then come back to me and hope that you are lucky.",
+        "sound": "cloud/npc/zdobich/29.ogg",
+        "Title": "Luck is on my Side",
+        "Desc": "Buy a lottery ticket and go back to Dobich.",
+        "Tasks": [
+            "1. Buy a lottery ticket at 24/7",
+            "2. Go back to Dobich"
+        ],
+        "textError":"It looks like you haven't completed my task yet. You can buy a ticket at 24/7, which you can find on the map [ESC] or on your phone [M - GPS - Nearest places - Nearest 24/7]. If you can't figure it out, ask the administrators with [/report], they will be happy to help you.",
+        "soundError": "cloud/npc/zdobich/29e.ogg",
+        "textSuccess": "How's it going? Were you lucky with the ticket?",
+        "buttonsSuccess":[
+            {"name": "Thanks, is there anything else for me?", "type": "perform", "questId": 30, "style": "medium"},
+            {"name": "See you again.", "style": "min"}
+        ],
+        "soundSucess": "cloud/npc/zdobich/29s.ogg",
+        "buttonsError":[
+            {"name": "I will get to the bottom of the matter!", "style": "big"}],
+        "Reward": {
+            "Exp": 1,
+            "Items": [ 233 ]
+        }
+    },
+    "30": {
+        "buttons":[
+            {"name": "Wait, I'm in a hurry!!", "style": "medium", "type": "take" },
+            {"name": "Go away.", "style": "min"}
+        ],
+        "text":"Well, now you know almost everything you need for a good start. We recently opened an arena here and there are now regular competitions, go there and win once. Then come back.",
+        "sound": "cloud/npc/zdobich/30.ogg",
+        "Title": "John Wick",
+        "Desc": "Win 1 time in the arena and then go back to Dobich",
+        "Tasks": [
+            "1. Go to the arena",
+            "2. Win once in the arena",
+            "3. Go back to Dobich"
+        ],
+        "textError":"It looks like you haven't completed my task yet. You can find the arena on the map or on your phone [M - GPS - Other - Arena]. If you can't find them, contact the administrators via [/report] and they will be happy to help you.",
+        "soundError": "cloud/npc/zdobich/30e.ogg",
+        "textSuccess": "Du hast endlich meine Aufgabe erledigt, ich habe auf dich gewartet.",
+        "buttonsSuccess":[
+            {"name": "Thanks, is there anything else for me?", "type": "perform", "questId": 31, "style": "medium"},
+            {"name": "See you again.", "style": "min"}
+        ],
+        "soundSucess": "cloud/npc/zdobich/30s.ogg",
+        "buttonsError":[
+            {"name": "I will get to the bottom of the matter!", "style": "big"}],
+        "Reward": {
+            "Money": 3500,
+            "Items": [ 224 ]
+        }
+    },
+    "31": {
+        "buttons":[
+            {"name": "Wait, I'm in a hurry!!", "style": "medium", "type": "take" },
+            {"name": "Go away.", "style": "min"}
+        ],
+        "text":"Shit, I almost forgot... To live a normal life, you need a medical certificate. You get them from the doctors in the hospital. Go there, get your medical certificate and come back to me.",
+        "sound": "cloud/npc/zdobich/31.ogg",
+        "Title": "The most important thing is health",
+        "Desc": "Get a medical card from the hospital and go back to Dobich.",
+        "Tasks": [
+            "1. Go to the hospital",
+            "2. Get a medical certificate from the doctor",
+            "3. Go back to Dobich"
+        ],
+        "textError":"It looks like you haven't completed my task yet. You can find the hospital on the map or on your phone [M - GPS - Government Offices - EMS]. If you can't find it, ask the administrators at [/report] and they will be happy to help you.",
+        "soundError": "cloud/npc/zdobich/31e.ogg",
+        "textSuccess": "So, now we know that everything is fine with you. With a medical card, you can enter almost any faction.",
+        "buttonsSuccess":[
+            {"name": "Thanks, is there anything else for me?", "type": "perform", "questId": 33, "style": "medium"},
+            {"name": "See you again.", "style": "min"}
+        ],
+        "soundSucess": "cloud/npc/zdobich/31s.ogg",
+        "buttonsError":[
+            {"name": "I will get to the bottom of the matter!", "style": "big"}],
+        "Reward": {
+            "Exp": 1,
+            "Items": [ 219 ]
+        }
+    },
+    "33": {
+        "buttons":[
+            {"name": "Wait, I'm in a hurry!!", "style": "medium", "type": "take" },
+            {"name": "Go away.", "style": "min"}
+        ],
+        "text":"Very good. With your health card, your weapon license is now available at the Los Santos Police Department. Get your gun license and come back to me.",
+        "sound": "cloud/npc/zdobich/33.ogg",
+        "Title": "With Two Hands",
+        "Desc": "Get a gun license from the Police Department and drive back to Dobich.",
+        "Tasks": [
+            "1. Go to the Police Department",
+            "2. Get a driver's license from the LSPD officer",
+            "3. Go back to Dobich"
+        ],
+        "textError":"It looks like you haven't completed my task yet. You can find the Police Department on the map [ESC] or on your phone [M - GPS - Government Offices - LSPD]. If you can't find it, ask the administrators with [/Report] and they will be happy to help you.",
+        "soundError": "cloud/npc/zdobich/33e.ogg",
+        "textSuccess": "Great, now you can go buy all weapons + ammunition.",
+        "buttonsSuccess":[
+            {"name": "Thanks, is there anything else for me?", "type": "perform", "questId": 34, "style": "medium"},
+            {"name": "See you again.", "style": "min"}
+        ],
+        "soundSucess": "cloud/npc/zdobich/33s.ogg",
+        "buttonsError":[
+            {"name": "I will get to the bottom of the matter!", "style": "big"}],
+        "Reward": {
+            "Money": 8500,
+            "Exp": 1,
+            "Items": [ 253, 228 ]
+        }
+    },
+    "34": {
+        "buttons":[
+            {"name": "Understood, thanks for the help!", "style": "medium", "type": "perform"},
+            {"name": "Leave.", "style": "min"}
+        ],
+        "text":"Well, now you know the basics of the city, but, of course, this is far from all that it has to offer. You can now join a faction or an organization or go into business, it's up to you what you want to do. I have nothing new or interesting for you at the moment. Thank you for the time and the trip together, but now you are on your own. Safe travels, my friend!",
+        "sound": "cloud/npc/zdobich/34.ogg",
+        "Title": "The adventure begins..."
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "0": {
+        "buttons":[
+            {"name": "Show what you have", "type": "perform"},
+            {"name": "I want to change my pet's name", "type": "take"},
+            {"name": "Why do I need a pet?", "questId": 1},
+            {"name": "I want to give up my pet.", "type": "take", "index": "1"},
+            {"name": "leave"}
+        ],
+        "text":"Hello! Let me guess, you want to buy yourself a pet? Well you've come to the right place!",
+        "sound": "cloud/npc/pet/petShop1.ogg"
+    },
+    "1": {
+        "buttons":[
+            {"name": "Thank you very much for the information!", "style": "medium"}
+        ],
+        "text":"How is this? You will have a friend who will always be there for you. Dogs will also be able to protect you if suddenly someone attacks you. Or you can order them to attack someone. All my pets are already trained in the necessary skills, you just need to get one of them and enjoy life in our wonderful state!.",
+        "sound": "cloud/npc/pet/petShop2.ogg"
+    }
+}

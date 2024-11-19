@@ -1,0 +1,28 @@
+{
+    "0": {
+        "buttons":[
+            {"name": "I would like to pick up my package...", "type": "perform"},
+            {"name": "Was macht man hier?", "questId": 1},
+            {"name": "How to work here?", "questId": 2},
+            {"name": "Bye."}
+        ],
+        "text":"Welcome to the GoPostal camp! My name is Alexander. I am responsible for logistics and employment here. What can I do for you?",
+        "sound": "cloud/npc/stock/stock1.ogg"
+    },
+    "1": {
+        "buttons":[
+            {"name": "Ja, was soll getan werden?", "questId": 2},
+            {"name": "No, thank you."}
+        ],
+        "text":"We are the largest logistics company for small and medium parcels in our country. When you order something, you can be sure that our delivery person will deliver it! Do you fancy a part-time job?",
+        "sound": "cloud/npc/stock/stock2.ogg"
+    },
+    "2": {
+        "buttons":[
+            {"name": "Yes, give me a chance.", "type": "take"},
+            {"name": "Not interested."}
+        ],
+        "text":"Our couriers earn money simply by delivering packages. Your salary depends on the distance you drive and your performance, so work hard and get rich with us. To start with, you only need a class B driver's license. Are you interested in this job?",
+        "sound": "cloud/npc/stock/stock3.ogg"
+    }
+}

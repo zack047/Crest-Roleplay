@@ -1,0 +1,2979 @@
+@import @/views/assets/css/main.sass
+@import './fonts/Gilroy/stylesheet.css'
+
+@keyframes rotateE
+    from 
+        transform: rotate(0deg)
+    to 
+        transform: rotate(360deg)
+
+@keyframes leftright
+    from 
+        opacity: 0.2
+    to 
+        opacity: 1
+
+.hud_bottom
+    .hudevo__bottom_usebutton
+        height: 3.7037vh
+        margin-top: 0.9259vh
+        margin-bottom: 0.9259vh
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 1.8519vh
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+            width: 100%
+            background: linear-gradient(270deg, #F82847 0%, rgba(248, 40, 71, 0) 100%)
+            height: 0.1852vh
+        #ProgressBarKey
+            width: 3.7037vh
+            height: 3.7037vh
+            position: relative
+            margin-right: 1.2963vh
+        .progressbar-text
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 2.7778vh
+            height: 2.7778vh
+            color: #000000
+            font-family: 'Gilroy'
+            font-style: normal
+            font-weight: 400
+            font-size: 1.2963vh
+            line-height: 1.4815vh
+            background: white
+    .hudevo-usebutton__text
+        font-family: 'Gilroy'
+        font-style: normal
+        font-weight: 400
+        font-size: 1.2963vh
+        line-height: 1.4815vh
+        text-align: center
+        display: flex
+        align-items: center
+        justify-content: center
+    .hudevo__dropitem
+        margin-top: 3.9815vh
+        display: flex
+        flex-direction: column
+        .hudevo__dropitem_header
+            width: 32.3148vh
+            height: 2.3148vh
+            background: #F82847
+            display: flex
+            align-items: center
+            padding-left: 0.8333vh
+            font-family: 'Gilroy'
+            font-style: normal
+            font-weight: 400
+            font-size: 1.2963vh
+            line-height: 1.4815vh
+            margin-bottom: 0.2778vh
+        .hudevo__dropitem_subheader
+            margin-bottom: 0.2778vh
+            margin-left: 0.2778vh
+            height: 2.3148vh
+            width: 2.2222vh
+            display: flex
+            align-items: center
+            justify-content: center
+            font-family: 'Gilroy'
+            font-style: normal
+            font-weight: 600
+            font-size: 1.2963vh
+            line-height: 1.5741vh
+            background: #F82847
+        .hudevo__dropitem_image
+            width: 8.3333vh
+            height: 8.3333vh
+            position: relative
+            display: flex
+            align-items: center
+            justify-content: center
+            background: white
+            overflow: hidden
+            .dropitem__image
+                width: 6.4815vh
+                height: 6.4815vh
+                background-position: center
+                background-size: contain
+                background-repeat: no-repeat
+                object-fit: contain
+                z-index: 1
+            .dropitem__absolute
+                position: absolute
+                left: 12.037vh
+                bottom: -0.9259vh
+                z-index: 0
+                font-weight: 900
+                font-size: 13.3333vh
+                line-height: 17.037vh
+                letter-spacing: -0.34em
+                color: rgba(37, 37, 37, 0.03)
+        .hudevo__dropitem_info
+            width: 23.7037vh
+            height: 8.3333vh
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            padding-top: 0.9259vh
+            padding-left: 1.2963vh
+            padding-right: 1.2963vh
+            padding-bottom: 0.9259vh
+            background: white
+            margin-right: 0.2778vh
+            margin-left: 0.2778vh
+            .hudevo__dropitem_title
+                font-family: 'Gilroy'
+                font-style: normal
+                font-weight: 600
+                font-size: 1.2963vh
+                line-height: 1.5741vh
+                color: #252525
+                margin-bottom: 0.0926vh
+            .hudevo__dropitem_subtitle
+                font-family: 'Gilroy'
+                font-style: normal
+                font-weight: 400
+                font-size: 1.2037vh
+                line-height: 1.3889vh
+                color: #252525
+        .hudevo__dropitem_take
+            width: 2.2222vh
+            height: 8.3333vh
+            font-family: 'Gilroy'
+            font-style: normal
+            font-weight: 400
+            font-size: 1.2037vh
+            line-height: 1.3889vh
+            color: #252525
+            background: white
+            display: flex
+            align-items: center
+            justify-content: center
+            .transform
+                transform: rotate(90deg)
+
+    
+
+.haxlevel
+    width: 21.522vh
+    height: 5.893vh
+    position: absolute
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+    align-content: center
+    background: url(https://imgur.com/dUkI302.png)
+    background-size: cover
+    top: 1.204vh
+    right: 22.222vh
+
+.haxlevel .titlelev
+    display: flex
+    width: 7.407vh
+    height: 2.778vh
+    align-items: center
+    justify-content: center
+    align-content: center
+
+.haxlevel .titlelev p
+    margin-bottom: 0vh
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 500
+    font-size: 1.944vh
+    line-height: 2.778vh
+    display: flex
+    align-items: center
+    text-align: center
+    color: #FFFFFF
+    text-shadow: 0vh 0vh 0.370vh rgb(255 255 255 / 50%)
+
+.haxlevel .hlevel
+    display: flex
+    flex-direction: row
+    align-content: center
+    align-items: center
+    justify-content: space-between
+    width: 21.522vh
+    position: absolute
+    top: 0.95vh
+
+.haxlevel .hlevel .leftlev
+    width: 4.167vh
+    height: 4.167vh
+    display: flex
+    align-items: center
+    justify-content: center
+    align-content: center
+    margin-left: 0.8vh
+
+.haxlevel .hlevel .rightlev
+    width: 4.167vh
+    height: 4.167vh
+    display: flex
+    align-items: center
+    justify-content: center
+    align-content: center
+    margin-right: 1vh
+
+.haxlevel .hlevel .leftlev p
+    margin-bottom: 0vh
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 500
+    font-size: 1.296vh
+    line-height: 1.574vh
+    display: flex
+    align-items: center
+    text-align: center
+    color: #FFFFFF
+    text-shadow: 0vh 0vh 0.370vh rgb(255 255 255 / 50%)
+
+.haxlevel .hlevel .rightlev p
+    margin-bottom: 0vh
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 500
+    font-size: 1.296vh
+    line-height: 1.574vh
+    display: flex
+    align-items: center
+    text-align: center
+    color: #FFFFFF
+    text-shadow: 0vh 0vh 0.37vh rgb(255 255 255 / 50%)
+
+.haxlevel .explev
+    width: 11.944vh
+    height: 2.870vh
+    display: flex
+    align-items: center
+    justify-content: center
+    align-content: center
+
+.haxlevel .explev p
+    margin-bottom: 0vh
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 500
+    font-size: 0.833vh
+    line-height: 1.019vh
+    display: flex
+    align-items: center
+    text-align: center
+    color: #FFFFFF
+
+.buttonsinfo.hax
+    margin-top: 0vh !important
+    position: absolute
+    right: 2vh
+    top: 50%
+    transform: translate(0vh, -50%)
+
+.haxhit .hitico svg
+    width: 1.852vh
+    height: 1.852vh
+    display: block
+    fill: #fff
+
+.haxhit
+    display: flex
+    align-items: center
+    flex-direction: row
+    justify-content: flex-end
+    align-content: center
+    margin-bottom: 1.481vh
+
+.haxhit .hitbut p
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 700
+    font-size: 1.389vh
+    line-height: 1.667vh
+    display: flex
+    align-items: center
+    text-align: center
+    color: #FFFFFF
+    margin-bottom: 0vh
+
+.haxhit .hitbut
+    display: flex
+    width: 2.778vh
+    height: 2.778vh
+    background: rgba(35, 38, 45, 0.5)
+    border: 0.093vh solid rgba(255, 255, 255, 0.04)
+    box-shadow: 0vh 0.370vh 0.370vh rgb(0 0 0 / 25%)
+    border-radius: 0.370vh
+    align-items: center
+    justify-content: center
+    align-content: center
+    margin-left: 1.389vh
+
+.haxhit .hitico
+    width: 1.852vh
+    height: 1.852vh
+    display: flex
+    justify-content: center
+    align-items: center
+    align-content: center
+
+.hudhaxzer_gps
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin-left: 2.037vh
+
+.hudhaxzer_gps .butradio
+    width: 5.185vh
+    height: 5.648vh
+    display: flex
+    align-items: center
+    justify-content: center
+    background: url(https://imgur.com/RVYm0JF.png)
+    background-size: cover
+    align-content: center
+    margin-left: -1vh
+    margin-bottom: -1.5vh
+
+.hudhaxzer_gps .butradio.act
+    background: url(https://imgur.com/Q0Bl2Yd.png)
+
+.hudhaxzer_gps .butradio svg
+    width: 1.667vh
+    height: 1.667vh
+    fill: rgba(231, 56, 53, 0.5)
+
+.hudhaxzer_gps .butradio.act svg
+    width: 1.667vh
+    height: 1.667vh
+    fill: #0091FF
+
+.hudhaxzer_gps .butmicro
+    width: 5.185vh
+    height: 5.648vh
+    display: flex
+    align-items: center
+    justify-content: center
+    background: url(https://imgur.com/RVYm0JF.png)
+    background-size: cover
+    align-content: center
+    margin-left: -1vh
+    margin-bottom: -0.3vh
+
+.hudhaxzer_gps .butmicro.active
+    width: 5.185vh
+    height: 5.648vh
+    display: flex
+    align-items: center
+    justify-content: center
+    background: url(https://imgur.com/Q0Bl2Yd.png)
+    background-size: cover
+    align-content: center
+    margin-left: -1vh
+    margin-bottom: -0.3vh
+
+
+.hudhaxzer_gps .butmicro svg
+    width: 1.667vh
+    height: 1.667vh
+    fill: rgba(231, 56, 53, 0.5)
+
+.hudhaxzer_gps .butmicro.active svg
+    width: 1.667vh
+    height: 1.667vh
+    fill: #0091FF
+    animation: key-info-active 500ms
+
+.hudhaxzer_gps .hudtime
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin-bottom: 0.648vh
+
+.hudhaxzer_gps .hudtime b
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 500
+    font-size: 1.111vh
+    line-height: 1.296vh
+    display: flex
+    align-items: center
+    color: #FFFFFF
+    opacity: 0.2
+    text-shadow: 0vh 0vh 1.111vh #000000
+
+.hudhaxzer_gps .hudtime p
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 500
+    font-size: 1.389vh
+    line-height: 1.667vh
+    display: flex
+    align-items: center
+    color: #FFFFFF
+    text-shadow: 0vh 0vh 1.111vh #0000003d
+    margin-bottom: 0vh
+
+.hudhaxzer_gps .hudgps
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-start
+    align-content: center
+
+.hudhaxzer_gps .hudgps .left
+    display: flex
+    align-items: center
+    justify-content: center
+    align-content: center
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 700
+    font-size: 2.963vh
+    line-height: 3.519vh
+    text-align: center
+    color: #FFFFFF
+    text-shadow: 0vh 0vh 1.111vh #0000003d
+
+.hudhaxzer_gps .hudgps .right
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: center
+    border-left: 0.285vh solid rgba(255, 255, 255, 0.15)
+    margin-left: 1.296vh
+    padding-left: 1vh
+
+.hudhaxzer_gps .hudgps .right b
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 500
+    font-size: 1.389vh
+    line-height: 1.667vh
+    letter-spacing: 0.08em
+    color: #FFFFFF
+    text-shadow: 0vh 0vh 1.111vh #0000003d
+
+.hudhaxzer_gps .hudgps .right p
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 500
+    font-size: 1.389vh
+    line-height: 1.667vh
+    letter-spacing: 0.08em
+    color: rgba(255, 255, 255, 0.5)
+    margin-bottom: 0vh
+    text-shadow: 0vh 0vh 1.111vh #0000003d
+
+.hudhaxzer_gps .hudgreen
+    margin-bottom: 0.648vh
+
+.hudhaxzer_gps .hudgreen p
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 500
+    font-size: 1.126vh
+    line-height: 1.311vh
+    display: flex
+    align-items: center
+    letter-spacing: 0.17em
+    color: #97E638
+    margin-bottom: 0vh
+    text-shadow: 0vh 0vh 1.111vh rgb(151 230 56 / 50%)
+
+.hudhaxzer_notilist
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: center
+    margin-top: 4vh
+
+.hudhaxzer_notilist .hudhaxzer_noti
+    display: flex
+    flex-direction: column
+    align-items: center
+    align-content: center
+    justify-content: flex-start
+
+.hudhaxzer_notilist .hudhaxzer_noti .notititle
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 600
+    font-size: 2.593vh
+    line-height: 3.056vh
+    display: flex
+    align-items: center
+    text-align: center
+    color: #FFFFFF
+    text-shadow: 0vh 0vh 0.370vh #ffffff
+
+.hudhaxzer_notilist .hudhaxzer_noti .notibar
+    width: 27.778vh
+    height: 0.278vh
+    background: rgba(255, 255, 255, 0.15)
+    margin-top: 1vh
+
+.hudhaxzer_notilist .hudhaxzer_noti .notibar .barprogress
+    width: 100%
+    height: 0.278vh
+    background: #0091FF
+    box-shadow: 0vh 0vh 1.111vh rgb(0 145 255 / 50%)
+
+.hudhaxzer_notilist .hudhaxzer_noti .notitext
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 500
+    font-size: 1.481vh
+    line-height: 1.759vh
+    text-align: center
+    color: #FFFFFF
+    text-shadow: 0vh 0vh 0.1vh #ffffff
+    margin-top: 1vh
+    width: 48.296vh
+
+.hudhaxzer__center
+    position: absolute
+    left: 0vh
+    top: 0vh
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    z-index: 0
+
+.hudhaxzer_center_bottom .hudhaxzer_use
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    align-content: center
+    margin-top: 3vh
+
+.hudhaxzer_center_bottom .hudhaxzer_use .usetitle
+    display: flex
+    align-items: center
+    justify-content: center
+    align-content: center
+    flex-direction: column
+
+.hudhaxzer_center_bottom .hudhaxzer_use .usetitle p
+    width: 2.778vh
+    height: 2.778vh
+    margin-bottom: 0vh
+    text-align: center
+    border-radius: 50%
+    border: solid 0.2vh rgba(255, 255, 255, 0.15)
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 500
+    font-size: 1.481vh
+    line-height: 1.759vh
+    display: flex
+    align-items: center
+    letter-spacing: 0.04em
+    color: #FFFFFF
+    text-shadow: 0vh 0vh 0.648vh rgb(255 255 255 / 50%)
+    justify-content: center
+    align-content: center
+
+.hudhaxzer_center_bottom .hudhaxzer_use .usetitle .titleico
+    animation: rotateE 1.5s infinite linear
+    position: absolute
+
+.hudhaxzer_center_bottom .hudhaxzer_use .usetitle .titleico svg
+    display: block
+    width: 5.093vh
+    height: 5.093vh
+
+.hudhaxzer_center_bottom .hudhaxzer_use .usetext
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 500
+    font-size: 1.481vh
+    line-height: 1.759vh
+    display: flex
+    align-items: center
+    letter-spacing: 0.04em
+    color: #FFFFFF
+    text-shadow: 0vh 0vh 0.648vh rgb(255 255 255 / 50%)
+    justify-content: flex-start
+    align-content: center
+    margin-left: 1.5vh
+
+.hudhaxzer_center_bottom
+    position: absolute
+    left: 50%
+    bottom: 2.130vh
+    transform: translate(-50%, 0vh)
+
+.hudhaxzer_right
+    position: absolute
+    right: 0vh
+    height: 100%
+    top: 0vh
+
+.hudhaxzer_case
+    position: absolute
+    width: 24.630vh
+    height: 5.556vh
+    right: 0vh
+    top: 15.685vh
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.10) 29.41%, rgba(255, 255, 255, 0) 92.29%)
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-end
+
+.hudhaxzer_case .infocase
+    text-align: right
+
+.hudhaxzer_case .icocase
+    background-size: cover
+    height: 5.556vh
+    width: 5.556vh
+
+.hudhaxzer_case .infocase h1
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 400
+    font-size: 1.389vh
+    line-height: 1.667vh
+    text-align: right
+    color: #FFFFFF
+    text-shadow: 0vh 0vh 1.111vh #000000
+
+.hudhaxzer_case .infocase p
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 500
+    font-size: 1.667vh
+    line-height: 1.944vh
+    color: #0091FF
+    text-shadow: 0vh 0vh 1.111vh #0091ff
+
+.hudhaxzer_quest
+    position: absolute
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    justify-content: center
+    width: 24.630vh
+    top: 21.796vh
+    right: 2vh
+
+.hudhaxzer_quest .quest_header
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-end
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 400
+    font-size: 1.589vh
+    line-height: 1.867vh
+    text-align: right
+    color: #FFFFFF
+    text-shadow: 0vh 0vh 1.111vh #000000
+
+.hudhaxzer_quest .quest_title
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-end
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 300
+    font-size: 1.033vh
+    line-height: 1.219vh
+    text-align: right
+    color: #FFFFFF
+    text-shadow: 0vh 0vh 1.111vh #000000
+    margin-right: 0.31vh
+
+.hudhaxzer_quest .quest_header .headerico
+    margin-left: 0.3vh
+
+.hudhaxzer_quest .quest_title .titleico
+    margin-left: 0.3vh
+
+.hudhaxzer_quest .quest_header .headerico svg
+    display: block
+    width: 2.944vh
+    height: 2.944vh
+
+.hudhaxzer_quest .quest_title .titleico svg
+    display: block
+    width: 2.111vh
+    height: 2.111vh
+
+.hudxahzer_playerinfo
+    display: flex
+    position: absolute
+    right: 1.204vh
+    top: 1.204vh
+    flex-direction: column
+    align-items: flex-end
+
+.hudxahzer_playerinfo .hud_logo
+    width: 11.574vh
+    height: 5.556vh
+
+.hudxahzer_playerinfo .hud_logo .donatx2
+    position: absolute
+    top: 0.8vh
+    right: -0.1vh
+    width: 1.596vh
+    height: 1.596vh
+    background: #FFCE4F
+    box-shadow: 0vh 0vh 1.111vh rgb(255 206 79 / 25%)
+    border-radius: 0.185vh
+    justify-content: center
+    align-content: center
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 600
+    font-size: 0.941vh
+    line-height: 0.926vh
+    display: flex
+    align-items: center
+    text-align: center
+    color: #FFFFFF
+    flex-direction: column
+
+.hudxahzer_playerinfo .hud_logo .logoh
+    width: 11.574vh
+    height: 5.556vh
+    background: url(https://imgur.com/73tNSVI.png)
+    background-size: cover
+
+.hudxahzer_playerinfo .moneynal
+    display: flex
+    flex-direction: row
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 500
+    font-size: 1.667vh
+    line-height: 1.944vh
+    text-align: center
+    color: #FFFFFF
+    text-shadow: 0vh 0vh 0.648vh rgb(255 255 255 / 25%)
+    margin-right: 1vh
+
+.hudxahzer_playerinfo .moneynal div#targetMoney
+    margin-left: 0.37vh
+
+.hudxahzer_playerinfo .moneybank
+    display: flex
+    flex-direction: row
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 500
+    font-size: 0.667vh
+    line-height: 1.944vh
+    text-align: center
+    color: #FFFFFF
+    text-shadow: 0vh 0vh 0.648vh rgb(255 255 255 / 25%)
+    margin-right: 1vh
+
+.hudxahzer_playerinfo .moneybank div#targetBank
+    margin-left: 0.37vh
+
+.hudxahzer_playerinfo .moneypush
+    margin-right: 1vh
+    text-shadow: 0vh 0vh 0.648vh #ffffff40
+    display: flex
+    flex-direction: row
+    align-items: center
+
+.hudxahzer_playerinfo .weaponsh
+    margin-top: 0.463vh
+    margin-right: 1vh
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+.hudxahzer_playerinfo .weaponsh .weaponname
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 500
+    font-size: 1.111vh
+    line-height: 1.296vh
+    display: flex
+    align-items: center
+    text-align: right
+    letter-spacing: 0.01em
+    color: #FFFFFF
+    text-shadow: 0vh 0vh 0.648vh rgb(255 255 255 / 50%)
+
+.hudxahzer_playerinfo .weaponsh .weaponammo
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-end
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 400
+    font-size: 1.574vh
+    line-height: 1.852vh
+    text-align: right
+    letter-spacing: 0.01em
+    color: #FFFFFF
+    text-shadow: 0vh 0vh 0.648vh rgb(255 255 255 / 50%)
+
+.hudxahzer_playerinfo .weaponsh .weaponammo b
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 400
+    font-size: 1.389vh
+    line-height: 1.667vh
+    display: flex
+    align-items: center
+    text-align: right
+    letter-spacing: 0.01em
+    color: rgba(255, 255, 255, 0.4)
+    text-shadow: 0vh 0vh 0.548vh #00000017
+    margin-left: 0.2vh
+
+.hudxahzer_playerinfo .playeronline
+    display: flex
+    position: fixed
+    bottom: 0.741vh
+    right: 2.685vh
+    flex-direction: row
+    align-items: center
+    justify-content: flex-end
+
+.hudxahzer_playerinfo .playeronline .onlinep
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-end
+    align-content: center
+    margin-right: 0.648vh
+
+.hudxahzer_playerinfo .playeronline .idp
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-end
+    align-content: center
+
+.hudxahzer_playerinfo .playeronline .onlinep .iconka
+    width: 1.581vh
+    height: 1.581vh
+    background: rgba(255, 255, 255, 0.06)
+    display: flex
+    border-radius: 50%
+    flex-direction: row
+    justify-content: center
+    align-items: center
+
+.hudxahzer_playerinfo .playeronline .onlinep .iconka svg
+    width: 0.833vh
+    height: 0.833vh
+
+.hudxahzer_playerinfo .playeronline .onlinep p
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 600
+    font-size: 2.511vh
+    line-height: 1.296vh
+    color: #fec219
+    text-shadow: 0vh 0vh 0.278vh rgb(0 0 0 / 25%)
+    margin-bottom: 0vh
+    margin-left: 0.370vh
+
+.hudxahzer_playerinfo .playeronline .idp p
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 600
+    font-size: 2.511vh
+    line-height: 1.296vh
+    color: #FFFFFF
+    text-shadow: 0vh 0vh 0.278vh rgb(0 0 0 / 25%)
+    margin-bottom: 0vh
+    margin-left: 0.37vh
+
+.hudxahzer_playerinfo .playeronline .idp .iconka
+    width: 1.581vh
+    height: 1.581vh
+    background: rgba(255, 255, 255, 0.06)
+    display: flex
+    border-radius: 50%
+    flex-direction: row
+    justify-content: center
+    align-items: center
+
+.hudxahzer_playerinfo .playeronline .idp .iconka svg
+    width: 0.833vh
+    height: 0.833vh
+
+.speedometrhax
+    position: absolute
+    width: 21.211vh
+    height: 21.211vh
+    right: -1vh
+    bottom: -1vh
+    display: flex
+    align-items: center
+    justify-content: center
+    align-content: center
+    zoom: 120%
+
+.speedometrhax .osnova .speedhax svg
+    position: absolute
+    width: 12.315vh
+    height: 13.981vh
+    filter: drop-shadow( 0vh 0vh 0.3vh white)
+    left: 3vh
+    top: 3vh
+
+.speedometrhax .osnova .fuel
+    position: absolute
+    top: 5vh
+    right: 5.6vh
+
+.speedometrhax .osnova .fuel svg
+    position: absolute
+    width: 2.870vh
+    height: 5.370vh
+    filter: drop-shadow( 0vh 0vh 0.3vh #0091FF)
+.speedometrhax .osnova .speedhax .kmh
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    position: absolute
+    top: 42%
+    left: 50%
+    transform: translate(-50%, -58%)
+
+.speedometrhax .osnova .speedhax .kmh p.speedk 
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 500
+    font-size: 3.704vh
+    line-height: 4.444vh
+    display: flex
+    align-items: center
+    text-align: center
+    letter-spacing: 0.01em
+    color: rgba(255, 255, 255, 0.5)
+    text-shadow: 0vh 0vh 1.111vh rgb(255 255 255 / 20%)
+    margin-bottom: 0vh
+
+.speedometrhax .osnova .speedhax .kmh .speedk b
+    color: #fff
+    font-family: 'SF Pro Display'
+    font-weight: 500
+    font-size: 3.704vh
+    line-height: 4.444vh
+    letter-spacing: 0.01em
+    color: rgba(255, 255, 255)
+    text-shadow: 0vh 0vh 1.111vh rgb(255 255 255 / 20%)
+
+.speedometrhax .osnova .speedhax .kmh p.speedp
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 500
+    font-size: 1.574vh
+    line-height: 1.852vh
+    display: flex
+    align-items: center
+    text-align: center
+    letter-spacing: 0.01em
+    color: #FFFFFF
+    text-shadow: 0vh 0vh 1.111vh #000000
+    margin-bottom: 0vh
+
+.speedometrhax .osnova .fuel svg.fuelico
+    width: 2.222vh
+    height: 1.389vh
+    position: absolute
+    top: 6vh
+    left: 1.5vh
+    filter: none
+
+.speedometrhax  .dop
+    width: 11.925vh
+    position: absolute
+    left: 50%
+    transform: translate(-50%, 0vh)
+    display: flex
+    flex-direction: column
+    align-items: center
+    top: 8vh
+
+.speedometrhax .dop .icoup
+    display: flex
+    flex-direction: row
+    width: 11.925vh
+    justify-content: space-between
+
+.speedometrhax .dop .icoup .icoleft svg
+    display: block
+    width: 1.574vh
+    height: 1.574vh
+    fill: #ffffff4d
+
+.speedometrhax .dop .icoup .icoright svg
+    display: block
+    width: 1.574vh
+    height: 1.574vh
+    fill: #ffffff4d
+
+.speedometrhax .dop .icoup .icoleft.active  svg
+    display: block
+    width: 1.574vh
+    height: 1.574vh
+    fill: #0091FF
+    filter: drop-shadow( 0vh 0vh 0.3vh #0091FF)
+    animation: leftright 1s infinite linear
+
+.speedometrhax .dop .icoup .icoright.active svg
+    display: block
+    width: 1.574vh
+    height: 1.574vh
+    fill: #0091FF
+    filter: drop-shadow( 0vh 0vh 0.3vh #0091FF)
+    animation: leftright 1s infinite linear
+
+.speedometrhax .dop .icodown
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    justify-content: center
+    margin-top: 4vh
+    margin-left: 3vh
+
+.speedometrhax .dop .icodown p
+    height: 1.481vh
+    background: rgba(255, 255, 255, 0.2)
+    border-radius: 0.278vh
+    width: 1.481vh
+    font-family: 'SF Pro Display'
+    font-style: normal
+    font-weight: 600
+    font-size: 1.111vh
+    line-height: 1.296vh
+    display: flex
+    align-items: center
+    text-align: center
+    color: #FFFFFF
+    justify-content: center
+
+.speedometrhax .dop .icodown .icoengine
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+    margin-right: 0.463vh
+
+.speedometrhax .dop .icodown .icoremen
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+    margin-right: 0.463vh
+
+.speedometrhax .dop .icodown .icolight
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+    margin-right: 0.463vh
+
+.speedometrhax .dop .icodown .icodor
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+
+.speedometrhax .dop .icodown .iconk
+    display: flex
+    width: 2.222vh
+    height: 2.222vh
+    align-items: center
+    justify-content: center
+    align-content: center
+
+.speedometrhax .dop .icodown .icoengine svg
+    width: 2.222vh
+    height: 2.222vh
+    fill: #ffffff4d
+
+.speedometrhax .dop .icodown .icoengine.active svg
+    width: 2.222vh
+    height: 2.222vh
+    fill: #fff
+
+.speedometrhax .dop .icodown .icoremen svg
+    width: 1.852vh
+    height: 1.852vh
+    fill: #ffffff4d
+
+.speedometrhax .dop .icodown .icoremen.active svg
+    width: 1.852vh
+    height: 1.852vh
+    fill: #fff
+
+.speedometrhax .dop .icodown .icolight svg
+    width: 1.852vh
+    height: 1.481vh
+    fill: #fff
+
+.speedometrhax .dop .icodown .icodor svg
+    width: 1.759vh
+    height: 1.852vh
+    fill: #ffffff4d
+
+.speedometrhax .dop .icodown .icodor.active svg
+    width: 1.759vh
+    height: 1.852vh
+    fill: #ffff
+
+.speedometrhax .osnova
+
+.speedometrhax .dop .icoup .icoleft
+
+.speedometrhax .dop .icoup .icoright
+
+
+
+
+
+.mt-20
+    margin-top: 1.8519vh
+
+/*@keyframes animatedeath
+    0%
+        background: radial-gradient(50% 50% at 50% 50%, #370606 0%, #070707 100%)
+    100%
+        background: radial-gradient(50% 50% at 50% 50%, #370606 10%, #070707 90%)*/
+
+@keyframes key-info-active
+    0%
+        background: rgba(255, 255, 255, 1)
+        color: rgba(0, 0, 0, 1)
+        border-bottom-color: rgba(0, 0, 0, 1)
+        /*border: 0.0926vh solid rgba(255, 255, 255, 0.0926vh*/
+    100%
+        background: rgba(255, 255, 255, 0.1)
+        color: rgba(255, 255, 255, 1)
+
+@keyframes key-info-detector
+    0%
+        background: rgba(255,255,255,0.05)
+    50%
+        background: rgba(255,255,255,0.2)
+    100%
+        background: rgba(255,255,255,0.05)
+
+@keyframes key-info-donate
+    0%
+        background: rgba(255,240,189,0.05)
+    50%
+        background: rgba(255,240,189,0.2)
+    100%
+        background: rgba(255,240,189,0.05)
+
+$circleTransitionDelay: 185ms
+
+.hudevo__hide
+    opacity: 0 !important
+    pointer-events: none
+
+#hudevo
+    position: absolute
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    height: 100%
+    font-size: 1.4815vh
+    line-height: 1.7593vh
+    font-family: 'Gilroy'
+    font-weight: 500
+    box-sizing: border-box
+    color: white
+    z-index: -1
+    //background: #535353
+    //background-image: url(./background.png)
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    .newhud__chat-block
+        height: 28.5185vh
+        width: 40%
+    .box-between
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 100%
+    .hudevo__left
+        min-width: 51.0185vh
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: space-between
+        position: relative
+        .hudevo__leftcenter_absolute
+            position: absolute
+            left: 0
+            top: 50%
+            transform: translate(0, -50%)
+    .hudevo__center
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        position: relative
+        z-index: 2
+    .hudevo__right
+        min-width: 51.0185vh
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        position: relative
+    .flex-end
+        display: flex
+        align-items: flex-end
+    .flex-start
+        display: flex
+        align-items: flex-start
+    .ml-13
+        margin-left: 1.2037vh
+    .buttonsinfo__button
+        text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.4504)
+        font-family: 'Gilroy'
+        font-style: normal
+        font-weight: 600
+        font-size: 1.2963vh
+        line-height: 1.5741vh
+        margin-right: 0.2778vh
+        display: flex
+        align-items: center
+        justify-content: center
+        padding-left: 0.8333vh
+        padding-right: 0.8333vh
+        padding-top: 0.5556vh
+        padding-bottom: 0.5556vh
+        border: 0.1852vh solid
+        border-image-source: linear-gradient(43.64deg, rgba(248, 40, 71, 0) -1.83%, #F82847 73.21%) !important
+        border-image-slice: 1 !important
+    .gift
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 18.5185vh
+        height: 15.7407vh
+        background-image: url(./images/case.png)
+        background-size: contain
+        background-position: center
+        background-repeat: no-repeat
+        padding-left: 0.463vh
+        position: absolute
+        left: -5.5556vh
+        top: 0vh
+        .gift__image
+            margin-top: 0.7407vh
+            width: 9.2593vh
+            height: 9.2593vh
+            background-image: url(./images/money.png)
+            background-size: contain
+            background-position: center
+            background-repeat: no-repeat
+            margin-bottom: 0.463vh
+        .gift__text
+            max-width: 9.2593vh
+            font-weight: 600
+            font-size: 1.2963vh
+            line-height: 1.2963vh
+            text-align: center
+        .gift__subtitle
+            margin-top: 0.463vh
+            color: gray
+            font-weight: 600
+            font-size: 1.2963vh
+            line-height: 1.2963vh
+
+    .buttonsinfo
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+        margin-bottom: auto
+        margin-top: 0.9259vh
+        .buttonsinfo__element
+            padding-right: 8.3333vh
+            padding-left: 0.9259vh
+            padding-top: 0.5556vh
+            padding-bottom: 0.5556vh
+            text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.4504)
+            font-family: 'Gilroy'
+            font-style: normal
+            font-weight: 400
+            font-size: 1.2963vh
+            line-height: 1.4815vh
+            display: flex
+            align-items: center
+            justify-content: center
+        .box-flex
+            margin-bottom: 0.463vh
+    .hudevo__killlist
+        display: flex
+        align-items: center
+        flex-direction: column-reverse
+        margin-top: 0.9259vh
+        .hudevo__killlist_element
+            display: flex
+            align-items: center
+            margin-bottom: 0.5556vh
+            font-weight: 600
+            font-size: 1.2963vh
+            line-height: 1.5741vh
+            position: relative
+            text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.4504)
+            .killlist_absolute
+                position: absolute
+                width: 0.2778vh
+                height: 1.7593vh
+                background: #F82847
+            .hudevo__killlist_killer
+                height: 3.4259vh
+                width: fit-content
+                position: relative
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                padding-right: 4.537vh
+                padding-left: 1.0185vh
+                .killlist_absolute
+                    left: -0.2778vh
+                    top: 50%
+                    transform: translate(0, -50%)
+            .hudevo__killlist_killed
+                position: relative
+                height: 3.4259vh
+                width: fit-content
+                display: flex
+                align-items: center
+                justify-content: flex-end
+                padding-left: 4.537vh
+                padding-right: 1.0185vh
+                .killlist_absolute
+                    right: -0.2778vh
+                    top: 50%
+                    transform: translate(0, -50%)
+        .hudevo__killlist_sprite
+            width: 5.7407vh
+            height: 6.7593vh
+            background-image: url(./images/killsprite.png)
+            z-index: 10
+            background-size: contain
+            background-position: center
+            background-repeat: no-repeat
+            display: flex
+            align-items: center
+            justify-content: center
+            position: absolute
+            top: 50%
+            left: -2.8704vh
+            transform: translate(0, -50%)
+            font-size: 2.963vh
+    .hudevo__radio
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        line-height: initial
+        margin-top: 0.9259vh
+        .hudevo__radio_title
+            display: flex
+            align-items: center
+            justify-content: center
+            background: #FFFFFF
+            color: #252525
+            font-weight: 500
+            font-size: 1.2963vh
+            line-height: 1.4815vh
+            margin-right: 0.2778vh
+            padding-left: 0.463vh
+            padding-right: 0.463vh
+        .hudevo__radio_subtitle
+            width: 1.8519vh
+            height: 1.8519vh
+            display: flex
+            align-items: center
+            justify-content: center
+            font-size: 1.2037vh
+            background: #F82847
+        .hudevo__radio_element
+            margin-top: 0.6481vh
+            width: fit-content
+            height: 2.7778vh
+            padding-right: 0.3704vh
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            font-weight: 600
+            font-size: 1.2963vh
+            line-height: 1.5741vh
+            text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.4504)
+            padding-right: 1.2963vh
+            padding-left: 3.5185vh
+            position: relative
+            .hudevo__radio_absolute
+                position: absolute
+                width: 0.9259vh
+                height: 0.9259vh
+                right: -0.463vh
+                top: 50%
+                transform: translate(0, -50%)
+                background: #F82847
+                &.active
+                    background: #67FF4F
+
+    .hudevo__bizwar
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        line-height: initial
+        margin-top: 0.9259vh
+        .hudevo__bizwar_title
+            display: flex
+            align-items: center
+            justify-content: center
+            background: #FFFFFF
+            color: #252525
+            font-weight: 500
+            font-size: 1.2963vh
+            line-height: 1.4815vh
+            margin-bottom: 0.6481vh
+            padding-left: 0.6481vh
+            padding-right: 0.6481vh
+        .hudevo__bizwar_element
+            margin-top: 0.463vh
+            width: 16.8519vh
+            height: 2.7778vh
+            padding-right: 0.3704vh
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            font-weight: 600
+            font-size: 1.2963vh
+            line-height: 1.5741vh
+            text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.4504)
+        .hudevo__bizwar_score
+            background: #F82847
+            height: 2.037vh
+            min-width: 2.037vh
+            padding-left: 0.5556vh
+            padding-right: 0.5556vh
+            display: flex
+            align-items: center
+            justify-content: center
+            font-size: 1.2963vh
+            font-weight: 600
+            margin-left: 0.6481vh
+
+    .hudevo__speedometr
+        display: flex
+        margin-top: auto
+        .hudevo__speedometr_bottom
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+            font-weight: 700
+            font-size: 1.8519vh
+            line-height: 2.2222vh
+            margin-right: 1.1111vh
+            .hudevoicon-fuel
+                color: #A6B1BA
+                margin-right: 0.9259vh
+        .hudevo__speedometr_title
+            font-weight: 700
+            font-size: 4.4444vh
+            line-height: 2.2222vh
+            margin-right: 0.463vh
+            width: 6.8519vh
+        .hudevoicon-left
+            font-size: 1.6667vh
+            margin-right: 0.7407vh
+            color: #A6B1BA
+        .hudevoicon-right
+            color: #A6B1BA
+            font-size: 1.6667vh
+        .hudevo__speedometr_gray
+            margin-top: 0.463vh
+            color: #A6B1BA
+            font-weight: 700
+            font-size: 1.4815vh
+            line-height: 2.2222vh
+        .box-column
+            align-items: center
+        .hudevo__speedometr_icon
+            font-size: 2.2222vh
+            color: #A6B1BA
+        .hudevo__speedometr_text
+            margin-top: 0.3704vh
+            font-weight: 700
+            font-size: 1.2963vh
+            line-height: 2.2222vh
+        .active
+            color: #F82847
+        .hudevo__speedometr_fuel
+            margin-top: 2.2222vh
+            width: 23.3333vh
+            height: 0.7407vh
+            display: flex
+            background: rgba(166,177,186,0.3996)
+            margin-bottom: 0.463vh
+            .filled
+                height: 100%
+                background: #F82847
+    .hudevo__playerinfo
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        line-height: initial
+        margin-bottom: 3.7037vh
+        z-index: 2
+        .hudevo__weaponbox
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            height: 11.2963vh
+        .align-end
+            align-items: flex-end
+        .hudevo__playerinfo_link
+            margin-bottom: 0.463vh
+            font-weight: 600
+            font-size: 1.6667vh
+            line-height: 1.2963vh
+        .hudevo__playerinfo_online
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 5.463vh
+            height: 2.037vh
+            font-weight: 400
+            font-size: 1.2963vh
+            line-height: 1.4815vh
+            margin-right: 0.3704vh
+            .hudevoicon-person
+                margin-right: 0.5556vh
+                font-size: 1.1111vh
+        .hudevo__playerinfo_name
+            background: #DA2640
+            height: 2.037vh
+            display: flex
+            align-items: center
+            justify-content: center
+            padding-left: 1.1111vh
+            padding-right: 1.1111vh
+            font-weight: 600
+            font-size: 1.2963vh
+            line-height: 1.2963vh
+        .hudevo__playerinfo_logo
+            background: #DA2640
+            margin-left: 0.5556vh
+            width: 3.7963vh
+            height: 3.7963vh
+            display: flex
+            align-items: center
+            justify-content: center
+            &.transform
+                transform: rotate(90deg)
+            &.zdobich
+                background-image: url(./images/zd.png)
+                background-size: contain
+                background-position: center
+                background-repeat: no-repeat
+                .hudevo__playerinfo_icon
+                    opacity: 0
+            .hudevo__playerinfo_icon
+                width: 1.7593vh
+                height: 1.5741vh
+                background-image: url(./images/r.svg)
+                background-size: contain
+                background-position: center
+                background-repeat: no-repeat
+        .hudevo__playerinfo_money
+            position: relative
+            min-width: 13.8889vh
+            height: 2.7778vh
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            padding-right: 1.2963vh
+            margin-right: 0.463vh
+            font-weight: 500
+            font-size: 1.8519vh
+            line-height: 2.2222vh
+
+        .hudevo__playerinfo_hide
+            opacity: 0
+            position: absolute
+
+        .hudevo__playerinfo_icon
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 2.7778vh
+            height: 2.7778vh
+            font-size: 1.4815vh
+            background: #DA2640
+        .hudevo__playerinfo_weapon
+            width: 16.3889vh
+            height: 5.5556vh
+            display: flex
+            align-items: center
+            justify-content: center
+            .hudevo__weapon_image
+                width: 13.2407vh
+                height: 4.9074vh
+                background-image: url(./images/weapon.png)
+                background-size: contain
+                background-position: center
+                background-repeat: no-repeat
+        .hudevo__playerinfo_white
+            width: 2.037vh
+            height: 2.037vh
+            background: white
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-right: 0.1852vh
+            color: #252525
+            line-height: initial
+        .hudevo__playerinfo_ammo
+            background: white
+            height: 2.037vh
+            min-width: 2.037vh
+            padding-left: 0.463vh
+            padding-right: 0.463vh
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            color: #252525
+            font-weight: 600
+            font-size: 1.2963vh
+            margin-right: 0.1852vh
+            line-height: initial
+        .hudevo__playerinfo_red
+            color: white
+            background: #DA2640
+            height: 2.037vh
+            font-size: 1.2963vh
+            font-weight: 600
+            padding-left: 0.463vh
+            padding-right: 0.463vh
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            line-height: initial
+        .hudevo__playerinfo_donate
+            width: 15.1852vh
+            height: 6.3889vh
+            background-image: url(./images/donate.png)
+            background-size: contain
+            background-position: center
+            background-repeat: no-repeat
+
+    .hudevo__playerinfo_stars
+        display: flex
+        align-items: center
+        color: rgba(253, 255, 252, 0.25)
+        .hudevoicon-star
+            margin-left: 0.7407vh
+            &.active
+                color: white
+    .mb-5
+        margin-bottom: 0.463vh
+    .hudevo__quests
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        .hudevo__quest
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            margin-bottom: 0.9259vh
+            .box-flex
+                align-items: center
+            .hudevo__quest_circle
+                width: 1.8519vh
+                height: 1.8519vh
+                border-radius: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+                border: 0.1852vh solid rgba(255, 255, 255, 0.25)
+                margin-right: 0.7407vh
+                .questcircle
+                    height: 0.9259vh
+                    width: 0.9259vh
+                    border-radius: 50%
+                    background: #F82847
+                    &.purple
+                        background: #9b7ae3
+            .hudevo__quest_title
+                text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.45)
+                font-weight: 600
+                font-size: 1.3889vh
+                line-height: 1.2963vh
+            .hudevo__quest_square
+                background: #67FF4F
+                width: 0.463vh
+                height: 0.463vh
+                margin-right: 0.463vh
+            .hudevo__quest_subtitle
+                text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.45)
+                font-weight: 400
+                font-size: 1.2037vh
+                line-height: 1.2963vh
+                max-width: 18.2407vh
+            .hudevo__quest_button
+                min-width: 2.2222vh
+                min-height: 2.2222vh
+                padding-left: 0.463vh
+                padding-right: 0.463vh
+                padding-bottom: 0.2778vh
+                padding-top: 0.2778vh
+                display: flex
+                align-items: center
+                justify-content: center
+                font-weight: 600
+                font-size: 1.2963vh
+                line-height: 1.5741vh
+                background: #F82847
+                &.purple
+                    background: #9b7ae3
+            .hudevo__quest_info
+                min-width: 2.2222vh
+                min-height: 2.2222vh
+                background: white
+                color: #252525
+                margin-left: 0.2778vh
+                padding-left: 0.463vh
+                padding-right: 0.463vh
+                padding-bottom: 0.2778vh
+                padding-top: 0.2778vh
+                display: flex
+                align-items: center
+                justify-content: center
+                font-weight: 400
+                font-size: 1.2037vh
+                line-height: 1.3889vh
+
+    .mb-6
+        margin-bottom: 0.5556vh
+
+    .hudevo__lobby
+        display: flex
+        flex-direction: column
+        align-items: center
+        align-items: flex-end
+        .hudevo__lobby_header
+            background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+            width: 12.8704vh
+            height: 1.8519vh
+            margin-right: 0.1852vh
+            padding-right: 0.463vh
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            font-weight: 500
+            font-size: 1.2963vh
+            line-height: 1.4815vh
+            text-align: right
+            color: #252525
+        .hudevo__lobby_count
+            background: #F82847
+            width: 3.3333vh
+            height: 1.8519vh
+            display: flex
+            align-items: center
+            justify-content: center
+            font-weight: 600
+            font-size: 1.2963vh
+            line-height: 1.2963vh
+        .hudevo__lobby_element
+            margin-top: 0.6481vh
+            width: 16.3889vh
+            height: 2.7778vh
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            font-weight: 600
+            font-size: 1.2963vh
+            line-height: 1.5741vh
+            color: #FFFFFF
+            text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.45)
+            padding-right: 0.9259vh
+            .hudevoicon-person
+                margin-left: 0.7407vh
+                font-size: 1.2963vh
+        .hudevo__lobby_health
+            width: 16.3889vh
+            background: rgba(255, 255, 255, 0.25)
+            height: 0.3704vh
+            display: flex
+            .currenthealth
+                width: 30%
+                height: 100%
+                background: #F82847
+
+    .adminmenu
+        width: 48.1481vh
+        height: auto
+        background: rgba(30,38,47,0.9)
+        border-radius: 0.6481vh
+        z-index: 20001
+        position: absolute
+        right: 4.6296vh
+        padding: 0.9259vh
+        top: 50%
+        .adminmenu__grid
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(2, 1fr)
+            margin-bottom: 0.9259vh
+            .adminmenu__element
+                border: 0.0926vh solid gray
+                display: flex
+                justify-content: space-between
+                width: 23.1481vh
+                padding-left: 0.463vh
+                padding-right: 0.463vh
+                .gray
+                    color: #A6B1BA
+        .adminmenu__title
+            font-size: 1.6667vh
+            font-weight: bold
+            margin-bottom: 0.5556vh
+
+    .hudevo__chat_obman
+        height: 28.5185vh
+        width: 46.2963vh
+        opacity: 0
+        z-index: -1
+        pointer-events: none
+    .hudevo__chat-block
+        height: 28.5185vh
+        width: 64.259vh
+        position: absolute
+        left: 0
+        top: 0
+        z-index: 1
+        .hudevo__chat
+            position: absolute
+            left: 0
+            top: 0
+            width: 100%
+            display: flex
+            flex-direction: column
+            transition: opacity ease .2s
+            border-radius: 0.7407vh
+            //padding-left: 1.2963vh
+            //padding-right: 1.2963vh
+            padding-bottom: 1.0185vh
+            //padding-top: 1.0185vh
+            &.chatbackground
+                background: rgba(30, 38, 47, 0.2)
+            &.noActive
+                opacity: 0.35
+
+            .hudevo__chat_messages
+                width: 100%
+                overflow: hidden
+                display: flex
+                flex-direction: column-reverse
+                direction: rtl
+                text-align: left
+                overflow-y: auto
+                padding-left: 0.9259vh
+                box-sizing: border-box
+                //user-select: text
+
+                .scroll
+                    padding-left: 0.6481vh
+
+                &::-webkit-scrollbar
+                    width: 0.2778vh
+
+                &::-webkit-scrollbar-track
+                    background: rgba(253,255,252,0.4)
+                    border-radius: 0.3704vh
+
+                &::-webkit-scrollbar-thumb
+                    background: #FDFFFC
+                    border-radius: 0.5556vh
+                p
+                    font-family: SF Pro Display
+                    font-size: 1.6111vh
+                    font-weight: 400
+                    line-height: 1.6111vh
+                    letter-spacing: 0%
+                    text-align: left
+                    position: relative
+                    direction: ltr
+                    word-break: keep-all
+                    text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.6)
+
+                    .chat__span
+                        max-height: 2.5926vh
+                        max-width: 2.5926vh
+                        border: 0.0926vh solid white
+                        padding: 0.463vh
+                        margin-right: 0.6481vh
+                        border-radius: 0.2778vh
+                        box-sizing: border-box
+                        &.market
+                            background: #2BB6A8
+                            font-size: 1.6667vh
+                            border: 0
+                        &.shop
+                            background: #FF9F1C
+                            border: 0
+                            padding-top: 0.5556vh
+                            padding-bottom: 0.5556vh
+                            padding-left: 0.463vh
+                            padding-right: 0.463vh
+
+            .hudevo__chat_input_block
+                margin-top: 1.8519vh
+                min-height: 2.7778vh
+                width: 46.2963vh
+                margin-left: 0.9259vh
+                overflow: hidden
+                .hudevo__chat_input_box
+                    position: relative
+                    width: 100%
+                    display: flex
+                    align-items: center
+                    height: 3.2407vh
+                    background: rgba(0,0,0,0.25)
+
+                    .hudevo__chat_input_chat
+                        position: absolute
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        top: 50%
+                        transform: translateY(-50%)
+                        height: 1.4815vh
+                        width: 5.9259vh
+                        padding-right: 0.5556vh
+                        padding-left: 0.9259vh
+                        border-right: 0.0926vh solid rgba(255, 255, 255, 0.15)
+                        font-size: 1.1111vh
+                        text-transform: uppercase
+                        box-sizing: border-box
+
+                    .hudevo__chat_input
+                        width: 100%
+                        height: 100%
+                        border: 0
+                        //margin-left: 0.9259vh
+                        padding-left: 6.4815vh
+                        background: rgba(255,255,255,0.0)
+                        color: white
+                        font-family: 'SF Pro Display'
+
+                        &::-webkit-input-placeholder
+                            color: rgba(255,255,255,0.8)
+                    .hudevo__chat_input_send
+                        display: flex
+                        align-items: center
+                        height: 2.037vh
+                        padding-right: 0.9259vh
+                        padding-left: 0.5556vh
+                        margin-left: 0.5556vh
+                        border-left: 0.0926vh solid rgba(255, 255, 255, 0.15)
+                        .hudevo__chat_input_send_icon
+                            font-size: 1.8519vh
+                            color: rgba(255, 255, 255, 0.6)
+                            &.active
+                                color: rgba(255, 255, 255, 1)
+
+            .hudevo__chat_buttons_helpcmd
+                background: rgba(0, 0, 0, 0.25)
+                margin-left: 0.9259vh
+                font-size: 1.1111vh
+                width: 46.2963vh
+                margin-top: 0.5556vh
+                padding-right: 0.9259vh
+                padding-left: 0.5556vh
+                max-height: 12.7778vh
+                overflow: hidden
+                overflow-y: auto
+
+                &::-webkit-scrollbar
+                    width: 0.2778vh
+
+                &::-webkit-scrollbar-track
+                    background: rgba(253,255,252,0.4)
+                    border-radius: 0.3704vh
+                &::-webkit-scrollbar-thumb
+                    background: #FDFFFC
+                    border-radius: 0.5556vh
+
+            .hudevo__chat_buttons_block
+                width: 46.2963vh
+                margin-top: 0.5556vh
+                margin-left: 0.9259vh
+                height: 3.2407vh
+                width: 100%
+                .hudevo__chat_buttons
+                    display: flex
+                    align-items: center
+                    height: 100%
+                    .hudevo__chat_buttons_key
+                        display: flex
+                        align-items: center
+                        height: 2.4074vh
+                        margin-right: 0.7407vh
+                        padding-right: 0.5556vh
+                        border-right: 0.0926vh solid rgba(255, 255, 255, 0.15)
+                    .hudevo__chat_button
+                        cursor: pointer
+                        height: 100%
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        padding-left: 1.7593vh
+                        padding-right: 1.7593vh
+                        margin-right: 0.5556vh
+                        background: rgba(35, 38, 45, 0.50)
+                        font-family: 'SF Pro Display'
+                        border-radius: 0.2778vh
+                        &.active
+                            border: 0.0926vh solid #FFF
+                            background: rgba(255, 255, 255, 0.25)
+                            color: white
+    .hudevo__petcontrol
+        display: flex
+        flex-direction: column
+        font-size: 1.4815vh
+        justify-content: flex-end
+        margin-bottom: auto
+        margin-top: 0.9259vh
+        .hudevo__lobby_health
+            display: flex
+            width: 17.6852vh
+            height: 0.3704vh
+            background: rgba(255, 255, 255, 0.25)
+            position: relative
+            margin-top: 0.1852vh
+
+        .hudevo__lobby_health_current
+            height: 100%
+            width: 56%
+            background: #E71D36
+        .petcontrol__name
+            font-family: 'Gilroy'
+            font-style: normal
+            font-weight: 600
+            font-size: 1.2963vh
+            line-height: 1.5741vh
+            color: #FFFFFF
+            text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.45)
+            margin-left: 3.7037vh
+        .box-flex
+            align-items: center
+        .hudevo__petbox
+            width: fit-content
+            height: 5.1852vh
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 1.2963vh
+            padding-right: 2.963vh
+            position: relative
+        .petcontrol__buttons
+            display: flex
+            flex-wrap: wrap
+            @include fluid("gap", 7)
+            width: 23.1481vh
+            margin-top: 0.463vh
+            .box-flex
+                align-items: center
+        .petcontrol__button
+            display: flex
+            align-items: center
+            justify-content: center
+            height: 1.8519vh
+            min-width: 1.8519vh
+            background: rgba(255, 255, 255, 0.25)
+            margin-right: 0.2778vh
+            &.active
+                background: white
+                color: #252525
+        .petcontrol__button_text
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 12.3%, rgba(255, 255, 255, 0.19) 100%)
+            padding-left: 0.7407vh
+            padding-right: 0.7407vh
+            padding-bottom: 0.1852vh
+            padding-top: 0.1852vh
+            display: flex
+            align-items: center
+            justify-content: center
+            text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.45)
+            font-weight: 400
+            font-size: 1.2037vh
+            line-height: 1.3889vh
+        .petcontrol__pet
+            height: 3.3333vh
+            width: 3.3333vh
+            border: 0.2778vh solid #F82847
+            background: rgba(255, 255, 255, 0.1)
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            box-sizing: border-box
+            position: absolute
+            right: -1.6667vh
+            top: 50%
+            transform: translate(0%, -50%)
+            .petcontrol__pet_img
+                height: 3.1481vh
+                width: 3.1481vh
+                background-size: contain
+                background-repeat: no-repeat
+                background-position: center
+                border-radius: 50%
+    .hudevo__left_bottom
+        display: flex
+        align-items: flex-end
+        justify-content: space-between
+        height: fit-content
+        .hudevo__map
+            margin-right: 2.7778vh
+    .hudevo__placetime
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        position: relative
+        margin-left: 0.9259vh
+        .placetime__icon
+            font-size: 1.8519vh
+        .placetime__buttons
+            display: flex
+            align-items: center
+            .playerinfo__box
+                margin-right: 1.1111vh
+            .playerinfo__box_key
+                position: absolute
+                bottom: -0.8333vh
+                right: -0.2778vh
+                text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.45)
+                font-weight: 400
+                font-size: 1.2963vh
+                line-height: 1.8519vh
+                font-family: 'RF Dewi'
+                color: white
+        .hudevo__placetime_image
+            width: 15.6481vh
+            height: 4.0741vh
+            background-image: url(./images/bottom-info.png)
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            padding-left: 2.3148vh
+            display: flex
+            align-items: flex-start
+            justify-content: center
+            position: relative
+            flex-direction: column
+            font-family: 'Gilroy'
+            margin-bottom: 1.2963vh
+            .hudevo__placetime_cirlce
+                min-width: 2.2222vh
+                min-height: 2.2222vh
+                width: 2.2222vh
+                height: 2.2222vh
+                border-radius: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+                border: 0.0926vh solid #F82847
+                font-weight: 600
+                font-size: 1.2963vh
+                line-height: 1.2963vh
+                position: absolute
+                top: 0%
+                left: -1.1111vh
+                transform: translate(0%, 50%)
+            .hudevo__placetime_title
+                font-weight: 600
+                font-size: 1.6667vh
+                line-height: 1.9444vh
+                color: #FFFFFF
+                text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.45)
+                white-space: nowrap
+            .hudevo__placetime_subtitle
+                white-space: nowrap
+                font-weight: 400
+                font-size: 1.2963vh
+                line-height: 1.4815vh
+                color: #FFFFFF
+                text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.45)
+            .hudevoicon-clock
+                font-size: 1.6667vh
+    .hudevo__dropitem
+        margin-top: 3.9815vh
+        display: flex
+        flex-direction: column
+        .hudevo__dropitem_header
+            width: 32.3148vh
+            height: 2.3148vh
+            background: #F82847
+            display: flex
+            align-items: center
+            padding-left: 0.8333vh
+            font-family: 'Gilroy'
+            font-style: normal
+            font-weight: 400
+            font-size: 1.2963vh
+            line-height: 1.4815vh
+            margin-bottom: 0.2778vh
+        .hudevo__dropitem_subheader
+            margin-bottom: 0.2778vh
+            margin-left: 0.2778vh
+            height: 2.3148vh
+            width: 2.2222vh
+            display: flex
+            align-items: center
+            justify-content: center
+            font-family: 'Gilroy'
+            font-style: normal
+            font-weight: 600
+            font-size: 1.2963vh
+            line-height: 1.5741vh
+            background: #F82847
+        .hudevo__dropitem_image
+            width: 8.3333vh
+            height: 8.3333vh
+            position: relative
+            display: flex
+            align-items: center
+            justify-content: center
+            background: white
+            overflow: hidden
+            .dropitem__image
+                width: 6.4815vh
+                height: 6.4815vh
+                background-position: center
+                background-size: contain
+                background-repeat: no-repeat
+                object-fit: contain
+                z-index: 1
+            .dropitem__absolute
+                position: absolute
+                left: 12.037vh
+                bottom: -0.9259vh
+                z-index: 0
+                font-weight: 900
+                font-size: 13.3333vh
+                line-height: 17.037vh
+                letter-spacing: -0.34em
+                color: rgba(37, 37, 37, 0.03)
+        .hudevo__dropitem_info
+            width: 23.7037vh
+            height: 8.3333vh
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            padding-top: 0.9259vh
+            padding-left: 1.2963vh
+            padding-right: 1.2963vh
+            padding-bottom: 0.9259vh
+            background: white
+            margin-right: 0.2778vh
+            margin-left: 0.2778vh
+            .hudevo__dropitem_title
+                font-family: 'Gilroy'
+                font-style: normal
+                font-weight: 600
+                font-size: 1.2963vh
+                line-height: 1.5741vh
+                color: #252525
+                margin-bottom: 0.0926vh
+            .hudevo__dropitem_subtitle
+                font-family: 'Gilroy'
+                font-style: normal
+                font-weight: 400
+                font-size: 1.2037vh
+                line-height: 1.3889vh
+                color: #252525
+        .hudevo__dropitem_take
+            width: 2.2222vh
+            height: 8.3333vh
+            font-family: 'Gilroy'
+            font-style: normal
+            font-weight: 400
+            font-size: 1.2037vh
+            line-height: 1.3889vh
+            color: #252525
+            background: white
+            display: flex
+            align-items: center
+            justify-content: center
+            .transform
+                transform: rotate(90deg)
+
+    .hudevo__restart
+        position: absolute
+        margin-top:0.9259vh
+        display: flex
+        align-items: center
+        right: 0vh
+        bottom: 0.9259vh
+        .restart__icon
+            color: #FF9F1C
+            font-size:2.2222vh
+            margin-right:1.1111vh
+    .hudevo__activecapt
+        margin-top: 1.8519vh
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        font-family: 'Gilroy'
+        width: 43.9815vh
+        .hudevo__activecapt_image
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            width: 22.5926vh
+            min-height: 3.4259vh
+            background-image: url(./images/battlepass-background.png)
+            background-size: contain
+            background-position: center
+            background-repeat: no-repeat
+            color: #252525
+            font-weight: 600
+            font-size: 1.2963vh
+            line-height: 1.2963vh
+            margin-bottom: 1.6667vh
+            text-align: center
+        .hudevo__activecapt_time
+            font-weight: 500
+            font-size: 2.2222vh
+            line-height: 2.5926vh
+            color: #FFFFFF
+            text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.45)
+            margin-bottom: 1.8519vh
+        .hudevoicon-skull, .hudevoicon-war-person
+            font-size: 1.6667vh
+        .mr
+            margin-right: 0.9259vh
+        .ml
+            margin-left: 0.9259vh
+        .box-flex
+            font-weight: 700
+            font-size: 1.6667vh
+            line-height: 1.6667vh
+            color: #FFFFFF
+            text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.45)
+        .hudevo__activecapt_square
+            width: 0.9259vh
+            height: 0.9259vh
+            &.green
+                background: #2AD300
+            &.red
+                background: #F82847
+        .hudevo__activecapt_line
+            height: 0.2778vh
+            width: 43.9815vh
+            display: flex
+            justify-content: space-between
+            align-items: center
+            background: rgba(255,255,255,0.3)
+            .hudevo__activecapt_left
+                width: 8.3333vh
+                height: 100%
+                background: #2AD300
+            .hudevo__activecapt_center
+                width: 8.3333vh
+                height: 100%
+                background: #f8b628
+            .hudevo__activecapt_right
+                background: #F82847
+                width: 8.3333vh
+                height: 100%
+        .fs-10
+            font-size: 0.9259vh
+            text-align: center
+        .activewidth
+            max-width: 13.8889vh
+            min-width: 13.8889vh
+            &.l
+                text-align: left
+            &.r
+                text-align: right
+    .mt-14
+        margin-top: 1.2963vh
+    .mt-5
+        margin-top: 0.463vh
+
+    .hudevo__streamer
+        display: flex
+        flex-direction: column
+        align-items: center
+        font-family: 'Gilroy'
+        position: absolute
+        right: 0
+        bottom: 7.4074vh
+        .hudevo__streamer_image
+            width: 16.9444vh
+            height: 2.7778vh
+            background-image: url(./images/exsight.png)
+            background-size: contain
+            background-position: center
+            background-repeat: no-repeat
+            margin-bottom: 0.6481vh
+    .hudevo__taxicount
+        display: flex
+        flex-direction: column
+        font-family: 'Gilroy'
+        bottom: 1.8519vh
+        margin-top: 0.9259vh
+        .hudevo__taxicount_title
+            height: 1.8519vh
+            font-style: normal
+            font-weight: 600
+            font-size: 1.2963vh
+            line-height: 1.5741vh
+            text-align: left
+            color: #FFFFFF
+            text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.45)
+            padding-right: 0.7407vh
+            padding-left: 1.5741vh
+        .box-flex
+            align-items: center
+        .hudevo__taxicount_thin
+            font-style: normal
+            font-weight: 400
+            font-size: 1.1111vh
+            line-height: 1.2963vh
+            text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.45)
+            margin-right: 0.9259vh
+        .hudevo__taxicount_cost
+            width: 5.1852vh
+            height: 1.8519vh
+            display: flex
+            align-items: center
+            justify-content: center
+            background: #F82847
+            font-weight: 600
+            font-size: 1.2963vh
+            line-height: 1.2963vh
+
+    .hudevo__greenzone
+        position: absolute
+        right: -8.9815vh
+        bottom: 0
+        border-bottom: 0.5556vh solid #67FF4F
+        background: linear-gradient(180deg, rgba(103, 255, 79, 0) 0%, rgba(103, 255, 79, 0.25) 100%)
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 7.6852vh
+        height: 8.3333vh
+        color: #67FF4F
+        .hudevoicon-shield
+            margin-top: 0.8333vh
+            filter: drop-shadow(0vh 0vh 2.1296vh #67FF4F)
+            font-size: 3.2407vh
+            margin-bottom: 0.3704vh
+        .hudevo__greenzone_text
+            margin-bottom: 0.7407vh
+            max-width: 5.5556vh
+            text-align: center
+            font-family: 'Gilroy'
+            font-style: normal
+            font-weight: 400
+            font-size: 1.2963vh
+            line-height: 1.2963vh
+            color: #FFFFFF
+            text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.45)
+            b
+                font-weight: 600
+    .hudevo__bottom_usebutton
+        height: 3.7037vh
+        margin-top: 0.9259vh
+        margin-bottom: 0.9259vh
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 1.8519vh
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+            width: 100%
+            background: linear-gradient(270deg, #F82847 0%, rgba(248, 40, 71, 0) 100%)
+            height: 0.1852vh
+        #ProgressBarKey
+            width: 3.7037vh
+            height: 3.7037vh
+            position: relative
+            margin-right: 1.2963vh
+        .progressbar-text
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 2.7778vh
+            height: 2.7778vh
+            color: #000000
+            font-family: 'Gilroy'
+            font-style: normal
+            font-weight: 400
+            font-size: 1.2963vh
+            line-height: 1.4815vh
+            background: white
+    .hudevo-usebutton__text
+        font-family: 'Gilroy'
+        font-style: normal
+        font-weight: 400
+        font-size: 1.2963vh
+        line-height: 1.4815vh
+        text-align: center
+        display: flex
+        align-items: center
+        justify-content: center
+    .hudevo__check
+        position: absolute
+        right: 0
+        top: 0
+        width: 14.8148vh
+        height: 13.2407vh
+        background-image: url(./images/check.png)
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        display: flex
+        align-items: flex-start
+        justify-content: center
+        padding-top: 3.7037vh
+        flex-direction: column
+        padding-left: 1.2037vh
+        padding-right: 1.2037vh
+        .hudevo__check_title
+            color: #252525
+            font-family: 'Gilroy'
+            font-style: normal
+            font-weight: 600
+            font-size: 1.2963vh
+            line-height: 1.2963vh
+        .hudevo__check_subtitle
+            font-family: 'Gilroy'
+            font-style: normal
+            font-weight: 400
+            font-size: 1.1111vh
+            line-height: 1.1111vh
+            color: #252525
+            max-width: 6.9444vh
+            text-align: left
+        .box-between
+            margin-bottom: 0.1852vh
+            width: 100%
+            display: flex
+            justify-content: space-between
+            align-items: center
+        .hudevo__check_money
+            text-shadow: 0vh 0vh 3.6111vh #53CC3F
+            align-self: center
+            margin-top: 2.037vh
+            color: #53CC3F
+            font-family: 'Gilroy'
+            font-style: normal
+            font-weight: 600
+            font-size: 2.2222vh
+            line-height: 1.2963vh
+            align-self: center
+    .hudevo__event
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        position: relative
+        .hudevo__event_image
+            width: 21.5741vh
+            height: 9.4444vh
+            background-image: url(./images/event.png)
+            background-size: contain
+            background-position: center
+            background-repeat: no-repeat
+            align-self: center
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translate(-50%, 0%)
+    .hudevo__notification
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        position: relative
+    .hudevo__battlepass
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translate(-50%, 0%)
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        .hudevo__battlepass_image
+            width: 33.0556vh
+            height: 8.6111vh
+            background-image: url(./images/battlepass-info.png)
+            background-size: contain
+            background-position: center
+            background-repeat: no-repeat
+            align-self: center
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translate(-50%, 0%)
+    .hudevo__notification_subtitle
+        background: #F82847
+        padding-left: 0.463vh
+        padding-right: 0.463vh
+        padding-bottom: 0.1852vh
+        padding-top: 0.1852vh
+        font-family: 'Gilroy'
+        font-style: normal
+        font-weight: 600
+        font-size: 1.2963vh
+        line-height: 1.2963vh
+        color: white
+        text-transform: uppercase
+        text-align: center
+        &.battlepass
+            margin-top: 2.963vh
+            margin-left: 0.3704vh
+        &.mt-51
+            margin-top: 4.7222vh
+    .hudevo__battlepass_background
+        width: 32.963vh
+        height: 3.4259vh
+        background-image: url(./images/battlepass-background.png)
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        align-self: center
+        display: flex
+        align-items: center
+        justify-content: center
+        color: #252525
+        font-weight: 600
+        font-size: 2.2222vh
+        line-height: 1.2963vh
+    .hudevo__notification_title
+        width: 24.8148vh
+        height: 3.4259vh
+        background: white
+        align-self: center
+        display: flex
+        align-items: center
+        justify-content: center
+        color: #252525
+        text-align: center
+        font-weight: 600
+        font-size: 2.2222vh
+        line-height: 1.2963vh
+        &.fs-14
+            font-family: 'Gilroy'
+            font-weight: 500
+            font-size: 1.2963vh
+            line-height: 1.2963vh
+        &.large
+            width: fit-content
+            padding-right: 0.8333vh
+            padding-left: 0.8333vh
+            height: 1.9444vh
+            text-align: center
+    .hudevo__winner
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        flex-direction: column
+        margin-bottom: 0.9259vh
+        width: 41.1111vh
+        height: 25.1852vh
+        background-image: url(./images/winner.png)
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        padding-top: 3.7037vh
+        .hudevo__winner_image
+            margin-top: 1.3889vh
+            width: 11.0185vh
+            height: 8.1481vh
+            background-image: url(./images/money.png)
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+        &.noback
+            background-image: none
+    .hudevo__level
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        flex-direction: column
+        margin-bottom: 0.9259vh
+        .hudevo__level_image
+            width: 22.5926vh
+            height: 6.1111vh
+            background-image: url(./images/level.png)
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 1.2963vh
+            .level
+                font-weight: 600
+                font-size: 2.037vh
+                width: 3.7037vh
+                text-align: center
+                margin-left: 1.2037vh
+            .newlevel
+                width: 3.7037vh
+                color: rgba(255, 255, 255, 0.55)
+                font-weight: 600
+                font-size: 1.6667vh
+                text-align: center
+                margin-right: 0.9259vh
+
+    .hudevo__weekprise
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+        .hudevo__weekprise_prise
+            width: 18.6111vh
+            height: 12.4074vh
+            background-image: url(./images/prise.png)
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-right: -2.963vh
+            .hudevo__weekprise_image
+                width: 10.463vh
+                height: 10.463vh
+                background-image: url(./images/money.png)
+                background-size: contain
+                background-position: center
+                background-repeat: no-repeat
+        .hudevo__weekprise_sprite
+            position: absolute
+            left: 0
+            top: 0
+            width: 32.037vh
+            height: 10.1852vh
+            background-image: url(./images/sprite.png)
+            background-size: contain
+            background-position: center
+            background-repeat: no-repeat
+            z-index: -1
+        .align-right
+            align-self: flex-end
+            font-weight: 600
+            font-size: 1.2037vh
+            line-height: 1.2963vh
+        .justify-start
+            justify-content: flex-start
+    .hudevo__notification_text
+        align-self: center
+        margin-top: 0.5556vh
+        border-top: 0.2778vh solid #F82847
+        padding-top: 0.7407vh
+        padding-bottom: 1.2963vh
+        padding-left: 1.1111vh
+        padding-right: 1.1111vh
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%)
+        text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.45)
+        text-align: center
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        font-weight: 400
+        font-size: 1.2037vh
+        line-height: 1.2963vh
+        &.large
+            max-width: 32.4074vh
+        &.small
+            margin-top: 0.463vh
+            max-width: 21.1111vh
+        &.medium
+            width: 24.8148vh
+        b
+            font-weight: 600
+    .hudevo__center_bottom
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: auto
+        justify-content: center
+    .hudevo__playerinfo_button
+        min-width: 1.8519vh
+        height: 1.8519vh
+        padding-left: 0.5556vh
+        padding-right: 0.5556vh
+        background: rgba(255, 255, 255, 0.25)
+        display: flex
+        align-items: center
+        justify-content: center
+        font-style: normal
+        font-weight: 400
+        font-size: 1.2037vh
+        line-height: 1.3889vh
+        font-family: 'Gilroy'
+        position: relative
+        &.bottom
+            min-width: 2.963vh
+            height: 2.963vh
+            position: relative
+        &:hover
+            background: rgba(255,255,255,1)
+            color: #5b5b5b
+
+        &.active
+            animation: key-info-active 500ms
+
+        &.pressed
+            animation: none
+            background: rgba(255, 255, 255, 1)
+            color: #464545
+
+        &.disabled
+            opacity: 0.6
+            pointer-events: none
+
+        &.disabled &:hover
+            background: rgba(255,255,255,0.1)
+            color: rgba(255, 255, 255, 1)
+
+        &.nonactive
+            background: rgba(255,255,255,0.1)
+            color: rgba(255, 255, 255, 1)
+
+        &.nonactive &:hover
+            background: rgba(255,255,255,0.1)
+            color: rgba(255, 255, 255, 1)
+
+        &.keyDetector
+            color: rgba(255, 255, 255, 1)
+
+            animation: key-info-detector 2s infinite
+
+            &:hover
+                background: rgba(255,255,255,0.3)
+                color: rgba(255, 255, 255, 1)
+
+        &.keyDonate
+            color: rgba(255, 255, 255, 1)
+
+            animation: key-info-donate 5s infinite
+
+            &:hover
+                background: rgba(255,240,189,0.3)
+                color: rgba(255, 255, 255, 1)
+
+        &.keyPet
+            border: 0.1852vh solid
+            border-image-source: linear-gradient(43.64deg, rgba(248, 40, 71, 0) -1.83%, #F82847 73.21%) !important
+            border-image-slice: 1 !important
+            width: 2.5926vh
+            height: 2.5926vh
+            display: flex
+            align-items: center
+            justify-content: center
+            text-shadow: 0vh 0.0926vh 0.1852vh rgba(0, 0, 0, 0.45)
+            font-family: 'Gilroy'
+            font-style: normal
+            font-weight: 600
+            font-size: 1.2963vh
+            line-height: 1.5741vh
+            background: transparent
+            &.pressed, &:hover
+                color: white !important
+                background: rgba(0,0,0,0) !important
+                border-image-source: linear-gradient(217.64deg, rgba(248, 40, 71, 0) -1.83%, #F82847 73.21%) !important
+
+    .w-228
+        width: 21.1111vh
+    .hudevo__elementparams
+        border-width: 0.1852vh
+        border-top-style: solid
+        border-bottom-style: solid
+        border-left-style: solid
+        border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 74.56%) !important
+        border-image-slice: 1 !important
+        position: relative
+        z-index: 1
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.19) 9.17%, rgba(255, 255, 255, 0) 74.56%)
+        &.paramsright
+            border-right-style: solid
+            border-left-style: hidden
+            background: linear-gradient(279deg, rgba(255, 255, 255, 0.19) 12.3%, rgba(255, 255, 255, 0) 100%) !important
+            border-image-source: linear-gradient(270.3deg, rgba(255, 255, 255, 0.25) 0.24%, rgba(255, 255, 255, 0) 99.74%) !important
+
+    &.night
+        .hudevo__elementparams
+            border-width: 0.1852vh
+            border-top-style: solid
+            border-bottom-style: solid
+            border-left-style: solid
+            border-image-source: linear-gradient(90.3deg, rgba(255, 255, 255, 0.25) 0.24%, rgba(255, 255, 255, 0) 99.74%) !important
+            border-image-slice: 1 !important
+            position: relative
+            z-index: 1
+            background: linear-gradient(89.87deg, rgba(0, 0, 0, 0.25) -2.38%, rgba(0, 0, 0, 0) 99.89%) !important
+            &.paramsright
+                border-right-style: solid
+                border-left-style: hidden
+                background: linear-gradient(279deg, rgba(0, 0, 0, 0.25) -2.38%, rgba(0, 0, 0, 0) 99.89%) !important
+                border-image-source: linear-gradient(270.3deg, rgba(255, 255, 255, 0.25) 0.24%, rgba(255, 255, 255, 0) 99.74%) !important
+
+        .hudevo__placetime
+            .hudevo__placetime_image
+                width: 15.6481vh
+                height: 4.0741vh
+                background-image: url(./images/bottom-info-night.png) !important
+                background-size: cover
+                background-position: center
+                background-repeat: no-repeat
+        .hudevo__notification_text
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%) !important
+    .mr-6
+        margin-right: 0.5556vh

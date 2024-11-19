@@ -1,0 +1,20 @@
+export default [
+    "-",
+    "Gangs",
+    "Gangs",
+    "Gangs",
+    "Gangs",
+    "Gangs",
+    "Government",
+    "LSPD",
+    "EMS",
+    "FIB",
+    "Mafia",
+    "Mafia",
+    "Mafia",
+    "Mafia",
+    "The Army",
+    "LSNEWS",
+    "The Army",
+    "The Army"
+]

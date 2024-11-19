@@ -1,0 +1,14 @@
+{
+  "maxplayers": 500,
+  "name": "Testing Roleplay",
+  "gamemode": "roleplay",
+  "language": "in",
+  "stream-distance": 500.0,
+  "announce": true,
+  "csharp": "enabled",
+  "voice-chat": true,
+  "allow-cef-debugging": false,
+  "voice-chat-sample-rate": 48000,
+  "port": 22005,
+  "api-threading-debugging": false
+}

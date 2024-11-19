@@ -1,0 +1,52 @@
+{
+    "0": {
+        "buttons":[
+            {"name": "What's going on here?", "questId": 1},
+            {"name": "I want to hand over a bag of money.", "questId": 2},
+            {"name": "How do i get a job here?", "questId": 3},
+            {"name": "I want to turn my self in.", "questId": 4},
+            {"name": "I want to hand over illegal items.", "questId": 5},
+            {"name": "Just leaving."}
+        ],
+        "text":"Hello, dear Citizen! I'm Anthony - The secretary of the Police Station. What can I help you with?",
+        "sound": "cloud/npc/police/pd1.ogg"
+    },
+    "1": {
+        "buttons":[
+            {"name": "Now i know more! Thanks!", "style": "medium"}
+        ],
+        "text":"Ahh, where to start... We've got a lot going on here at the police station! Here you can get a license for a weapon, report a person who has committed a crime, turn in a bag of money and do many other interesting things! Mostly people do not come here of their own free will: they are brought here by my fellow police officers. By the way, you can become one of them to.",
+        "sound": "cloud/npc/police/pd2.ogg"
+    },
+    "2": {
+        "buttons":[
+            {"name": "Hand the bag over.", "style": "medium", "type": "perform"},
+            {"name": "Ok, bye.", "style": "medium"}
+        ],
+        "text":"Ok, give me the bag.",
+        "sound": "cloud/npc/police/pd3.ogg"
+    },
+    "3": {
+        "buttons":[
+            {"name": "Ok.", "style": "min"}
+        ],
+        "text":"Do you want to join the police?! Amazing! The state needs daredevils who are ready to do anything for the sake of peace and safety of the people. I think you should talk to one of my colleagues, they will be able to advise you in more detail. Or you can search for information on the state portal, there is absolutely everything on there.",
+        "sound": "cloud/npc/police/pd4.ogg"
+    },
+    "4": {
+        "buttons":[
+            {"name": "Yes.", "type": "take"},
+            {"name": "No."}
+        ],
+        "text":"Are you sure you want to turn yourself in?",
+        "sound": "cloud/npc/police/pd5.ogg"
+    },
+    "5": {
+        "buttons":[
+            {"name": "Yes.", "type": "take", "index": "1"},
+            {"name": "No."}
+        ],
+        "text":"Are you sure you want to hand over illegal items?",
+        "sound": "cloud/npc/police/pd6.ogg"
+    }
+}

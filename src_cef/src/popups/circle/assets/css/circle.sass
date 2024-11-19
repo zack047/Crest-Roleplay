@@ -1,0 +1,169 @@
+@import @/views/assets/css/main.sass
+
+.circle .center .contents
+    border-radius: 5px !important
+    background: rgba(255, 255, 255, 0.05) !important
+    color: #FFF !important
+    text-align: center
+    font-family: Gilroy !important
+    font-size: 1.667vh !important
+    font-style: normal
+    font-weight: 500 !important
+    line-height: 110% !important
+
+.circle .center .contents:hover
+    transition: background 0.5s ease
+    background: #0091FF !important
+
+.circle 
+  transition: 0.3s 
+  top: 50% 
+  left: 50% 
+  transform: translate(-50%, -50%)
+  @include fluid("width", 480)
+  @include fluid("height", 480)
+  position: absolute
+  font-family: 'TTNorms-Medium'
+  .circle__text
+    text-align: center
+    font-family: 'TTNorms-Medium'
+    font-weight: 500
+    @include fluid("height", 48)
+    @include fluid("font-size", 14)
+    @include fluid("line-height", 16)
+  .circle__close
+    top: 50% 
+    left: 50% 
+    transform: translate(-50%, -50%)
+    @include fluid("width", 200)
+    @include fluid("height", 200)
+    border-radius: 50%
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
+    color: white
+    font-family: 'TTNorms-Bold'
+    font-weight: 500
+    background-color: red 
+    background-size: cover
+    @include fluid("font-size", 20)
+    .box-column
+      position: absolute
+      left: 50%
+      top: 50%
+      align-items: center
+      transform: translate(-50%, -50%)
+    .circle__image
+      @include fluid("margin-bottom", 8)
+      @include fluid("width", 36)
+      @include fluid("height", 56)
+      z-index: -1
+      background-image: url('../images/mouse_back.png')
+      background-size: contain
+      background-position: center
+      background-repeat: no-repeat
+
+      &.active
+        background-image: url('../images/mouse.png')
+.icons-circle
+  @include fluid("font-size", 24)
+  pointer-events: none
+
+.circle
+  &:after
+    content: ""
+    position: absolute
+    width: 100%
+    height: 100%
+    background-size: auto
+    top: 0
+    background-size: 100%
+    z-index: -1
+
+  .center
+    top: 50%
+    left: 50%
+    width: 90%
+    text-align: center
+    position: relative
+    -webkit-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+    color: #1E262F
+    cursor: pointer
+
+    .contents
+      width: 25vh
+      height: 3.7037vh
+      position: absolute
+      display: flex
+      align-items: center
+      justify-content: space-between
+      background: #1E262F
+      border-radius: 0.463vh
+      border: 0.0926vh solid rgba(255, 255, 255, 0.10)
+      background: rgba(255, 255, 255, 0.05)
+      transition: background 0.5s ease
+      z-index: 10000
+      color: #FFF
+      text-align: center
+      font-family: SF Pro Display
+      font-size: 1.2963vh
+      font-style: normal
+      font-weight: 500
+      line-height: 110%
+      &:hover
+        border-radius: 0.463vh
+        border: 0.0926vh solid #0BFFDF
+        background: linear-gradient(128deg, #0BFFDF -5.92%, #0D463F 103.2%)
+        box-shadow: 0px 0px 0.5556vh 0px #0BFFDF
+        .contents__index
+          transition: background 0.5s ease
+          background: #ffffff
+          color: #0BFFDF !important
+      .contents__index
+        font-family: 'Montserrat-Medium'
+        font-style: normal
+        transition: background 0.5s ease
+        @include fluid("width", 24)
+        @include fluid("height", 24)
+        display: flex
+        align-items: center
+        justify-content: center
+        @include fluid("font-size", 16)
+        font-weight: 600
+        color: #1E262F
+        @include fluid("border-radius", 3)
+        background: #ffffff
+      &.child1
+        transform: translate(-50%, -50%)
+        left: 50%
+        @include fluid("bottom", 109)
+      &.child2
+        transform: translate(-50%, -50%)
+        @include fluid("left", 465)
+        @include fluid("bottom", 23)
+      &.child3
+        transform: translate(-50%, -50%)
+        @include fluid("left", 505)
+        @include fluid("bottom", -64)
+      &.child4
+        transform: translate(-50%, -50%)
+        @include fluid("left", 465)
+        @include fluid("bottom", -151)
+      &.child5
+        transform: translate(-50%, -50%)
+        left: 50%
+        @include fluid("bottom", -236)
+      &.child6
+        transform: translate(-50%, -50%)
+        @include fluid("left", -33)
+        @include fluid("bottom", -151)
+      &.child7
+        transform: translate(-50%, -50%)
+        @include fluid("left", -73)
+        @include fluid("bottom", -64)
+      &.child8
+        transform: translate(-50%, -50%)
+        @include fluid("left", -33)
+        @include fluid("bottom", 23)

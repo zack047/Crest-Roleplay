@@ -1,0 +1,52 @@
+{
+    "-1": {
+        "buttons":[
+            {"name": "ok i sent it...", "style": "big"}
+        ],
+        "text":"Young, let's get out of here! Get out before my people come to collect your organs. Comprende Amigo? I wont repeat myself twice!",
+        "sound": "cloud/npc/airdrop/drop1.ogg"
+    },
+    "0": {
+        "buttons":[
+            {"name": "Important information.", "questId": 4},
+            {"name": "Not interested."},
+            {"name": "Order Information.", "questId": 2},
+            {"name": "Order delivery.", "questId": 3}
+        ],
+        "text":"Hell friend! Tell me what you are interested in? parcels or information?",
+        "sound": "cloud/npc/airdrop/drop2.ogg"
+    },
+    "1": {
+        "buttons":[
+            {"name": "Important information.", "questId": 4},
+            {"name": "Not interested."},
+            {"name": "Order Information.", "questId": 2},
+            {"name": "Order delivery.", "questId": 3}
+        ],
+        "text":"Hello how are you? What are you interested in this time, tell me my friend...",
+        "sound": "cloud/npc/airdrop/drop3.ogg"
+    },
+    "2": {
+        "buttons":[
+            {"name": "Payment Information.", "type": "take"},
+            {"name": "I changed my mind."}
+        ],
+        "text":"Ha ha! This is you, of course, a jackal, so you play this way? I understood you. Money in advance and at the time of sending the parcel you will be one of the first to be informed.",
+        "sound": "cloud/npc/airdrop/drop4.ogg"
+    },
+    "3": {
+        "buttons":[
+            {"name": "Order delivery.", "type": "perform"},
+            {"name": "I changed my mind."}
+        ],
+        "text":"Amigo, I tell you right away. We do not bear any responsibility for the parcel, but we take full prepayment. If you are interested, please send me the money..",
+        "sound": "cloud/npc/airdrop/drop5.ogg"
+    },
+    "4": {
+        "buttons":[
+            {"name": "Understood.", "style": "min"}
+        ],
+        "text":"Listen carefully, gringo. Through me, you can stir up a couple of things, for example: order a package with excellent guns and other junk for you and your brothers. It will be necessary to transfer the cash to me and wait: after a while (I will try to make it in 20 minutes, but I can do it earlier!) You will receive a message with the coordinates of the package. I can also give you information about the next package that I will organize. even about yours, if necessary, but what do you think? I will remember your number and message you when someone makes an order from me and sends their coordinates. You will have time to pull up with the homies and try to screw the rich muchahos out of their goodies!",
+        "sound": "cloud/npc/airdrop/drop6.ogg"
+    }
+}

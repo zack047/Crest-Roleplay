@@ -1,0 +1,10 @@
+{
+    "0": {
+        "buttons":[
+            {"name": "Let me have a look.", "type": "perform"},
+            {"name": "I'll go for now..."}
+        ],
+        "text":"Hey, Are you looking for a new property? I would also like to have my own home, but I have to live in a hotel ... But once I dreamed of flying into space! Now I am a simple office worker with a monthly salary. So, are you going to look at offers from our real estate agency?",
+        "sound": "cloud/npc/rieltor/rieltor.ogg"
+    }
+}

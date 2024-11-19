@@ -1,0 +1,550 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>By OneQ| AdminPanel v3.5</title>
+        <!-- <body style="background-image: url('./122.png');"> -->
+
+
+	<!-- FONTS -->
+	<link href="http://forum.cs2.uno/style.css" rel="stylesheet">
+	<link href="http://forum.cs2.uno/style.css" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+	<link rel="stylesheet" href="./fonts/bebas-neue/stylesheet.css">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="./css/adminmenu.css">
+</head>
+
+<body>
+	<div id="admin">
+		<transition-group name="opacityfast">
+			<div key="AdminMenu" class="adminmenu" v-if="enable">
+				<nav>
+					<header><a>Paradise | Admin Panel</a></header>
+					<div class="am_nav_list">
+						<div @click="changePage(0)" :class="{ active: page == 0 }" class="am_nav_list_block">Basic</div>
+						<div @click="changePage(1)" :class="{ active: page == 1 }" class="am_nav_list_block">Player</div>
+						<div @click="changePage(10)" :class="{ active: page == 10 }" class="am_nav_list_block">Server</div>
+						<div @click="changePage(6)" :class="{ active: page == 6 }" class="am_nav_list_block">Issue</div>
+						<div @click="changePage(7)" :class="{ active: page == 7 }" class="am_nav_list_block">Health</div>
+						<div @click="changePage(2)" :class="{ active: page == 2 }" class="am_nav_list_block">Transport</div>
+						<div @click="changePage(3)" :class="{ active: page == 3 }" class="am_nav_list_block">Punishments</div>
+						<div @click="changePage(4)" :class="{ active: page == 4 }" class="am_nav_list_block">Fractions</div>
+						<div @click="changePage(5)" :class="{ active: page == 5 }" class="am_nav_list_block">Business</div>
+						<div @click="changePage(8)" :class="{ active: page == 8 }" class="am_nav_list_block">Memo</div>
+						<div @click="changePage(9)" :class="{ active: page == 9 }" class="am_nav_list_block">Empty</div>
+
+
+
+					</div>
+				</nav>
+
+				<div v-if="page == 0" class="am_main">
+					<h1>Main Section</h1>
+					<div class="am_main_block">
+						<div class="am_main_block_flex">
+							<input type="text" v-model="main.inputGlobal" placeholder="Global Chat">
+							<div @click="useCommand('global ' + main.inputGlobal)" class="am_main_block_block">Send
+							</div>
+							<input type="text" v-model="main.inputGlobal1" placeholder="Admin chat">
+							<div @click="useCommand('a ' + main.inputGlobal1)" class="am_main_block_block">Send
+							</div>
+						</div>
+					</div>
+					<div class="am_main_block">
+						<h2>Admin Functions</h2>
+						<div class="am_main_block_flex">
+							<div @click="useCommand('redname')" class="am_main_block_block">Red nickname</div>
+							<div @click="useCommand('alog')" class="am_main_block_block">Administration logs</div>
+							<div @click="useCommand('winlog')" class="am_main_block_block">Logs of winnings</div>
+							<div @click="useCommand('elog')" class="am_main_block_block">Error logs</div>
+							<div @click="useCommand('kl')" class="am_main_block_block">Kill list</div>
+							<div @click="useCommand('agm')" class="am_main_block_block">GodMode</div>
+						</div>
+					</div>
+                                        <div class="am_main_block_flex">
+                                        </div>
+					<div class="am_main_block">
+						<h2>Other</h2>
+						<div class="am_main_block_flex">
+							<div @click="useCommand('mypos')" class="am_main_block_block">Coordinates</div>
+							<div @click="useCommand('leaders')" class="am_main_block_block">Online Leaders</div>
+							<div @click="useCommand('medialist')" class="am_main_block_block">Online Media</div>
+							<div @click="useCommand('admins')" class="am_main_block_block">Admins Online</div>
+							<div @click="useCommand('payday ')" class="am_main_block_block">Payday</div>
+						</div>
+					</div>
+					<div class="am_main_block">
+						<h2>Containers</h2>
+						<div class="am_main_block_flex">
+							<div @click="useCommand('boxstate ' + true)" class="am_main_block_block">Spawn</div>
+							<div @click="useCommand('boxstate ' + false)" class="am_main_block_block">Throw off</div>
+						</div>
+					</div>
+						<div class="am_main_block">
+						<h2>Event</h2>
+						<div class="am_main_block_flex">
+							<input v-model="player.inputLimitsPlayers" type="number" placeholder="Player Limit">
+							<input v-model="player.inputRadius" type="number" placeholder="Radius">
+                            <input v-model="player.inputNameMP" type="text" placeholder="Title">
+						</div>
+						<div class="am_main_block_flex">
+							<div @click="useCommand('createmp ' + player.inputLimitsPlayers + ' ' + player.inputRadius + ' ' + player.NameMP)" class="am_main_block_block">
+								Create an Event</div>
+							<div @click="useCommand('mpplayers ')" class="am_main_block_block">
+								List of players in Event</div>
+							<input v-model="player.inputMPCHAT" type="text" placeholder="Message to everyone on Event">
+							<div @click="useCommand('mpo ' + player.inputMPCHAT)" class="am_main_block_block">
+								Send</div>
+							<div @click="useCommand('startmp ')" class="am_main_block_block">
+								Start Event</div>
+							<div @click="useCommand('stopmp ' + player.inputPrizes + ' ' + player.inputIDPlayerPriz)" class="am_main_block_block">
+								Finish Event</div>
+							<input v-model="player.inputIDPlayerPriz" type="number" placeholder="Winner's ID">
+                            <input v-model="player.inputPrizes" type="number" placeholder="Reward">
+						</div>
+					</div>
+				</div>
+
+				<div v-if="page == 2" class="am_main">
+					<h1>Transport</h1>
+					<div class="am_main_block">
+						<div class="am_main_block_flex">
+							<input v-model="player.inputId" type="number" placeholder="Player ID">
+							<input v-model="player.inputVehicleModel" type="text" placeholder="Transport model">
+                            <input v-model="player.inputVehicleId" type="number" placeholder="Transport ID">
+						</div>
+					</div>
+					<div class="am_main_block">
+						<h2>Teleport</h2>
+						<div class="am_main_block_flex">
+
+							<div @click="useCommand('tpcar ' + player.inputVehicleId)" class="am_main_block_block">
+								Teleport to the transport</div>
+							<div @click="useCommand('metpcar ' + player.inputVehicleId)" class="am_main_block_block">
+								Teleport the transport to yourself</div>
+						</div>
+					</div>
+					<div class="am_main_block">
+						<h2>Spawner</h2>
+						<div class="am_main_block_flex">
+
+							<div @click="useCommand('veh ' + player.inputVehicleModel + ' ' + 1 + ' ' + 1)" class="am_main_block_block">
+								Spawn a car</div>
+							<div @click="useCommand('delveh ')" class="am_main_block_block">
+								Delete a car</div>
+							<div @click="useCommand('delvehid ' + player.inputVehicleId)" class="am_main_block_block">
+								Delete a car by ID</div>
+							<div @click="useCommand('veh faggio2 1 1')" class="am_main_block_block">Create a moped</div>
+						</div>
+					</div>
+					<div class="am_main_block">
+						<h2>Other</h2>
+						<div class="am_main_block_flex">
+							<div @click="useCommand('afuel 100')" class="am_main_block_block">Refuel
+							</div>
+							<div @click="useCommand('fixcarid ' + player.inputVehicleId)" class="am_main_block_block">
+								Fix</div>
+							<div @click="useCommand('flip ' + player.inputVehicleId)" class="am_main_block_block">
+								Flip over</div>
+							<div @click="useCommand('carcoupon ' + player.inputId + ' ' + player.inputVehicleModel)" class="am_main_block_block">
+								Issue a coupon</div>
+						</div>
+					</div>
+				</div>
+				<div v-if="page == 1" class="am_main">
+					<h1>Interaction with players</h1>
+					<div class="am_main_block">
+						<div class="am_main_block_flex">
+							<input v-model="player.inputId" type="number" placeholder="Player ID">
+							<input v-model="player.inputName" type="text" placeholder="Player's nickname">
+						</div>
+					</div>
+					<div class="am_main_block">
+						<h2>Message</h2>
+						<div class="am_main_block_flex">
+							<input v-model="player.inputMessage" type="text" placeholder="Message">
+							<div @click="useCommand('asms ' + player.inputId + ' ' +  player.inputMessage)"
+								class="am_main_block_block">Send</div>
+						</div>
+					</div>
+					<div class="am_main_block">
+						<h2>Teleport</h2>
+						<div class="am_main_block_flex">
+							<input type="number" v-model="player.inputDim" placeholder="Dimension">
+							<div @click="useCommand('setdim ' + player.inputId + ' ' + player.inputDim)"
+								class="am_main_block_block">Set a dimension for the player</div>
+						</div>
+						<div class="am_main_block_flex">
+
+							<div @click="useCommand('tp ' + player.inputId)" class="am_main_block_block">
+								Teleport to the player</div>
+							<div @click="useCommand('metp ' + player.inputId)" class="am_main_block_block">
+								Teleport them to you.</div>
+						</div>
+					</div>
+					<div class="am_main_block">
+						<h2>Other</h2>
+						<div class="am_main_block_flex">
+							<div @click="useCommand('spawn ' + player.inputId)" class="am_main_block_block">
+								To spawn</div>
+							<div @click="useCommand('fz ' + player.inputId)" class="am_main_block_block">Freeze
+							</div>
+							<div @click="useCommand('unfz ' + player.inputId)" class="am_main_block_block">
+								Unfreeze</div>
+							<div @click="useCommand('kill ' + player.inputId)" class="am_main_block_block">
+									Kill Player</div>
+							<div @click="useCommand('slap ' + player.inputId)"
+									class="am_main_block_block">Slap</div>
+							<div @click="useCommand('agl ' + player.inputId)"
+									class="am_main_block_block">Licenses</div>
+						</div>
+						<div class="am_main_block_flex">
+					<input v-model="player.inputNum" type="number" placeholder="Номер симки">
+							<div @click="useCommand('newsimcard ' + player.inputId + ' ' + player.inputNum)"
+									class="am_main_block_block">New Sim Card</div>
+					<input v-model="player.inputIdCase" type="number" placeholder="ID Кейса">
+							<div @click="useCommand('Givecase ' + player.inputId + ' ' + player.inputIdCase)"
+									class="am_main_block_block">Issue a case</div>
+					</div>
+					</div>
+					<div class="am_main_block">
+						<h2>Administration</h2>
+						<div class="am_main_block_flex">
+							<input v-model="player.inputRank" type="number" placeholder="Admin Level">
+							<div @click="useCommand('arank ' + player.inputId + ' ' + player.inputRank)"
+									class="am_main_block_block">Change Level</div>
+							<div @click="useCommand('setadmin ' + player.inputId)"
+									class="am_main_block_block">Make Admin</div>
+							<div @click="useCommand('deladmin ' + player.inputId)"
+									class="am_main_block_block">Remove Admin</div>
+						</div>
+					</div>
+				</div>
+				<div v-if="page == 3" class="am_main">
+					<h1>Other</h1>
+					<div class="am_main_block">
+						<div class="am_main_block_flex">
+							<input v-model="player.inputId" type="number" placeholder="Player ID">
+							<input v-model="player.inputName" type="text" placeholder="Player's nickname">
+						</div>
+						<div class="am_main_block_flex">
+							<input v-model="player.inputPunishTime" type="number" placeholder="The time of punishment">
+							<input v-model="player.inputPunishReason1" type="text" placeholder="The reason for the punishment">
+						</div>
+					</div>
+                                                <div class="am_main_block">
+						<h2>Remove Punishments (Online)</h2>
+						<div class="am_main_block_flex">
+							<div @click="useCommand('unmute ' + player.inputId)"
+								class="am_main_block_block">Unmute</div>
+							<div @click="useCommand('unjail ' + player.inputId)"
+								class="am_main_block_block">Unjail</div>
+							<div @click="useCommand('unwarn ' + player.inputId)"
+								class="am_main_block_block">Unwarn</div>
+						</div>
+					</div>
+                                                <div class="am_main_block">
+						<h2>Removing punishments (offline)</h2>
+						<div class="am_main_block_flex">
+							<div @click="useCommand('offunmute ' + player.inputName)"
+								class="am_main_block_block">Unmute</div>
+							<div @click="useCommand('offunjail ' + player.inputName)"
+								class="am_main_block_block">Unjail</div>
+							<div @click="useCommand('offunwarn ' + player.inputName)"
+								class="am_main_block_block">Unwarn</div>
+							<div @click="useCommand('unban ' + player.inputName)"
+								class="am_main_block_block">unban</div>
+						</div>
+					</div>
+					<div class="am_main_block">
+						<h2>Punishments</h2>
+						<div class="am_main_block_flex">
+							<div @click="useCommand('kick ' + player.inputId + ' ' + player.inputPunishReason1)"
+								class="am_main_block_block">Kick</div>
+							<div @click="useCommand('mute ' + player.inputId + ' ' + player.inputPunishTime + ' ' + player.inputPunishReason1)"
+								class="am_main_block_block">Mute</div>
+							<div @click="useCommand('jail ' + player.inputId + ' ' + player.inputPunishTime + ' ' + player.inputPunishReason1)"
+								class="am_main_block_block">Jail</div>
+							<div @click="useCommand('warn ' + player.inputId + ' ' + player.inputPunishReason1)"
+								class="am_main_block_block">Warn</div>
+							<div @click="useCommand('ban ' + player.inputId + ' ' + player.inputPunishTime + ' ' + player.inputPunishReason1)"
+								class="am_main_block_block">Ban</div>
+							<div @click="useCommand('hardban ' + player.inputId + ' ' + player.inputPunishTime + ' ' + player.inputPunishReason1)"
+								class="am_main_block_block">hardban</div>
+							<div @click="useCommand('hardban ' + player.inputId + ' ' + 9999 + ' ' + player.inputPunishReason1)"
+								class="am_main_block_block">Ban forever</div>
+							<div @click="useCommand('offban ' + player.inputName + ' ' + player.inputPunishTime + ' ' + player.inputPunishReason1)"
+								class="am_main_block_block">Offline ban</div>
+							<div @click="useCommand('offhardban ' + player.inputName + ' ' + player.inputPunishTime + ' ' + player.inputPunishReason1)"
+								class="am_main_block_block">Offline hardban</div>
+							<div @click="useCommand('aclear ' + player.inputName + ' ' + player.inputPunishReason1)"
+								class="am_main_block_block">Clear the character</div>
+						</div><div class="am_main_block_flex"></div>
+						<h2 style="padding: 10px 0 0 0;">Extreme Punishments</h2>
+						<div class="am_main_block_flex">
+							<div @click="useCommand('crimeban ' + player.inputId + ' ' + player.inputPunishReason1)"
+								class="am_main_block_block">Ban</div>
+							<div @click="useCommand('uncrimeban ' + player.inputId)"
+								class="am_main_block_block">Unban</div>
+							<div @click="useCommand('offcrimeban ' + player.inputId + ' ' + player.inputPunishReason1)"
+								class="am_main_block_block">Offline Crimeban</div>
+							<div @click="useCommand('offuncrimeban ' + player.inputName)"
+								class="am_main_block_block">Offline Crime unban</div>
+						</div>
+					</div>
+				</div>
+				<div v-if="page == 4" class="am_main">
+					<div class="am_main_block_flex"></div>
+					<div class="am_main_block">
+						<div class="am_main_block"><h2>Data:</h2>
+						<div class="am_main_block_flex">
+									<input v-model="player.inputLeader" type="number" placeholder="Faction ID">
+									<input v-model="player.inputId" type="number" placeholder="Player ID">
+									</div>
+									<h2 style="padding: 5px 0 0 0;">General:</h2>
+									<div class="am_main_block_flex">
+							<div @click="useCommand('setleader ' + player.inputId + ' ' + player.inputLeader)"
+									class="am_main_block_block">Make a leader</div>
+							<div @click="useCommand('delleader ' + player.inputId)"
+									class="am_main_block_block">Remove the leader</div>
+									</div>
+									<h2 style="padding: 10px 0 0 0;">Issuing mats</h2>
+									<div class="am_main_block_flex">
+									<input v-model="player.inputMats" type="text" placeholder="What exactly is it ?">
+									<input v-model="player.inputLimits" type="text" placeholder="Quantity">
+							<div @click="useCommand('changestock ' + player.inputLeader + ' ' + player.inputMats + ' ' + player.inputLimits )"
+									class="am_main_block_block">Issue</div>
+						</div>
+					</div>
+												<div class="am_main_block">
+												<h5>When replenishing mats, you replace the current amount with your own!</h5>
+												
+							<h5>Mats - Materials</h5>
+							<h5>Drugs - Drugs!</h5>
+							<h5>Medkits - Medkits</h5>
+							<h5>Money - Money</h5>
+						</div>
+				</div>
+				</div>
+				<div v-if="page == 5" class="am_main">
+					<h1>Business</h1>
+					<div class="am_main_block">
+						<div class="am_main_block_flex">
+							<input v-model="player.inputIdBiz" type="number" placeholder="Business ID">
+							<div @click="useCommand('setprod ' + player.inputIdBiz)"
+								class="am_main_block_block">Replenish</div>
+							<div @click="useCommand('takeoffbiz ' + player.inputIdBiz)"
+								class="am_main_block_block">Merge into the state</div>
+							<div @click="useCommand('Deletebusiness ' + player.inputIdBiz)"
+								class="am_main_block_block">Remove</div>
+							<div @click="useCommand('tpbiz ' + player.inputIdBiz)"
+								class="am_main_block_block">Teleport</div>
+						</div>
+					</div>
+
+					<div class="am_main_block"><div class="am_main_block_flex">
+							<input v-model="player.inputIdPriceBiz" type="number" placeholder="Price">
+							<div @click="useCommand('Changebizprice ' + player.inputIdPriceBiz)"
+								class="am_main_block_block">Change the price</div>
+								<h5 style="padding: 10px 0 10px 0;">Note: You need to stand on a business marker to change its price or change the mafia</h5>
+							<input v-model="player.inputIdMafia" type="number" placeholder="Mafia ID">
+							<div @click="useCommand('Setbizmafia ' + player.inputIdMafia)"
+								class="am_main_block_block">Change the mafia</div>
+							<h5 style="padding: 10px 0 10px 0;">ID 10 - LCN! ID 11 - Russian! ID 12 - Yakuza! ID 13 - Armenia!</h5>
+							</div>
+							</div>
+				</div>
+				
+				<div v-if="page == 8" class="am_main">
+					<h1>Memo</h1>
+					<div class="am_main_block">
+						<div class="am_main_block_flex">
+						</div>
+					</div>
+				</div>
+				<div v-if="page == 9" class="am_main">
+					<h1>Empty</h1>
+
+
+					<div class="am_main_block">
+						<div class="am_main_block_flex">
+						</div>
+					</div>
+				</div>
+				<div v-if="page == 7" class="am_main">
+					<h1>Health</h1>
+                                                <div class="am_main_block">
+						<h2>Хп</h2>
+						<div class="am_main_block_flex">
+							<input v-model="player.inputId5" type="number" placeholder="Player ID">
+							<div @click="useCommand('sethp ' + player.inputId5 + ' ' + 100)"
+								class="am_main_block_block">Give out 100 HP</div>
+						</div>
+					</div>
+                                                <div class="am_main_block">
+						<h2>Броня</h2>
+						<div class="am_main_block_flex">
+							<input v-model="player.inputId6" type="number" placeholder="Player ID">
+							<div @click="useCommand('setar ' + player.inputId6 + ' ' + 100)"
+								class="am_main_block_block">Issue 100 Armor</div>
+						</div>
+					</div>
+                                                <div class="am_main_block">
+						<h2>Intensive care</h2>
+						<div class="am_main_block_flex">
+							<input v-model="player.inputId7" type="number" placeholder="Player ID">
+							<div @click="useCommand('revive ' + player.inputId7)"
+								class="am_main_block_block">Revive</div>
+						</div>
+					</div>
+                                                <div class="am_main_block">
+						<h2>Extras</h2>
+						<div class="am_main_block_flex">
+							<input v-model="player.inputId8" type="number" placeholder="Player ID">
+							<div @click="useCommand('givegun ' + player.inputId8 + ' ' + 1 + ' ' + 123456789)"
+								class="am_main_block_block">Give out a first aid kit</div>
+						</div>
+					</div>
+				</div>
+                                        <div v-if="page == 10" class="am_main">
+					<h1>The server</h1>
+                        <div class="am_main_block">
+						<h2>Погода</h2>
+						<div class="am_main_block_flex">
+							<div @click="useCommand('sw 0')"
+								class="am_main_block_block">EXTRASUNNY</div>
+							<div @click="useCommand('sw 1')"
+								class="am_main_block_block">CLEAR</div>
+							<div @click="useCommand('sw 2')"
+								class="am_main_block_block">CLOUDS</div>
+							<div @click="useCommand('sw 3')"
+								class="am_main_block_block">SMOG</div>
+							<div @click="useCommand('sw 4')"
+								class="am_main_block_block">FOGGY</div>
+							<div @click="useCommand('sw 5')"
+								class="am_main_block_block">OVERCAST</div>
+							<div @click="useCommand('sw 6')"
+								class="am_main_block_block">RAIN</div>
+							<div @click="useCommand('sw 7')"
+								class="am_main_block_block">THUNDER</div>
+							<div @click="useCommand('sw 8')"
+								class="am_main_block_block">CLEARING</div>
+							<div @click="useCommand('sw 9')"
+								class="am_main_block_block">NEUTRAL</div>
+							<div @click="useCommand('sw 10')"
+								class="am_main_block_block">SNOW</div>
+							<div @click="useCommand('sw 11')"
+								class="am_main_block_block">BLIZZARD</div>
+							<div @click="useCommand('sw 12')"
+								class="am_main_block_block">SNOWLIGHT</div>
+							<div @click="useCommand('sw 13')"
+								class="am_main_block_block">XMAS</div>
+							<div @click="useCommand('sw 14')"
+								class="am_main_block_block">HALLOWEEN</div><div class="am_main_block_flex"></div>
+						<h2>Разное</h2>
+						<div class="am_main_block_flex">
+							<div @click="useCommand('saveserver')" class="am_main_block_block">Save the server</div>
+							<div @click="useCommand('restart')" class="am_main_block_block">Restart the server</div>
+							<div @click="useCommand('luckywheel')" class="am_main_block_block">Reset the wheel of fortune</div>
+						</div>
+						<h2 style="padding: 5px 0 0 0;">The war for materials</h2>
+						<div class="am_main_block_flex">
+						<div @click="useCommand('stopmatwars')" class="am_main_block_block">Finish</div>
+						<div @click="useCommand('startmatwars')" class="am_main_block_block">Start</div>
+						</div>
+						<h2 style="padding: 5px 0 0 0;">House</h2><div class="am_main_block_flex">
+												<div class="am_main_block_flex" style="padding: 0 0 10px 0;">
+							<input v-model="player.inputIdHouse" type="number" placeholder="House ID">
+							<div @click="useCommand('tphouse ' + player.inputIdHouse)"
+								class="am_main_block_block">Teleport</div>
+						</div>
+							<input v-model="player.inputIdPriceHouse" type="number" placeholder="Цена">
+							<div @click="useCommand('changehouseprice ' + player.inputIdPriceHouse)"
+								class="am_main_block_block">Change price</div>
+								<div @click="useCommand('delhouseowner ')"
+								class="am_main_block_block">Merge into the state</div>
+								<h5>You need to stand on the marker at home to edit</h5>
+						</div>
+						</div>
+					</div>
+				</div>
+				<div v-if="page == 6" class="am_main">
+					<h1>Issues</h1>
+					<div class="am_main_block">
+					</div>
+					<div class="am_main_block">
+						<h2>Donate to everyone</h2>
+						<div class="am_main_block_flex">
+							<input v-model="player.inputDonate2" type="number" placeholder="Number of donations">
+							<div @click="useCommand('giveredsall '+ player.inputDonate2)"
+								class="am_main_block_block">Issue</div>
+						</div>
+					</div>
+                                             <div class="am_main_block">
+						<h2>Donation</h2>
+						<div class="am_main_block_flex">
+							<input v-model="player.inputId9" type="number" placeholder="Player ID">
+							<input v-model="player.inputDonate1" type="number" placeholder="Number of donations">
+							<div @click="useCommand('givereds ' + player.inputId9 + ' ' + player.inputDonate1)"
+								class="am_main_block_block">Issue</div>
+						</div>
+					</div>
+                                             <div class="am_main_block">
+						<h2>Money</h2>
+						<div class="am_main_block_flex">
+							<input v-model="player.inputId10" type="number" placeholder="Player ID">
+							<input v-model="player.inputMoney" type="number" placeholder="Amount of money">
+							<div @click="useCommand('givemoney ' + player.inputId10 + ' ' + player.inputMoney)"
+								class="am_main_block_block">Issue</div>
+						</div>
+					</div>
+					<div class="am_main_block">
+						<h2>Level</h2>
+						<div class="am_main_block_flex">
+							<input v-model="player.inputId11" type="number" placeholder="Player ID">
+							<input v-model="player.inputLvl" type="number" placeholder="Number of levels">
+							<div @click="useCommand('givelvl ' + player.inputId11 + ' ' + player.inputLvl)"
+								class="am_main_block_block">Issue</div>
+						</div>
+					</div>
+                                             <div class="am_main_block">
+						<h2>Issue of weapons</h2>
+						<div class="am_main_block_flex">
+							<input v-model="player.inputId12" type="number" placeholder="Player ID">
+							<input v-model="player.inputWeaponId" type="number" placeholder="Weapon ID">
+							<div @click="useCommand('givegun ' + player.inputId12 + ' ' + player.inputWeaponId + ' ' + 574390000)"
+								class="am_main_block_block">Issue</div>
+					   </div>
+				   </div>
+                                             <div class="am_main_block">
+						<h2>Ammo Issuage</h2>
+						<div class="am_main_block_flex">
+							<input v-model="player.inputId13" type="number" placeholder="Player ID">
+							<input v-model="player.inputAmmoType" type="number" placeholder="Ammo ID">
+							<div @click="useCommand('giveammo ' + player.inputId13 + ' ' + player.inputAmmoType + ' ' + 48)"
+								class="am_main_block_block">Issue</div>
+					   </div>
+				   </div>
+				</div>
+			</div>
+	</transition-group>
+	</div>
+
+	<script src="./src/library/merumondRpc.js"></script>
+
+	<script src="https://cdn.polyfill.io/v1/polyfill.js?features=Element.prototype.closest"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<script>Vue.filter('formatThousands', (x) => { return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") })</script>
+
+	<script src="./js/adminmenu.js"></script>
+
+</body>
+
+</html>

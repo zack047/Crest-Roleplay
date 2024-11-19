@@ -1,0 +1,10 @@
+{
+    "0": {
+        "buttons":[
+            {"name": "I would like to meet you!", "type": "perform"},
+            {"name": "Good bye."}
+        ],
+        "text":"Welcome to the Air Transport Shop! Here you can buy both a helicopter and an airplane! After purchase, your little bird will be flown directly to the airport, where it will be waiting for you. Go there at any time and start your exciting journey through the air!",
+        "sound": "cloud/npc/airshop/airshop.ogg"
+    }
+}
